@@ -1,0 +1,4139 @@
+[
+ {
+  "paper_id": "28934",
+  "title": "Relational Programming with Foundational Models",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "28308",
+  "title": "PathAsst: A Generative Foundation AI Assistant towards Artificial General Intelligence of Pathology",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "29905",
+  "title": "Tackling Vision Language Tasks through Learning Inner Monologues",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "29376",
+  "title": "Hypothesis, Verification, and Induction: Grounding Large Language Models with Self-Driven Skill Learning",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "27888",
+  "title": "Visual Chain-of-Thought Prompting for Knowledge-Based Visual Reasoning",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "29858",
+  "title": "VELMA: Verbalization Embodiment of LLM Agents for Vision and Language Navigation in Street View",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "28597",
+  "title": "NavGPT: Explicit Reasoning in Vision-and-Language Navigation with Large Language Models",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "29421",
+  "title": "SemTra: A Semantic Skill Translator for Cross-Domain Zero-Shot Policy Adaptation",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "33160",
+  "title": "VIoTGPT: Learning to Schedule Vision Tools Towards Intelligent Video Internet of Things",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "35048",
+  "title": "Pioneering Explainable Video Fact-Checking with a New Dataset and Multi-role Multimodal Model Approach",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32280",
+  "title": "Muses: 3D-Controllable Image Generation via Multi-Modal Agent Collaboration",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32346",
+  "title": "DME-Driver: Integrating Human Decision Logic and 3D Scene Perception in Autonomous Driving",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32681",
+  "title": "Modular-Cam: Modular Dynamic Camera-view Video Generation with LLM",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32913",
+  "title": "Combating Multimodal LLM Hallucination via Bottom-Up Holistic Reasoning",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "33610",
+  "title": "Instruction-Augmented Long-Horizon Planning: Embedding Grounding Mechanisms in Embodied Mobile Manipulation",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "34661",
+  "title": "DialogDraw: Image Generation and Editing System Based on Multi-Turn Dialogue",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32796",
+  "title": "ChatterBox: Multimodal Referring and Grounding with Chain-of-Questions",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32455",
+  "title": "Multi-Modal Grounded Planning and Efficient Replanning for Learning Embodied Agents with a Few Examples",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "33607",
+  "title": "Enhancing Multi-Robot Semantic Navigation Through Multimodal Chain-of-Thought Score Collaboration",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "35003",
+  "title": "PhishAgent: A Robust Multimodal Agent for Phishing Webpage Detection",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32387",
+  "title": "Unleashing the Temporal-Spatial Reasoning Capacity of GPT for Training-Free Audio and Language Referenced Video Object Segmentation",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "34526",
+  "title": "Affordances-Oriented Planning Using Foundation Models for Continuous Vision-Language Navigation",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "34965",
+  "title": "SYNAPSE: SYmbolic Neural-Aided Preference Synthesis Engine",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32384",
+  "title": "VProChart: Answering Chart Question Through Visual Perception Alignment Agent and Programmatic Solution Reasoning",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32142",
+  "title": "MuMA-ToM: Multi-modal Multi-Agent Theory of Mind",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32038",
+  "title": "GenAL: Generative Agent for Adaptive Learning",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "34123",
+  "title": "Vision-Based Generic Potential Function for Policy Alignment in Multi-Agent Reinforcement Learning",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "33602",
+  "title": "Safe Planner: Empowering Safety Awareness in Large Pre-Trained Models for Robot Task Planning",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "32657",
+  "title": "Autonomous LLM-Enhanced Adversarial Attack for Text-to-Motion",
+  "conference": "AAAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.acl-short.65",
+  "title": "Modular Visual Question Answering via Code Generation",
+  "conference": "ACL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.908",
+  "title": "Embodied Language Learning: Opportunities, Challenges, and Future Directions",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.529",
+  "title": "MapGPT: Map-Guided Prompting with Adaptive Path Planning for Vision-and-Language Navigation",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.200",
+  "title": "Semantic Skill Grounding for Embodied Instruction-Following in Cross-Domain Environments",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.594",
+  "title": "Exploring Hybrid Question Answering via Program-based Prompting",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.362",
+  "title": "GeoAgent: To Empower LLMs using Geospatial Tools for Address Standardization",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.50",
+  "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.640",
+  "title": "ViCor: Bridging Visual Understanding and Commonsense Reasoning with Large Language Models",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.701",
+  "title": "MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.745",
+  "title": "CorNav: Autonomous Agent with Self-Corrected Planning for Zero-Shot Vision-and-Language Navigation",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.178",
+  "title": "Unified Hallucination Detection for Multimodal Large Language Models",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.537",
+  "title": "TextBind: Multi-turn Interleaved Multimodal Instruction-following in the Wild",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.670",
+  "title": "Agent Lumos: Unified and Modular Training for Open-Source Language Agents",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.acl-long.37",
+  "title": "OPEx: A Component-Wise Analysis of LLM-Centric Agents in Embodied Instruction Following",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.12",
+  "title": "Text2DB: Integration-Aware Information Extraction with Large Language Model Agents",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.39",
+  "title": "Large Language Models can Share Images, Too!",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.767",
+  "title": "Selective “Selective Prediction”: Reducing Unnecessary Abstention in Vision-Language Reasoning",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-acl.240",
+  "title": "Autonomous Workflow for Multimodal Fine-Grained Training Assistants Towards Mixed Reality",
+  "conference": "ACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1191",
+  "title": "M2PA: A Multi-Memory Planning Agent for Open Worlds Inspired by Cognitive Theory",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.600",
+  "title": "Enhancing Interpretable Image Classification Through LLM Agents and Conditional Concept Bottleneck Models",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.466",
+  "title": "AgentStore: Scalable Integration of Heterogeneous Agents As Specialized Generalist Computer Assistant",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1100",
+  "title": "Query-Driven Multimodal GraphRAG: Dynamic Local Knowledge Graph Construction for Online Reasoning",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1158",
+  "title": "GUI Agents: A Survey",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-short.41",
+  "title": "Fast or Slow? Integrating Fast Intuition and Deliberate Thinking for Enhancing Visual Question Answering",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.994",
+  "title": "UnrealLLM: Towards Highly Controllable and Interactable 3D Scene Generation by LLM-powered Procedural Content Generation",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.385",
+  "title": "VQAGuider: Guiding Multimodal Large Language Models to Answer Complex Video Questions",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-short.6",
+  "title": "Doc-React: Multi-page Heterogeneous Document Question-answering",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.663",
+  "title": "ReflecTool: Towards Reflection-Aware Tool-Augmented Clinical Agents",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1169",
+  "title": "Metagent-P: A Neuro-Symbolic Planning Agent with Metacognition for Open Worlds",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.374",
+  "title": "Evaluation Agent: Efficient and Promptable Evaluation Framework for Visual Generative Models",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-industry.86",
+  "title": "SingaKids: A Multilingual Multimodal Dialogic Tutor for Language Learning",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.620",
+  "title": "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.282",
+  "title": "GUI-explorer: Autonomous Exploration and Mining of Transition-aware Knowledge for GUI Agent",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1152",
+  "title": "Aria-UI: Visual Grounding for GUI Instructions",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.523",
+  "title": "Bayesian Optimization for Controlled Image Editing via LLMs",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-industry.75",
+  "title": "sudo rm -rf agentic_security",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1113",
+  "title": "CRAB: Cross-environment Agent Benchmark for Multimodal Language Model Agents",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.449",
+  "title": "The Male CEO and the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.1511",
+  "title": "CityNavAgent: Aerial Vision-and-Language Navigation with Hierarchical Semantic Planning and Global Memory",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.acl-long.643",
+  "title": "Cultivating Gaming Sense for Yourself: Making VLMs Gaming Experts",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.1226",
+  "title": "PodAgent: A Comprehensive Framework for Podcast Generation",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.559",
+  "title": "Self-play through Computational Runtimes improves Chart Reasoning",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.341",
+  "title": "RATE-Nav: Region-Aware Termination Enhancement for Zero-shot Object Navigation with Vision-Language Models",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-acl.348",
+  "title": "OS-Kairos: Adaptive Interaction for MLLM-Powered GUI Agents",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5651a0a840db",
+  "title": "Let's ViCE! Mimicking Human Cognitive Behavior in Image Generation Evaluation",
+  "conference": "ACMMM",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3882c611b280",
+  "title": "CT2C-QA: Multimodal Question Answering over Chinese Text, Table and Chart",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2ca5f0b9f266",
+  "title": "Few-Shot Multimodal Explanation for Visual Question Answering",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "b143bbc4fd52",
+  "title": "De-fine: Decomposing and Refining Visual Programs with Auto-Feedback",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "755f6c990dfa",
+  "title": "Exploring the Robustness of Decision-Level Through Adversarial Attacks on LLM-Based Embodied Models",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1da5c9b9b68a",
+  "title": "OpenLEAF: A Novel Benchmark for Open-Domain Interleaved Image-Text Generation",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "77bfac7fc372",
+  "title": "GPT4Video: A Unified Multimodal Large Language Model for lnstruction-Followed Understanding and Safety-Aware Generation",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "da45735e925e",
+  "title": "An Entailment Tree Generation Approach for Multimodal Multi-Hop Question Answering with Mixture-of-Experts and Iterative Feedback Mechanism",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4adaabfbd60d",
+  "title": "AdaCoder: Adaptive Prompt Compression for Programmatic Visual Question Answering",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4aff1c9872d9",
+  "title": "GG-Editor: Locally Editing 3D Avatars with Multimodal Large Language Model Guidance",
+  "conference": "ACMMM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5cddd38e4198",
+  "title": "Multi-Agent System for Comprehensive Soccer Understanding",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "126386591810",
+  "title": "Twin Co-Adaptive Dialogue for Progressive Image Generation",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "13cf2a755144",
+  "title": "EMO-Avatar: An LLM-Agent-Orchestrated Framework for Multimodal Emotional Support in Human Animation",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0838cd0d79e8",
+  "title": "Learning to Be a Doctor: Searching for Effective Medical Agent Architectures",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "17e78baac4d6",
+  "title": "The Eye of Sherlock Holmes: Uncovering User Private Attribute Profiling via Vision-Language Model Agentic Framework",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4c70b091f5f8",
+  "title": "I2CR: Intra- and Inter-modal Collaborative Reflections for Multimodal Entity Linking",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "c082791d3414",
+  "title": "MMPro: A Decoupled Perception-Thinking-Execution Framework for Secure GUI Agent",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "a11f73b8b183",
+  "title": "UAV-ON: A Benchmark for Open-World Object Goal Navigation with Aerial Agents",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "784a6da28503",
+  "title": "OpenMap: Instruction Grounding via Open-Vocabulary Visual-Language Mapping",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "439f9647d2c9",
+  "title": "AudioGenie: A Training-Free Multi-Agent Framework for Diverse Multimodality-to-Multiaudio Generation",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7cff810deeb7",
+  "title": "GraphVideoAgent: Enhancing Long-form Video Understanding with Entity Relation Graphs",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "b5165168ba48",
+  "title": "From Outline to Detail: An Hierarchical End-to-end Framework for Coherent and Consistent Visual Novel Generation and Assembly",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "e2ee56c0e76d",
+  "title": "VL-DynaRefine: A Vision-Language Dynamic Refinement Approach for Visual Reasoning",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "755fdcb1565c",
+  "title": "AeroDuo: Aerial Duo for UAV-based Vision and Language Navigation",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "68f111a4d437",
+  "title": "CogDDN: A Cognitive Demand-Driven Navigation with Decision Optimization and Dual-Process Thinking",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "a8fc017c3032",
+  "title": "Building Embodied EvoAgent: A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "254f157fd92a",
+  "title": "FineQuest: Adaptive Knowledge-Assisted Sports Video Understanding via Agent-of-Thoughts Reasoning",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "565e73776567",
+  "title": "Human Motion Generation in 3D Scenes from Open-Ended Textual Instructions with MLLM Planning",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ec3fca278028",
+  "title": "HEAR: A Holistic Extraction and Agentic Reasoning Framework for Document Understanding",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4e852cf5ae29",
+  "title": "Can I Trust You? Advancing GUI Task Automation with Action Trust Score",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "03a40d2285d2",
+  "title": "Queryable 3D Scene Representation: A Multi-Modal Framework for Semantic Reasoning and Robotic Task Planning",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "da4f0e9da161",
+  "title": "ScreenSpot-Pro: GUI Grounding for Professional High-Resolution Computer Use",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "be4cb0f45d38",
+  "title": "Agent-to-Agent (A2A) Protocol Integrated Digital Twin System with AgentIQ for Multimodal AI Fitness Coaching and Personalized Well-Being",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7913cb04ca5c",
+  "title": "Towards Autonomous Tool Utilization in Language Models: A Unified, Efficient and Scalable Framework",
+  "conference": "COLING",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "70faa6c0c636",
+  "title": "FineRAG: Fine-grained Retrieval-Augmented Text-to-Image Generation",
+  "conference": "COLING",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "abc9f99a3145",
+  "title": "LAW: Legal Agentic Workflows for Custody and Fund Services Contracts",
+  "conference": "COLING",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8961076c2563",
+  "title": "Idea23D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs",
+  "conference": "COLING",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "78f9a486daf1",
+  "title": "AutoProteinEngine: A Large Language Model Driven Agent Framework for Multimodal AutoML in Protein Engineering",
+  "conference": "COLING",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "f61d7f19fd5f",
+  "title": "EffiQA: Efficient Question-Answering with Strategic Multi-Model Collaboration on Knowledge Graphs",
+  "conference": "COLING",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1ba209BACA",
+  "title": "Agent-DocEdit: Language-Instructed LLM Agent for Content-Rich Document Editing",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "NV8yRJRET1",
+  "title": "DiagrammerGPT: Generating Open-Domain, Open-Platform Diagrams via LLM Planning",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "otKo4zFKmH",
+  "title": "Task Success is not Enough: Investigating the Use of Video-Language Models as Behavior Critics for Catching Undesirable Agent Behaviors",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "UPE6WYE8vg",
+  "title": "A Language Agent for Autonomous Driving",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "sKNIjS2brr",
+  "title": "VideoDirectorGPT: Consistent Multi-Scene Video Generation via LLM-Guided Planning",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "6U1FEKP7Ar",
+  "title": "ExoViP: Step-by-step Verification and Exploration with Exoskeleton Modules for Compositional Visual Reasoning",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7HPuAkgdVm",
+  "title": "VisualTrap: A Stealthy Backdoor Attack on GUI Agents via Visual Grounding Manipulation",
+  "conference": "COLM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nSV8Depcpx",
+  "title": "Plancraft: an evaluation dataset for planning with LLM agents",
+  "conference": "COLM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zg5is4GJ3R",
+  "title": "Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents",
+  "conference": "COLM",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gupta_Visual_Programming_Compositional_Visual_Reasoning_Without_Training",
+  "title": "Visual Programming: Compositional Visual Reasoning Without Training",
+  "conference": "CVPR",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cai_L-MAGIC_Language_Model_Assisted_Generation_of_Images_with_Coherence",
+  "title": "L-MAGIC: Language Model Assisted Generation of Images with Coherence",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Khan_Self-Training_Large_Language_Models_for_Improved_Visual_Program_Synthesis_With",
+  "title": "Self-Training Large Language Models for Improved Visual Program Synthesis With Visual Reinforcement",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ge_Visual_Fact_Checker_Enabling_High-Fidelity_Detailed_Caption_Generation",
+  "title": "Visual Fact Checker: Enabling High-Fidelity Detailed Caption Generation",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gao_AssistGUI_Task-Oriented_PC_Graphical_User_Interface_Automation",
+  "title": "AssistGUI: Task-Oriented PC Graphical User Interface Automation",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Li_Driving_Everywhere_with_Large_Language_Model_Policy_Adaptation",
+  "title": "Driving Everywhere with Large Language Model Policy Adaptation",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Shao_LMDrive_Closed-Loop_End-to-End_Driving_with_Large_Language_Models",
+  "title": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Min_MoReVQA_Exploring_Modular_Reasoning_Models_for_Video_Question_Answering",
+  "title": "MoReVQA: Exploring Modular Reasoning Models for Video Question Answering",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wu_V_Guided_Visual_Search_as_a_Core_Mechanism_in_Multimodal",
+  "title": "V?: Guided Visual Search as a Core Mechanism in Multimodal LLMs",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhuang_Vlogger_Make_Your_Dream_A_Vlog",
+  "title": "Vlogger: Make Your Dream A Vlog",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhan_OAKINK2_A_Dataset_of_Bimanual_Hands-Object_Manipulation_in_Complex_Task",
+  "title": "OAKINK2: A Dataset of Bimanual Hands-Object Manipulation in Complex Task Completion",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yang_RILA_Reflective_and_Imaginative_Language_Agent_for_Zero-Shot_Semantic_Audio-Visual",
+  "title": "RILA: Reflective and Imaginative Language Agent for Zero-Shot Semantic Audio-Visual Navigation",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wang_ModaVerse_Efficiently_Transforming_Modalities_with_LLMs",
+  "title": "ModaVerse: Efficiently Transforming Modalities with LLMs",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cai_Digital_Life_Project_Autonomous_3D_Characters_with_Social_Intelligence",
+  "title": "Digital Life Project: Autonomous 3D Characters with Social Intelligence",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gao_CLOVA_A_Closed-LOop_Visual_Assistant_with_Tool_Usage_and_Update",
+  "title": "CLOVA: A Closed-LOop Visual Assistant with Tool Usage and Update",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wei_Editable_Scene_Simulation_for_Autonomous_Driving_via_Collaborative_LLM-Agents",
+  "title": "Editable Scene Simulation for Autonomous Driving via Collaborative LLM-Agents",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Toubal_Modeling_Collaborator_Enabling_Subjective_Vision_Classification_With_Minimal_Human_Effort",
+  "title": "Modeling Collaborator: Enabling Subjective Vision Classification With Minimal Human Effort via LLM Tool-Use",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wu_Self-correcting_LLM-controlled_Diffusion_Models",
+  "title": "Self-correcting LLM-controlled Diffusion Models",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Hong_MultiPLY_A_Multisensory_Object-Centric_Embodied_Large_Language_Model_in_3D",
+  "title": "MultiPLY: A Multisensory Object-Centric Embodied Large Language Model in 3D World",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhao_DiffAgent_Fast_and_Accurate_Text-to-Image_API_Selection_with_Large_Language",
+  "title": "DiffAgent: Fast and Accurate Text-to-Image API Selection with Large Language Model",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yuan_Visual_Programming_for_Zero-shot_Open-Vocabulary_3D_Visual_Grounding",
+  "title": "Visual Programming for Zero-shot Open-Vocabulary 3D Visual Grounding",
+  "conference": "CVPR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Bai_R2C_Mapping_Room_to_Chessboard_to_Unlock_LLM_As_Low-Level",
+  "title": "R2C: Mapping Room to Chessboard to Unlock LLM As Low-Level Action Planner",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xue_PhyT2V_LLM-Guided_Iterative_Self-Refinement_for_Physics-Grounded_Text-to-Video_Generation",
+  "title": "PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cao_SceneTAP_Scene-Coherent_Typographic_Adversarial_Planner_against_Vision-Language_Models_in_Real-World",
+  "title": "SceneTAP: Scene-Coherent Typographic Adversarial Planner against Vision-Language Models in Real-World Environments",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Mu_RoboTwin_Dual-Arm_Robot_Benchmark_with_Generative_Digital_Twins",
+  "title": "RoboTwin: Dual-Arm Robot Benchmark with Generative Digital Twins",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wu_Chat2SVG_Vector_Graphics_Generation_with_Large_Language_Models_and_Image",
+  "title": "Chat2SVG: Vector Graphics Generation with Large Language Models and Image Diffusion Models",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Heiman_FactCheXcker_Mitigating_Measurement_Hallucinations_in_Chest_X-ray_Report_Generation_Models",
+  "title": "FactCheXcker: Mitigating Measurement Hallucinations in Chest X-ray Report Generation Models",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Chen_SOLVE_Synergy_of_Language-Vision_and_End-to-End_Networks_for_Autonomous_Driving",
+  "title": "SOLVE: Synergy of Language-Vision and End-to-End Networks for Autonomous Driving",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ziliotto_TANGO_Training-free_Embodied_AI_Agents_for_Open-world_Tasks",
+  "title": "TANGO: Training-free Embodied AI Agents for Open-world Tasks",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long",
+  "title": "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cui_GROVE_A_Generalized_Reward_for_Learning_Open-Vocabulary_Physical_Skill",
+  "title": "GROVE: A Generalized Reward for Learning Open-Vocabulary Physical Skill",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wei_From_Words_to_Structured_Visuals_A_Benchmark_and_Framework_for",
+  "title": "From Words to Structured Visuals: A Benchmark and Framework for Text-to-Diagram Generation and Editing",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cai_ROCKET-1_Mastering_Open-World_Interaction_with_Visual-Temporal_Context_Prompting",
+  "title": "ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context Prompting",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Panagopoulou_ViUniT_Visual_Unit_Tests_for_More_Robust_Visual_Programming",
+  "title": "ViUniT: Visual Unit Tests for More Robust Visual Programming",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gao_GENMANIP_LLM-driven_Simulation_for_Generalizable_Instruction-Following_Manipulation",
+  "title": "GENMANIP: LLM-driven Simulation for Generalizable Instruction-Following Manipulation",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Lin_Olympus_A_Universal_Task_Router_for_Computer_Vision_Tasks",
+  "title": "Olympus: A Universal Task Router for Computer Vision Tasks",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Chen_Symbolic_Representation_for_Any-to-Any_Generative_Tasks",
+  "title": "Symbolic Representation for Any-to-Any Generative Tasks",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Mall_DiSciPLE_Learning_Interpretable_Programs_for_Scientific_Visual_Discovery",
+  "title": "DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Pan_OmniManip_Towards_General_Robotic_Manipulation_via_Object-Centric_Interaction_Primitives_as",
+  "title": "OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Shi_Chain_of_Semantics_Programming_in_3D_Gaussian_Splatting_Representation_for",
+  "title": "Chain of Semantics Programming in 3D Gaussian Splatting Representation for 3D Vision Grounding",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xue_ComfyBench_Benchmarking_LLM-based_Agents_in_ComfyUI_for_Autonomously_Designing_Collaborative",
+  "title": "ComfyBench: Benchmarking LLM-based Agents in ComfyUI for Autonomously Designing Collaborative AI Systems",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xia_Phoenix_A_Motion-based_Self-Reflection_Framework_for_Fine-grained_Robotic_Action_Correction",
+  "title": "Phoenix: A Motion-based Self-Reflection Framework for Fine-grained Robotic Action Correction",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Shi_Enhancing_Video-LLM_Reasoning_via_Agent-of-Thoughts_Distillation",
+  "title": "Enhancing Video-LLM Reasoning via Agent-of-Thoughts Distillation",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Nath_VILA-M3_Enhancing_Vision-Language_Models_with_Medical_Expert_Knowledge",
+  "title": "VILA-M3: Enhancing Vision-Language Models with Medical Expert Knowledge",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gan_StageDesigner_Artistic_Stage_Generation_for_Scenography_via_Theater_Scripts",
+  "title": "StageDesigner: Artistic Stage Generation for Scenography via Theater Scripts",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Li_Robotic_Visual_Instruction",
+  "title": "Robotic Visual Instruction",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Li_DyFo_A_Training-Free_Dynamic_Focus_Visual_Search_for_Enhancing_LMMs",
+  "title": "DyFo: A Training-Free Dynamic Focus Visual Search for Enhancing LMMs in Fine-Grained Visual Understanding",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhou_Feature4X_Bridging_Any_Monocular_Video_to_4D_Agentic_AI_with",
+  "title": "Feature4X: Bridging Any Monocular Video to 4D Agentic AI with Versatile Gaussian Feature Fields",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xie_FilmComposer_LLM-Driven_Music_Production_for_Silent_Film_Clips",
+  "title": "FilmComposer: LLM-Driven Music Production for Silent Film Clips",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding",
+  "title": "DrVideo: Document Retrieval Based Long Video Understanding",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Lin_ChatHuman_Chatting_about_3D_Humans_with_Tools",
+  "title": "ChatHuman: Chatting about 3D Humans with Tools",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning",
+  "title": "3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yin_UniGoal_Towards_Universal_Zero-shot_Goal-oriented_Navigation",
+  "title": "UniGoal: Towards Universal Zero-shot Goal-oriented Navigation",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhou_Code-as-Monitor_Constraint-aware_Visual_Programming_for_Reactive_and_Proactive_Robotic_Failure",
+  "title": "Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Lin_JarvisIR_Elevating_Autonomous_Driving_Perception_with_Intelligent_Image_Restoration",
+  "title": "JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Long_CheckManual_A_New_Challenge_and_Benchmark_for_Manual-based_Appliance_Manipulation",
+  "title": "CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yue_V-Stylist_Video_Stylization_via_Collaboration_and_Reflection_of_MLLM_Agents",
+  "title": "V-Stylist: Video Stylization via Collaboration and Reflection of MLLM Agents",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhu_SegAgent_Exploring_Pixel_Understanding_Capabilities_in_MLLMs_by_Imitating_Human",
+  "title": "SegAgent: Exploring Pixel Understanding Capabilities in MLLMs by Imitating Human Annotator Trajectories",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ge_AutoPresent_Designing_Structured_Visuals_from_Scratch",
+  "title": "AutoPresent: Designing Structured Visuals from Scratch",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Huang_PEACE_Empowering_Geologic_Map_Holistic_Understanding_with_MLLMs",
+  "title": "PEACE: Empowering Geologic Map Holistic Understanding with MLLMs",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Marsili_Visual_Agentic_AI_for_Spatial_Reasoning_with_a_Dynamic_API",
+  "title": "Visual Agentic AI for Spatial Reasoning with a Dynamic API",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Liu_ReasonGrounder_LVLM-Guided_Hierarchical_Feature_Splatting_for_Open-Vocabulary_3D_Visual_Grounding",
+  "title": "ReasonGrounder: LVLM-Guided Hierarchical Feature Splatting for Open-Vocabulary 3D Visual Grounding and Reasoning",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Deng_Motion-Grounded_Video_Reasoning_Understanding_and_Perceiving_Motion_at_Pixel_Level",
+  "title": "Motion-Grounded Video Reasoning: Understanding and Perceiving Motion at Pixel Level",
+  "conference": "CVPR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "12578",
+  "title": "BlenderAlchemy: Editing 3D Graphics with Vision-Language Models",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3276",
+  "title": "Responsible Visual Editing",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2965",
+  "title": "Propose, Assess, Search: Harnessing LLMs for Goal-Oriented Planning in Instructional Videos",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2711",
+  "title": "CoReS: Orchestrating the Dance of Reasoning and Segmentation",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11877",
+  "title": "O2V-Mapping: Online Open-Vocabulary Mapping with Neural Implicit Representation",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "6341",
+  "title": "LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5554",
+  "title": "LLMGA: Multimodal Large Language Model based Generation Assistant",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3012",
+  "title": "HYDRA: A Hyper Agent for Dynamic Compositional Visual Reasoning",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1267",
+  "title": "ScanReason: Empowering 3D Visual Grounding with Reasoning Capabilities",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1143",
+  "title": "NavGPT-2: Unleashing Navigational Reasoning Capability for Large Vision-Language Models",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3241",
+  "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7826",
+  "title": "Situated Instruction Following",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5917",
+  "title": "Recursive Visual Programming",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "6117",
+  "title": "V-IRL: Grounding Virtual Intelligence in Real Life",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5515",
+  "title": "Idea2Img: Iterative Self-Refinement with GPT-4V for Automatic Image Design and Generation",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8538",
+  "title": "OmniACT: A Dataset and Benchmark for Enabling Multimodal Generalist Autonomous Agents for Desktop and Web",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10348",
+  "title": "Constructing Concept-based Models to Mitigate Spurious Correlations with Minimal Human Effort",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5851",
+  "title": "Chat-Edit-3D: Interactive 3D Scene Editing via Text Prompts",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1838",
+  "title": "ControlLLM: Augment Language Models with Tools by Searching on Graphs",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10325",
+  "title": "VideoAgent: Long-form Video Understanding with Large Language Model as Agent",
+  "conference": "ECCV",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.emnlp-main.157",
+  "title": "Analyzing Modular Approaches for Visual Question Decomposition",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.findings-emnlp.824",
+  "title": "Can Foundation Models Watch, Talk and Guide You Step by Step to Make a Cake?",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.findings-emnlp.189",
+  "title": "Filling the Image Information Gap for VQA: Prompting Large Language Models to Proactively Ask Questions",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.findings-emnlp.226",
+  "title": "Open-Ended Instructable Embodied Agents with Memory-Augmented Large Language Models",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.findings-emnlp.755",
+  "title": "IdealGPT: Iteratively Decomposing Vision and Language Reasoning via Large Language Models",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2023.emnlp-industry.23",
+  "title": "WordArt Designer: User-Driven Artistic Typography Synthesis using Large Language Models",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-industry.75",
+  "title": "OMG-QA: Building Open-Domain Multi-Modal Generative Question Answering Systems",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.268",
+  "title": "Retrospex: Language Agent Meets Offline Reinforcement Learning Critic",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.38",
+  "title": "MSI-Agent: Incorporating Multi-Scale Insight into Embodied Agents for Superior Planning and Decision-Making",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.790",
+  "title": "Tools Fail: Detecting Silent Errors in Faulty Tools",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.510",
+  "title": "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.487",
+  "title": "Learning to Ask Denotative and Connotative Questions for Knowledge-based VQA",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.284",
+  "title": "From the Least to the Most: Building a Plug-and-Play Visual Reasoner via Data Synthesis",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.575",
+  "title": "VDebugger: Harnessing Execution Feedback for Debugging Visual Programs",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.470",
+  "title": "Pelican: Correcting Hallucination in Vision-LLMs via Claim Decomposition and Program of Thought Verification",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.367",
+  "title": "EPO: Hierarchical LLM Agents with Environment Preference Optimization",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.559",
+  "title": "OmAgent: A Multi-modal Agent Framework for Complex Video Understanding with Task Divide-and-Conquer",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.98",
+  "title": "UrbanLLM: Autonomous Urban Activity Planning and Management with Large Language Models",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.384",
+  "title": "VideoINSTA: Zero-shot Long Video Understanding via Informative Spatial-Temporal Reasoning with LLMs",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.emnlp-main.544",
+  "title": "TraveLER: A Modular Multi-LMM Agent Framework for Video Question-Answering",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.483",
+  "title": "PropTest: Automatic Property Testing for Improved Visual Programming",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-emnlp.708",
+  "title": "Stark: Social Long-Term Multi-Modal Conversation with Persona Commonsense Knowledge",
+  "conference": "EMNLP",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-industry.57",
+  "title": "DASR: Distributed Adaptive Scene Recognition - A Multi-Agent Cloud-Edge Framework for Language-Guided Scene Detection",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-industry.19",
+  "title": "ECom-Bench: Can LLM Agent Resolve Real-World E-commerce Customer Support Issues?",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.564",
+  "title": "LATTE: Learning to Think with Vision Specialists",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1339",
+  "title": "GraphAgent: Agentic Graph Language Assistant",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.162",
+  "title": "Visual Program Distillation with Template-Based Augmentation",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1614",
+  "title": "ProReason: Multi-Modal Proactive Reasoning with Decoupled Eyesight and Wisdom",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.1233",
+  "title": "MEXA: Towards General Multimodal Reasoning with Dynamic Multi-Expert Aggregation",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.939",
+  "title": "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.720",
+  "title": "OAgents: An Empirical Study of Building Effective Agents",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1133",
+  "title": "Orchestrating Audio: Multi-Agent Framework for Long-Video Audio Synthesis",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.728",
+  "title": "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.567",
+  "title": "“Where Does This Strange Smell Come from?”: Enabling Conversational Interfaces for Artificial Olfaction",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1252",
+  "title": "MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.1350",
+  "title": "AMANDA: Agentic Medical Knowledge Augmentation for Data-Efficient Medical Visual Question Answering",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.564",
+  "title": "AgentThink: A Unified Framework for Tool-Augmented Chain-of-Thought Reasoning in Vision-Language Models for Autonomous Driving",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.473",
+  "title": "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.49",
+  "title": "GenPilot: A Multi-Agent System for Test-Time Prompt Optimization in Image Generation",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.603",
+  "title": "LIDDIA: Language-based Intelligent Drug Discovery Agent",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.42",
+  "title": "FairCoT: Enhancing Fairness in Text-to-Image Generation via Chain of Thought Reasoning with Multimodal Large Language Models",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.367",
+  "title": "MADD: Multi-Agent Drug Discovery Orchestra",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.717",
+  "title": "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.214",
+  "title": "BannerAgency: Advertising Banner Design with Multimodal LLM Agents",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.913",
+  "title": "Iterative Prompt Refinement for Safer Text-to-Image Generation",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1111",
+  "title": "VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph for Minecraft",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.11",
+  "title": "ReAL: How Can LLMs Simulate the Real Teacher? Retrieval-enhanced Agent for Adaptive Learning",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.630",
+  "title": "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.810",
+  "title": "VisEscape: A Benchmark for Evaluating Exploration-driven Decision-making in Virtual Escape Rooms",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.69",
+  "title": "From Grounding to Manipulation: Case Studies of Foundation Model Integration in Embodied Robotic Systems",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1144",
+  "title": "Follow the Flow: Fine-grained Flowchart Attribution with Neurosymbolic Agents",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.848",
+  "title": "DrAgent: Empowering Large Language Models as Medical Agents for Multi-hop Medical Reasoning",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-emnlp.365",
+  "title": "Beyond the Textual: Generating Coherent Visual Options for MCQs",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.emnlp-main.1353",
+  "title": "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Song_LLM-Planner_Few-Shot_Grounded_Planning_for_Embodied_Agents_with_Large_Language",
+  "title": "LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models",
+  "conference": "ICCV",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Suris_ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning",
+  "title": "ViperGPT: Visual Inference via Python Execution for Reasoning",
+  "conference": "ICCV",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Taioli_Collaborative_Instance_Object_Navigation_Leveraging_Uncertainty-Awareness_to_Minimize_Human-Agent_Dialogues",
+  "title": "Collaborative Instance Object Navigation: Leveraging Uncertainty-Awareness to Minimize Human-Agent Dialogues",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cheng_AnimeGamer_Infinite_Anime_Life_Simulation_with_Next_Game_State_Prediction",
+  "title": "AnimeGamer: Infinite Anime Life Simulation with Next Game State Prediction",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yang_Medical_World_Model",
+  "title": "Medical World Model",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Li_Towards_Long-Horizon_Vision-Language-Action_System_Reasoning_Acting_and_Memory",
+  "title": "Towards Long-Horizon Vision-Language-Action System: Reasoning, Acting and Memory",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xu_Automated_Red_Teaming_for_Text-to-Image_Models_through_Feedback-Guided_Prompt_Iteration",
+  "title": "Automated Red Teaming for Text-to-Image Models through Feedback-Guided Prompt Iteration with Vision-Language Models",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Balazadeh_Physics_Context_Builders_A_Modular_Framework_for_Physical_Reasoning_in",
+  "title": "Physics Context Builders: A Modular Framework for Physical Reasoning in Vision-Language Models",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhang_VTimeCoT_Thinking_by_Drawing_for_Video_Temporal_Grounding_and_Reasoning",
+  "title": "VTimeCoT: Thinking by Drawing for Video Temporal Grounding and Reasoning",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Jiang_Multimodal_LLM_Guided_Exploration_and_Active_Mapping_using_Fisher_Information",
+  "title": "Multimodal LLM Guided Exploration and Active Mapping using Fisher Information",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Liu_CoLMDriver_LLM-based_Negotiation_Benefits_Cooperative_Autonomous_Driving",
+  "title": "CoLMDriver: LLM-based Negotiation Benefits Cooperative Autonomous Driving",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Chen_Rethinking_Layered_Graphic_Design_Generation_with_a_Top-Down_Approach",
+  "title": "Rethinking Layered Graphic Design Generation with a Top-Down Approach",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Liu_Preacher_Paper-to-Video_Agentic_System",
+  "title": "Preacher: Paper-to-Video Agentic System",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ji_Instruction-based_Image_Editing_with_Planning_Reasoning_and_Generation",
+  "title": "Instruction-based Image Editing with Planning, Reasoning, and Generation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wu_Human-Object_Interaction_from_Human-Level_Instructions",
+  "title": "Human-Object Interaction from Human-Level Instructions",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Tao_RoboPearls_Editable_Video_Simulation_for_Robot_Manipulation",
+  "title": "RoboPearls: Editable Video Simulation for Robot Manipulation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cao_CogNav_Cognitive_Process_Modeling_for_Object_Goal_Navigation_with_LLMs",
+  "title": "CogNav: Cognitive Process Modeling for Object Goal Navigation with LLMs",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Chen_T2I-Copilot_A_Training-Free_Multi-Agent_Text-to-Image_System_for_Enhanced_Prompt_Interpretation",
+  "title": "T2I-Copilot: A Training-Free Multi-Agent Text-to-Image System for Enhanced Prompt Interpretation and Interactive Generation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Boudjoghra_ScanEdit_Hierarchically-Guided_Functional_3D_Scan_Editing",
+  "title": "ScanEdit: Hierarchically-Guided Functional 3D Scan Editing",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhu_PASG_A_Closed-Loop_Framework_for_Automated_Geometric_Primitive_Extraction_and",
+  "title": "PASG: A Closed-Loop Framework for Automated Geometric Primitive Extraction and Semantic Anchoring in Robotic Manipulation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhang_AdaDrive_Self-Adaptive_Slow-Fast_System_for_Language-Grounded_Autonomous_Driving",
+  "title": "AdaDrive: Self-Adaptive Slow-Fast System for Language-Grounded Autonomous Driving",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhou_LIRA_Reasoning_Reconstruction_via_Multimodal_Large_Language_Models",
+  "title": "LIRA: Reasoning Reconstruction via Multimodal Large Language Models",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhang_RoBridge_A_Hierarchical_Architecture_Bridging_Cognition_and_Execution_for_General",
+  "title": "RoBridge: A Hierarchical Architecture Bridging Cognition and Execution for General Robotic Manipulation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Liang_Towards_Human-like_Virtual_Beings_Simulating_Human_Behavior_in_3D_Scenes",
+  "title": "Towards Human-like Virtual Beings: Simulating Human Behavior in 3D Scenes",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yin_ToolVQA_A_Dataset_for_Multi-step_Reasoning_VQA_with_External_Tools",
+  "title": "ToolVQA: A Dataset for Multi-step Reasoning VQA with External Tools",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ke_DWIM_Towards_Tool-aware_Visual_Reasoning_via_Discrepancy-aware_Workflow_Generation_",
+  "title": "DWIM: Towards Tool-aware Visual Reasoning via Discrepancy-aware Workflow Generation & Instruct-Masking Tuning",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Qu_IGD_Instructional_Graphic_Design_with_Multimodal_Layer_Generation",
+  "title": "IGD: Instructional Graphic Design with Multimodal Layer Generation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Gao_MMAT-1M_A_Large_Reasoning_Dataset_for_Multimodal_Agent_Tuning",
+  "title": "MMAT-1M: A Large Reasoning Dataset for Multimodal Agent Tuning",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Mallis_CAD-Assistant_Tool-Augmented_VLLMs_as_Generic_CAD_Task_Solvers",
+  "title": "CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Shen_Online_Reasoning_Video_Segmentation_with_Just-in-Time_Digital_Twins",
+  "title": "Online Reasoning Video Segmentation with Just-in-Time Digital Twins",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Li_LLM_Thought_Divergence_and_Convergence_for_Dialogue-Based_Image_Generation_Control",
+  "title": "LLM Thought Divergence and Convergence for Dialogue-Based Image Generation Control",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Jiang_Beyond_the_Destination_A_Novel_Benchmark_for_Exploration-Aware_Embodied_Question",
+  "title": "Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Zhang_Adaptive_Articulated_Object_Manipulation_On_The_Fly_with_Foundation_Model",
+  "title": "Adaptive Articulated Object Manipulation On The Fly with Foundation Model Reasoning and Part Grounding",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Fu_ORION_A_Holistic_End-to-End_Autonomous_Driving_Framework_by_Vision-Language_Instructed",
+  "title": "ORION: A Holistic End-to-End Autonomous Driving Framework by Vision-Language Instructed Action Generation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Lee_Perspective-Aware_Reasoning_in_Vision-Language_Models_via_Mental_Imagery_Simulation",
+  "title": "Perspective-Aware Reasoning in Vision-Language Models via Mental Imagery Simulation",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yasuki_GeoProg3D_Compositional_Visual_Reasoning_for_City-Scale_3D_Language_Fields",
+  "title": "GeoProg3D: Compositional Visual Reasoning for City-Scale 3D Language Fields",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Wu_CATP-LLM_Empowering_Large_Language_Models_for_Cost-Aware_Tool_Planning",
+  "title": "CATP-LLM: Empowering Large Language Models for Cost-Aware Tool Planning",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Qin_RoboFactory_Exploring_Embodied_Agent_Collaboration_with_Compositional_Constraints",
+  "title": "RoboFactory: Exploring Embodied Agent Collaboration with Compositional Constraints",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Cai_NAVER_A_Neuro-Symbolic_Compositional_Automaton_for_Visual_Grounding_with_Explicit",
+  "title": "NAVER: A Neuro-Symbolic Compositional Automaton for Visual Grounding with Explicit Logic Reasoning",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xie_Are_VLMs_Ready_for_Autonomous_Driving_An_Empirical_Study_from",
+  "title": "Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data and Metric Perspectives",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Agrawal_UINavBench_A_Framework_for_Comprehensive_Evaluation_of_Interactive_Digital_Agents",
+  "title": "UINavBench: A Framework for Comprehensive Evaluation of Interactive Digital Agents",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Fan_Embodied_VideoAgent_Persistent_Memory_from_Egocentric_Videos_and_Embodied_Sensors",
+  "title": "Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding",
+  "conference": "ICCV",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "G2Q2Mh3avow",
+  "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+  "conference": "ICLR",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "KTf4DGAzus",
+  "title": "$\\textbf{\\textit{M}}^\\textbf{\\textit{3}}$: Towards Robust Multi-Modal Reasoning via Model Selection",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PHGxChm1l5",
+  "title": "Compositional VLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "EnXJfQqy0K",
+  "title": "Building Cooperative Embodied Agents Modularly with Large Language Models",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "pAoqRlTBtY",
+  "title": "Causal Modelling Agents: Causal Graph Discovery through Synergising Metadata- and Data-driven Reasoning",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Pc8AU1aF5e",
+  "title": "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yozwqhIHXj",
+  "title": "Image Translation as Diffusion Visual Programmers",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "u6imHU4Ebu",
+  "title": "Large Language Models as Generalizable Policies for Embodied Tasks",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "MNShbDSxKH",
+  "title": "Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9pKtcJcMP3",
+  "title": "Video Language Planning",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "hQVCCxQrYN",
+  "title": "Plan-Seq-Learn: Language Model Guided RL for Solving Long Horizon Robotics Tasks",
+  "conference": "ICLR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9YNyiCJE3k",
+  "title": "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "vQFw9ryKyK",
+  "title": "ImagineNav: Prompting Vision-Language Models as Embodied Navigator through Scene Imagination",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0bmGL4q7vJ",
+  "title": "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "y9A2TpaGsE",
+  "title": "Language Agents Meet Causality -- Bridging LLMs and Causal World Models",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ouu3HnIVBc",
+  "title": "ADAM: An Embodied Causal Agent in Open-World Environments",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3RLxccFPHz",
+  "title": "An Intelligent Agentic System for Complex Image Restoration Problems",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "VvDEuyVXkG",
+  "title": "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "TjP1d8PP8l",
+  "title": "Discriminator-Guided Embodied Planning for LLM Agent",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "h7aQxzKbq6",
+  "title": "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YauQYh2k1g",
+  "title": "Dissecting Adversarial Robustness of Multimodal LM Agents",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8NlUL0Cv1L",
+  "title": "Generative World Explorer",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Pm1NXHgzyf",
+  "title": "SegLLM: Multi-round Reasoning Segmentation with Large Language Model",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "00SnKBGTsz",
+  "title": "DataEnvGym: Data Generation Agents in Teacher Environments with Student Feedback",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "rDLgnYLM5b",
+  "title": "Interleaved Scene Graph for Interleaved Text-and-Image Generation Assessment",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "FvIASa0tau",
+  "title": "Sitcom-Crafter: A Plot-Driven Human Motion Generation System in 3D Scenes",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ncCuiD3KJQ",
+  "title": "Visual Agents as Fast and Slow Thinkers",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "KRv9NubipP",
+  "title": "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "qPzYF2EpXb",
+  "title": "GravMAD: Grounded Spatial Value Maps Guided Action Diffusion for Generalized 3D Manipulation",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "rUvCIvI4eB",
+  "title": "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "WpZyPk79Fu",
+  "title": "AnyPrefer: An Automatic Framework for Preference Data Synthesis",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "EdMb9TqqDY",
+  "title": "Long-horizon Visual Instruction Generation with Logic and Attribute Self-reflection",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "uy31tqVuNo",
+  "title": "Unbounded: A Generative Infinite Game of Character Life Simulation",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "womU9cEwcO",
+  "title": "Autonomous agents from automatic reward modeling and planning",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YXRyYkb1im",
+  "title": "COMBO: Compositional World Models for Embodied Multi-Agent Cooperation",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "GR0y0F3Ipd",
+  "title": "MAPS: Advancing Multi-Modal Reasoning in Expert-Level Physical Science",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "BgxsmpVoOX",
+  "title": "Rare-to-Frequent: Unlocking Compositional Generation Power of Diffusion Models on Rare Concepts with LLM Guidance",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "rQ7fz9NO7f",
+  "title": "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "QAAsnSRwgu",
+  "title": "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "MPJ4SMnScw",
+  "title": "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3bcN6xlO6f",
+  "title": "Video Action Differencing",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "lIVRgt4nLv",
+  "title": "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "T5QLRRHyL1",
+  "title": "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Mv3GAYJGcW",
+  "title": "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "OZbFRNhpwr",
+  "title": "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "s3FTX4Ay55",
+  "title": "Articulate-Anything: Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Y2Dh8rWwlb",
+  "title": "EditRoom: LLM-parameterized Graph Diffusion for Composable 3D Room Layout Editing",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "tFDTHA3odg",
+  "title": "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "vlraTIgUD3",
+  "title": "InSight-o3: Empowering Multimodal Foundation Models with Generalized Visual Search",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "OG1JMhoBKU",
+  "title": "LogiStory: A Logic-Aware Framework for Multi-Image Story Visualization",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Vjruxvp1Xd",
+  "title": "Agent-X: Evaluating Deep Multimodal Reasoning in Vision-Centric Agentic Tasks",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "XCW1l9qcxy",
+  "title": "Transductive Visual Programming: Evolving Tool Libraries from Experience for Spatial Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "gqb1hvuGcj",
+  "title": "TimeSearch-R: Adaptive Temporal Search for Long-Form Video Understanding via Self-Verification Reinforcement Learning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "hIwVFRLaFy",
+  "title": "VisualPrompter: Semantic-Aware Prompt Optimization with Visual Feedback for Text-to-Image Synthesis",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "fE14yWa68Z",
+  "title": "WebGen-Agent: Enhancing Interactive Website Generation with Multi-Level Feedback and Step-Level Reinforcement Learning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "eKhOrQWAVJ",
+  "title": "Spatially Guided Training for Vision-Language-Action Model",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "U9meoc0Sau",
+  "title": "SceneCOT: Eliciting Chain-of-Thought Reasoning in 3D Scenes",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "RnuB0Nlbd5",
+  "title": "JanusVLN: Decoupling Semantics and Spatiality with Dual Implicit Memory for Vision-Language Navigation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "dkIXAbWuxO",
+  "title": "Earth-Agent: Unlocking the Full Landscape of Earth Observation with Agents",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zJnPyb2xrp",
+  "title": "PostAlign: Multimodal Grounding as a Corrective Lens for MLLMs",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PzIc2TxhwN",
+  "title": "Seek-CAD: A Self-refined Generative Modeling for 3D Parametric CAD Using Local Inference via DeepSeek",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2awntLXwR6",
+  "title": "MMedAgent-RL: Optimizing Multi-Agent Collaboration for Multimodal Medical Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cVX3VqO8BO",
+  "title": "UniHM: Unified Dexterous Hand Manipulation with Vision Language Model",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "80JylHgQn1",
+  "title": "Instilling an Active Mind in Avatars via Cognitive Simulation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "k3DZzBl2EZ",
+  "title": "ContextNav: Towards Agentic Multimodal In-Context Learning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nUGPEmQ2ut",
+  "title": "AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "BK7Mk5d4WE",
+  "title": "LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8NXCwNjFNR",
+  "title": "Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "bZAKJwyn1n",
+  "title": "Pursuing Minimal Sufficiency in Spatial Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "5N3z9JQJKq",
+  "title": "AutoFigure: Generating and Refining Publication-Ready Scientific Illustrations",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PMz29A7Muq",
+  "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "xtysskccFc",
+  "title": "ProRe: A Proactive Reward System for GUI Agents via Reasoner–Actor Collaboration",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "WXFfMLyB6y",
+  "title": "Generalizable Coarse-to-Fine Robot Manipulation via Language-Aligned 3D Keypoints",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ZkoojtEm3W",
+  "title": "Resp-Agent: An Agent-Based System for Multimodal Respiratory Sound Generation and Disease Diagnosis",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8H0TkSusWI",
+  "title": "NePTune: A Neuro-Pythonic Framework for Tunable Compositional Reasoning on Vision-Language",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "bmQXN1Kg5i",
+  "title": "TumorChain: Interleaved Multimodal Chain-of-Thought Reasoning for Traceable Clinical Tumor Analysis",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3VIPmz7iAi",
+  "title": "GTA1: GUI Test-time Scaling Agent",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PVtZnUh04m",
+  "title": "AutoGPS: Automated Geometry Problem Solving via Multimodal Formalization and Deductive Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1dH4ARGdwD",
+  "title": "Scaling up Memory for Robotic Control via Experience Retrieval",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yDmb7xAfeb",
+  "title": "WoW!: World Models in a Closed-Loop World",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "eNmANCkefl",
+  "title": "Declarative Audio Editing with Audio Language Model",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YkV0fnXgJA",
+  "title": "EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3u6AkbWEls",
+  "title": "ManipEvalAgent: Promptable and Efficient Evaluation Framework for Robotic Manipulation Policies",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "TIqzhBvCNB",
+  "title": "Accelerating Materials Design via LLM-Guided Evolutionary Search",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "r2g8TV4nJy",
+  "title": "DriveAgent-R1: Advancing VLM-based Autonomous Driving with Active Perception and Hybrid Thinking",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "GK4rznYwhn",
+  "title": "Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-Language Navigation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "whRAOJiyHM",
+  "title": "CARE: Towards Clinical Accountability in Multi-Modal Medical Reasoning with an Evidence-Grounded Agentic Framework",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "aVeaNahsID",
+  "title": "Zephyrus: An Agentic Framework for Weather Science",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "eWoUcwEtLt",
+  "title": "VisionLaw: Inferring Interpretable Intrinsic Dynamics from Visual Observations via Bilevel Optimization",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wQ4OykcxaV",
+  "title": "ARMs: Adaptive Red-Teaming Agent against Multimodal Models with Plug-and-Play Attacks",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "NBOHB6aYZh",
+  "title": "Video-STAR: Reinforcing Open-Vocabulary Action Recognition with Tools",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "l1MQVgIKEU",
+  "title": "CoAct-1: Computer-using Multi-agent System with Coding Actions",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7tlLpQpGlx",
+  "title": "Simulation to Rules: A Dual-VLM Framework for Formal Visual Planning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "sVN9K0BLQj",
+  "title": "Urban Socio-Semantic Segmentation with Vision-Language Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yDbJHQlrbf",
+  "title": "Code Driven Planning with Domain-Adaptive Selector",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yhhbL9T1QB",
+  "title": "FaSTA*: Fast-Slow Toolpath Agent with Subroutine Mining for Efficient Multi-turn Image Editing",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Z091XLyVkJ",
+  "title": "Omni-Captioner: Data Pipeline, Models, and Benchmark for Omni Detailed Perception",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "CCSPm6V5EF",
+  "title": "WebDevJudge: Evaluating (M)LLMs as Critiques for Web Development Quality",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "oN55r8iJJW",
+  "title": "SAM-Veteran: An MLLM-Based Human-like SAM Agent for Reasoning Segmentation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "tdN42GTv4S",
+  "title": "PerfGuard: A Performance-Aware Agent for Visual Content Generation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "fC27SxF4ba",
+  "title": "MATA: A Trainable Hierarchical Automaton System for Multi-Agent Visual Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ZOuU0udyA4",
+  "title": "MedAgent-Pro: Towards Evidence-based Multi-modal Medical Diagnosis via Reasoning Agentic Workflow",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "HtpjSCs3g5",
+  "title": "PixelCraft: A Multi-Agent system for High-Fidelity Visual Reasoning on Structured Images",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "WffiETiSeU",
+  "title": "Part-X-MLLM: Part-aware 3D Multimodal Large Language Model",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7BLnSeWuei",
+  "title": "CP-Agent: Context‑Aware Multimodal Reasoning for Cellular Morphological Profiling under Chemical Perturbations",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "SzhezVoaNB",
+  "title": "Scenethesis: A Language and Vision Agentic Framework for 3D Scene Generation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "LfkPlFTfe0",
+  "title": "Human-Object Interaction via Automatically Designed VLM-Guided Motion Policy",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "H7gtryDnVK",
+  "title": "No labels, No Problem: Training Visual Reasoners with Multimodal Verifiers",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "81PJ2KPnmK",
+  "title": "DreamPhase: Offline Imagination and Uncertainty-Guided Planning for Large-Language-Model Agents",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "JoXwhGbuMi",
+  "title": "ReCogDrive: A Reinforced Cognitive Framework for End-to-End Autonomous Driving",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yv15C8ql24",
+  "title": "pySpatial: Generating 3D Visual Programs for Zero-Shot Spatial Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "GN8OdkTo3B",
+  "title": "Hilbert: Recursively Building Formal Proofs with Informal Reasoning",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ovSDneawKY",
+  "title": "FilMaster: Bridging Cinematic Principles and Generative AI for Automated Film Generation",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "aQWSEjcN9V",
+  "title": "Endowing GPT-4 with a Humanoid Body: Building the Bridge Between Off-the-Shelf VLMs and the Physical World",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nottingham23a",
+  "title": "Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling",
+  "conference": "ICML",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zhou23r",
+  "title": "ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation",
+  "conference": "ICML",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "shaham24a",
+  "title": "A Multimodal Automated Interpretability Agent",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zheng24e",
+  "title": "GPT-4V(ision) is a Generalist Web Agent, if Grounded",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cen24a",
+  "title": "Using Left and Right Brains Together: Towards Vision and Language Planning",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wang24cc",
+  "title": "RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wu24e",
+  "title": "NExT-GPT: Any-to-Any Multimodal LLM",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "hu24g",
+  "title": "SceneCraft: An LLM Agent for Synthesizing 3D Scenes as Blender Code",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "sprueill24a",
+  "title": "CHEMREASONER: Heuristic Search over a Large Language Model’s Knowledge Space using Quantum-Chemical Feedback",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yang24d",
+  "title": "DoraemonGPT: Toward Understanding Dynamic Scenes with Large Language Models (Exemplified as A Video Agent)",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wu24u",
+  "title": "VoroNav: Voronoi-based Zero-shot Object Navigation with Large Language Model",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zhen24a",
+  "title": "3D-VLA: A 3D Vision-Language-Action Generative World Model",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yang24ai",
+  "title": "Mastering Text-to-Image Diffusion: Recaptioning, Planning, and Generating with Multimodal LLMs",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "lv24a",
+  "title": "RoboMP$^2$: A Robotic Multimodal Perception-Planning Framework with Multimodal Large Language Models",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "mu24a",
+  "title": "RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis",
+  "conference": "ICML",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cJeFULIiot",
+  "title": "LLMs can see and hear without any training",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "6CAgbrjHTc",
+  "title": "Cradle: Empowering Foundation Agents towards General Computer Control",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "owulFly8oQ",
+  "title": "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "dtmTQawQN2",
+  "title": "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "REnIf3dCsI",
+  "title": "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "lNVHg9npif",
+  "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "umT6rMf1Rm",
+  "title": "DEFAME: Dynamic Evidence-based FAct-checking with Multimodal Experts",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "s7HUJamWqX",
+  "title": "Agent Reviewers: Domain-specific Multimodal Agents with Shared Memory for Paper Review",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YqerkYZfvu",
+  "title": "Perception in Reflection",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "f3iBgm2Zi0",
+  "title": "Proactive Agents for Multi-Turn Text-to-Image Generation Under Uncertainty",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "onumui0nHi",
+  "title": "Empowering World Models with Reflection for Embodied Video Prediction",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "tpbtodnI1p",
+  "title": "World Model Implanting for Test-time Adaptation of Embodied Agents",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "JiFfij5iv0",
+  "title": "MedRAX: Medical Reasoning Agent for Chest X-ray",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "GCkhEPE1FG",
+  "title": "Adversaries Can Misuse Combinations of Safe Models",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "W9s817KqYf",
+  "title": "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale",
+  "conference": "ICML",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "xue25",
+  "title": "Selective Invocation for Multilingual ASR: A Cost-effective Approach Adapting to Speech Recognition Difficulty",
+  "conference": "INTERSPEECH",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9f9755fc4b16",
+  "title": "Large Language Model with Curriculum Reasoning for Visual Concept Recognition",
+  "conference": "KDD",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "fed392e749e3",
+  "title": "Intelligent Agents with LLM-based Process Automation",
+  "conference": "KDD",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "799-Paper0242",
+  "title": "Transforming Surgical Interventions with Embodied Intelligence for Ultrasound Robotics",
+  "conference": "MICCAI",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0537-Paper2575",
+  "title": "MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions",
+  "conference": "MICCAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0655-Paper2221",
+  "title": "Operating Room Workflow Analysis via Reasoning Segmentation over Digital Twins",
+  "conference": "MICCAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0456-Paper2021",
+  "title": "Intelligent Virtual Sonographer (IVS): Enhancing Physician-Robot-Patient Communication",
+  "conference": "MICCAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1022-Paper0994",
+  "title": "WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis",
+  "conference": "MICCAI",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-naacl.60",
+  "title": "LangNav: Language as a Perceptual Representation for Navigation",
+  "conference": "NAACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-naacl.24",
+  "title": "OpenFMNav: Towards Open-Set Zero-Shot Object Navigation via Vision-Language Foundation Models",
+  "conference": "NAACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2024.findings-naacl.292",
+  "title": "LLaMA-Rider: Spurring Large Language Models to Explore the Open World",
+  "conference": "NAACL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.naacl-long.186",
+  "title": "Towards Rationality in Language and Multimodal Agents: A Survey",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-naacl.19",
+  "title": "UnifiedMLLM: Enabling Unified Representation for Multi-modal Multi-tasks With Large Language Model",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.naacl-long.379",
+  "title": "Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.naacl-long.406",
+  "title": "Follow the Beaten Path: The Role of Route Patterns on Vision-Language Navigation Agents Generalization Abilities",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-naacl.25",
+  "title": "DialogGen: Multi-modal Interactive Dialogue System with Multi-turn Text-Image Generation",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2025.findings-naacl.424",
+  "title": "Tooling or Not Tooling? The Impact of Tools on Language Agents for Chemistry Problem Solving",
+  "conference": "NAACL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yoAmURKDJi",
+  "title": "TOA: Task-oriented Active VQA",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "HtqnVSCj3q",
+  "title": "Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IL5zJqfxAa",
+  "title": "EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "dyXNh5HLq3",
+  "title": "Compositional Foundation Models for Hierarchical Planning",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "sq4o3tjWaj",
+  "title": "What’s Left? Concept Grounding with Logic-Enhanced Foundation Models",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yhBFG9Y85R",
+  "title": "Visual Programming for Step-by-Step Text-to-Image Generation and Evaluation",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Pk2x7FPuZ4",
+  "title": "EHRXQA: A Multi-Modal Question Answering Dataset for Electronic Health Records with Chest X-ray Images",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "gFf0a0ZxJM",
+  "title": "OpenAGI: When LLM Meets Domain Experts",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "dHF3Im8Aic",
+  "title": "LMC: Large Model Collaboration with Cross-assessment for Training-Free Open-Set Object Recognition",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yHdTscY6Ci",
+  "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "bt7pQ7o7zG",
+  "title": "Chatting Makes Perfect: Chat-based Image Retrieval",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cwjh8lqmOL",
+  "title": "GPT4Tools: Teaching Large Language Model to Use Tools via Self-instruction",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7EMphtUgCI",
+  "title": "AVIS: Autonomous Visual Information Seeking with Large Language Model Agent",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "JCCi58IUsh",
+  "title": "Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "KtvPdGb31Z",
+  "title": "Describe, Explain, Plan and Select: Interactive Planning with LLMs Enables Open-World Multi-Task Agents",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Xu8aG5Q8M3",
+  "title": "LayoutGPT: Compositional Visual Planning and Generation with Large Language Models",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ktYjrgOENR",
+  "title": "DDCoT: Duty-Distinct Chain-of-Thought Prompting for Multimodal Reasoning in Language Models",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9AcG3Tsyoq",
+  "title": "AmadeusGPT: a natural language interface for interactive animal behavioral analysis",
+  "conference": "NeurIPS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zw2K6LfFI9",
+  "title": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ur00BNk1v2",
+  "title": "GenArtist: Multimodal LLM as an Agent for Unified Image Generation and Editing",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "NGuGVT7ar2",
+  "title": "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "3Odq2tGSpp",
+  "title": "Stylus: Automatic Adapter Selection for Diffusion Models",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Y1rOWS2Z4i",
+  "title": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "HmCmxbCpp2",
+  "title": "SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YawXY6mWiK",
+  "title": "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "O0nBMRlkc8",
+  "title": "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IxazPgGF8h",
+  "title": "ChatCam: Empowering Camera Control through Conversational AI",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "H2ATO32ilj",
+  "title": "ART: Automatic Red-teaming for Text-to-Image Models to Protect Benign Users",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "bmoS6Ggw4j",
+  "title": "Can Graph Learning Improve Planning in LLM-based Agents?",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "YTHJ8O6SCB",
+  "title": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "uHs6RJFDsg",
+  "title": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "XXOMCwZ6by",
+  "title": "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "kPmSfhCM5s",
+  "title": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "RH7tfqhiZY",
+  "title": "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "N4quRxE19p",
+  "title": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nvYDPF4LJK",
+  "title": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "GNSMl1P5VR",
+  "title": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "UGlDVc0GTU",
+  "title": "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "oqdy2EFrja",
+  "title": "Compositional 3D-aware Video Generation with LLM Director",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "C3ZHiij9QE",
+  "title": "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "xgP5ynlZWf",
+  "title": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "HzANl2unCB",
+  "title": "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "LEzx6QRkRH",
+  "title": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "QMaLS4VeY3",
+  "title": "Aligning Audio-Visual Joint Representations with an Agentic Workflow",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "y9huwsnGRJ",
+  "title": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "s6k9l5yX8e",
+  "title": "Dynam3D: Dynamic Layered 3D Tokens Empower VLM for Vision-and-Language Navigation",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "h0LzGQq6uO",
+  "title": "Knowledge-based Visual Question Answer with Multimodal Processing, Retrieval and Filtering",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "72UR53jN7T",
+  "title": "ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "mj8VN4MyrO",
+  "title": "ThinkSound: Chain-of-Thought Reasoning in Multimodal LLMs for Audio Generation and Editing",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "tRXt10xKc5",
+  "title": "ContextAgent: Context-Aware Proactive LLM Agents with Open-world Sensory Perceptions",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "P6PijkA5lz",
+  "title": "Image Editing As Programs with Diffusion Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yKUwkihcsi",
+  "title": "Iterative Tool Usage Exploration for Multimodal Agents via Step-wise Preference Tuning",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "xrAqVVk2qe",
+  "title": "TP-MDDN: Task-Preferenced Multi-Demand-Driven Navigation with Autonomous Decision-Making",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Qla5PqFL0s",
+  "title": "A Unified Reasoning Framework for Holistic Zero-Shot Video Anomaly Analysis",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zwCb9cKHpd",
+  "title": "SAVVY: Spatial Awareness via Audio-Visual LLMs through Seeing and Hearing",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "qMm7tC1zvj",
+  "title": "EfficientNav: Towards On-Device Object-Goal Navigation with Navigation Map Caching and Retrieval",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "h6xQClTm4W",
+  "title": "Exploring the Limits of Vision-Language-Action Manipulation in Cross-task Generalization",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "zY5J1vp7tZ",
+  "title": "RDD: Retrieval-Based Demonstration Decomposer for Planner Alignment in Long-Horizon Tasks",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "w0xm9oG8im",
+  "title": "STRIDER: Navigation via Instruction-Aligned Structural Decision Space Optimization",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "L2W4wQsNkY",
+  "title": "MindJourney: Test-Time Scaling with World Models for Spatial Reasoning",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4xvE6Iy77Y",
+  "title": "PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "VzSjSUE0BZ",
+  "title": "CREA: A Collaborative Multi-Agent Framework for Creative Image Editing and Generation",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cU4ow1odRe",
+  "title": "ComfyMind: Toward General-Purpose Generation via Tree-Based Planning and Reactive Feedback",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "kmv7yg6QXv",
+  "title": "SoFar: Language-Grounded Orientation Bridges Spatial Reasoning and Object Manipulation",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cjjPn1EIwq",
+  "title": "ESCA: Contextualizing Embodied Agents via Scene-Graph Generation",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PQYazNKEYo",
+  "title": "VLA-OS: Structuring and Dissecting Planning Representations and Paradigms in Vision-Language-Action Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IPxOoU8aqt",
+  "title": "Doctor Approved: Generating Medically Accurate Skin Disease Images through AI-Expert Feedback",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "VZQSrNfNHd",
+  "title": "RobotSmith: Generative Robotic Tool Design for Acquisition of Complex Manipulation Skills",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7n2Kv5BUz2",
+  "title": "MR. Video: MapReduce as an Effective Principle for Long Video Understanding",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "dAwKePZvcN",
+  "title": "SEEA-R1: Tree-Structured Reinforcement Fine-Tuning for Self-Evolving Embodied Agents",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ToNRHqX6xq",
+  "title": "MIP against Agent: Malicious Image Patches Hijacking Multimodal OS Agents",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7k7cubl1iL",
+  "title": "CIDD: Collaborative Intelligence for Structure-Based Drug Design Empowered by LLMs",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9Ook5bXnPr",
+  "title": "TrajAgent: An LLM-Agent Framework for Trajectory Modeling via Large-and-Small Model Collaboration",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wOSZVnYH5w",
+  "title": "COOPERA: Continual Open-Ended Human-Robot Assistance",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yEq201U9AM",
+  "title": "Policy Optimized Text-to-Image Pipeline Design",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7Q1ApHpX31",
+  "title": "Omni-R1: Reinforcement Learning for Omnimodal Reasoning via Two-System Collaboration",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "x1wZoyS0rC",
+  "title": "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "OFz4VDn0SO",
+  "title": "Tool-Augmented Spatiotemporal Reasoning for Streamlining Video Question Answering Task",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PdRf0O7baQ",
+  "title": "Scaffolding Dexterous Manipulation with Vision-Language Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "08mjueZ0Iq",
+  "title": "VLMLight: Safety-Critical Traffic Signal Control via Vision-Language Meta-Control and Dual-Branch Reasoning Architecture",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "yTFJmGFsEy",
+  "title": "Reviving DSP for Advanced Theorem Proving in the Era of Reasoning Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "D1Iw4Unvfc",
+  "title": "ReAgent-V: A Reward-Driven Multi-Agent Framework for Video Understanding",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IHX5V6zQpY",
+  "title": "LayerCraft: Enhancing Text-to-Image Generation with CoT Reasoning and Layered Object Integration",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "skS03tzYNw",
+  "title": "ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "NKcwN347H7",
+  "title": "InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IKxKs3rF9V",
+  "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Qku7g56aWf",
+  "title": "Direct Numerical Layout Generation for 3D Indoor Scene Synthesis via Spatial Reasoning",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "N5vXT7AGuo",
+  "title": "AffordBot: 3D Fine-grained Embodied Reasoning via Multimodal Large Language Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "To7Rs2wsTd",
+  "title": "VideoLucy: Deep Memory Backtracking for Long Video Understanding",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "jvq8nzOUp8",
+  "title": "Safe + Safe = Unsafe? Exploring How Safe Images Can Be Exploited to Jailbreak Large Vision-Language Models",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wTBhWbCRpN",
+  "title": "Multi-scale Temporal Prediction via Incremental Generation and Multi-agent Collaboration",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "oQYq9L1NVT",
+  "title": "Deep Video Discovery: Agentic Search with Tool Use for Long-form Video Understanding",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "30iBKSQMXn",
+  "title": "Retro-R1: LLM-based Agentic Retrosynthesis",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "qE3knKF1rz",
+  "title": "PANDA: Towards Generalist Video Anomaly Detection via Agentic AI Engineer",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nfxTpNiSMH",
+  "title": "SPAZER: Spatial-Semantic Progressive Reasoning Agent for Zero-shot 3D Visual Grounding",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "MdqirFiD38",
+  "title": "Red-Teaming Text-to-Image Systems by Rule-based Preference Modeling",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "LyH2ISbOV8",
+  "title": "Automated Detection of Visual Attribute Reliance with a Self-Reflective Agent",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cZVYswQQMt",
+  "title": "ActiveVOO: Value of Observation Guided Active Knowledge Acquisition for Open-World Embodied Lifted Regression Planning",
+  "conference": "NeurIPS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "71b21339db41",
+  "title": "Empowering Large Language Models: Tool Learning for Real-World Interaction",
+  "conference": "SIGIR",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "aefd63fac0e1",
+  "title": "GlFoMR: A Glance-then-Focus Multimodal Reasoning Framework for Diagram Question Answering",
+  "conference": "SIGIR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "553203efe3b0",
+  "title": "Insight Agents: An LLM-Based Multi-Agent System for Data Insights",
+  "conference": "SIGIR",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "0fdd909e8e4d",
+  "title": "CapAlign: Improving Cross Modal Alignment via Informative Captioning for Harmful Meme Detection",
+  "conference": "WWW",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9e5713008315",
+  "title": "ChartCitor: Answer Citations for ChartQA via Multi-Agent LLM Retrieval",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "18809e4b5d37",
+  "title": "RTBAgent: A LLM-based Agent System for Real-Time Bidding",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "126afef305fa",
+  "title": "SupportPlay: A Multi-Agent Role-Playing System for Personalized and Sustained Multimodal Emotional Support Conversation",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "869d2a58f557",
+  "title": "Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "1f0103dd5ba6",
+  "title": "Enhancing Product Search Interfaces with Sketch-Guided Diffusion and Language Agents",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "336fd3d6e95e",
+  "title": "ColaCare: Enhancing Electronic Health Record Modeling through Large Language Model-Driven Multi-Agent Collaboration",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "194d2cb33f69",
+  "title": "Luoling: An Immersive Cross-Modal Interactive Poem Creation Factory through Multi-Agent Collaboration",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "59bae537cf3a",
+  "title": "Multi-Model Workflows for Advanced Visual Understanding",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "63b351eae773",
+  "title": "Ask, Acquire, Understand: A Multimodal Agent-based Framework for Social Abuse Detection in Memes",
+  "conference": "WWW",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "29991",
+  "title": "SayCanPay: Heuristic Planning with Large Language Models Using Learnable Domain Knowledge",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2025.findings-acl.1016",
+  "title": "Data Interpreter: An LLM Agent for Data Science",
+  "conference": "ACL",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "Xh1B90iBSR",
+  "title": "What Are Tools Anyway? A Survey from the Language Model Perspective",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2023.emnlp-main.187",
+  "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2023.findings-emnlp.985",
+  "title": "ChatCoT: Tool-Augmented Chain-of-Thought Reasoning on Chat-based Large Language Models",
+  "conference": "EMNLP",
+  "year": 2023,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2025.emnlp-main.759",
+  "title": "Vision-and-Language Navigation with Analogical Textual Descriptions in LLMs",
+  "conference": "EMNLP",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "OJd3ayDDoF",
+  "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "dRz3cizftU",
+  "title": "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+  "conference": "ICLR",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "P0GOk5wslg",
+  "title": "Speculative Actions: A Lossless Framework for Faster AI Agents",
+  "conference": "ICLR",
+  "year": 2026,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2024.naacl-long.195",
+  "title": "Making Language Models Better Tool Learners with Execution Feedback",
+  "conference": "NAACL",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2024.findings-naacl.271",
+  "title": "RecMind: Large Language Model Powered Agent For Recommendation",
+  "conference": "NAACL",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "tBRNC6YemY",
+  "title": "Gorilla: Large Language Model Connected with Massive APIs",
+  "conference": "NeurIPS",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "d2367b611d56",
+  "title": "Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning",
+  "conference": "SIGIR",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "7d4f1cfa5ef6",
+  "title": "Large Language Model Powered Agents in the Web",
+  "conference": "WWW",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "28122",
+  "title": "Text-to-Image Generation for Abstract Concepts",
+  "conference": "AAAI",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "2023.findings-acl.5",
+  "title": "Modularized Zero-shot VQA with Pre-trained Models",
+  "conference": "ACL",
+  "year": 2023,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "f0d5d2aa7381",
+  "title": "Cued-Agent: A Collaborative Multi-Agent System for Automatic Cued Speech Recognition",
+  "conference": "ACMMM",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "e048b35d711a",
+  "title": "MMAD: Multi-modal Movie Audio Description",
+  "conference": "COLING",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "0oiG1KigYN",
+  "title": "SPEER: Sentence-Level Planning of Long Clinical Summaries via Embedded Entity Retrieval",
+  "conference": "COLM",
+  "year": 2024,
+  "in_final_set": false
+ }
+]

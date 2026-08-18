@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents"
+type: article
+authors:
+  - family-names: Zhang
+    given-names: Zheng
+  - family-names: Yao
+    given-names: Nanjie
+  - family-names: Feng
+    given-names: Yu
+  - family-names: Chai
+    given-names: Qi
+  - family-names: Liu
+    given-names: Liu
+  - family-names: Ye
+    given-names: Deheng
+  - family-names: Zhao
+    given-names: Peilin
+  - family-names: Zhou
+    given-names: Xiangxin
+  - family-names: Wang
+    given-names: Hao
+  - family-names: Xiong
+    given-names: Hui
+year: 2026
