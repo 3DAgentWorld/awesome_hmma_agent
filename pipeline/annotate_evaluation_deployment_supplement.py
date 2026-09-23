@@ -23,6 +23,7 @@ import time
 import uuid
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from paper_utils import paper_key, pdf_path as library_pdf_path, valid_pdf
 from pathlib import Path
 
 import fitz
@@ -174,7 +175,7 @@ def load_taxonomy_records():
 
 
 def build_pdf_map(records):
-    needed = {r['paper_id'] for r in records}
+    needed = {paper_key(r) for r in records}
     pdf_map = {}
     for meta_file in METADATA_DIR.glob('*.json'):
         parts = meta_file.stem.rsplit('.', 1)
@@ -186,11 +187,11 @@ def build_pdf_map(records):
         except Exception:
             continue
         for paper in data:
-            pid = paper.get('paper_id')
+            pid = paper_key(paper)
             if pid not in needed:
                 continue
-            pdf_path = PDF_DIR / venue / year / f"{pid}_{safe_pdf_name(paper.get('title', ''))}.pdf"
-            if pdf_path.exists() and pdf_path.stat().st_size > 1000:
+            pdf_path = library_pdf_path(PDF_DIR, paper)
+            if valid_pdf(pdf_path):
                 pdf_map[pid] = pdf_path
     return pdf_map
 
@@ -212,9 +213,9 @@ def load_done():
             if not paper_id:
                 continue
             if rec.get('error'):
-                failed.add(paper_id)
+                failed.add(paper_key(rec))
             else:
-                done.add(paper_id)
+                done.add(paper_key(rec))
     failed -= done
     return done, failed
 
@@ -522,7 +523,7 @@ def main():
     pdf_map = build_pdf_map(records)
 
     skip = done if not args.retry_failed else done - failed
-    pending = [r for r in records if r['paper_id'] not in skip and r['paper_id'] in pdf_map]
+    pending = [r for r in records if paper_key(r) not in skip and paper_key(r) in pdf_map]
     if args.limit and args.limit > 0:
         pending = pending[:args.limit]
 
@@ -542,7 +543,7 @@ def main():
 
     with OUTPUT_PATH.open('a', encoding='utf-8') as fout:
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
-            futures = {pool.submit(process_one, rec, pdf_map[rec['paper_id']]): rec for rec in pending}
+            futures = {pool.submit(process_one, rec, pdf_map[paper_key(rec)]): rec for rec in pending}
             pbar = tqdm(as_completed(futures), total=len(futures), desc='evaluation/deployment')
             for fut in pbar:
                 try:

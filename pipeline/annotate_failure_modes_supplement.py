@@ -20,6 +20,7 @@ import threading
 import time
 import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from paper_utils import paper_key, pdf_path as library_pdf_path, valid_pdf
 from pathlib import Path
 
 import fitz
@@ -144,7 +145,7 @@ def load_taxonomy_records():
 
 
 def build_pdf_map(records):
-    needed = {r['paper_id'] for r in records}
+    needed = {paper_key(r) for r in records}
     pdf_map = {}
     for meta_file in METADATA_DIR.glob('*.json'):
         parts = meta_file.stem.rsplit('.', 1)
@@ -156,11 +157,11 @@ def build_pdf_map(records):
         except Exception:
             continue
         for p in data:
-            pid = p.get('paper_id')
+            pid = paper_key(p)
             if pid not in needed:
                 continue
-            path = PDF_DIR / venue / year / f"{pid}_{safe_pdf_name(p.get('title', ''))}.pdf"
-            if path.exists() and path.stat().st_size > 1000:
+            path = library_pdf_path(PDF_DIR, p)
+            if valid_pdf(path):
                 pdf_map[pid] = path
     return pdf_map
 
@@ -178,9 +179,9 @@ def load_done():
                         if not paper_id:
                             continue
                         if rec.get('error'):
-                            failed.add(paper_id)
+                            failed.add(paper_key(rec))
                         else:
-                            done.add(paper_id)
+                            done.add(paper_key(rec))
                     except Exception:
                         pass
     failed -= done
@@ -289,7 +290,7 @@ def parse_json(text: str):
 def process_one(rec, pdf_path):
     text = extract_pre_ref_text(pdf_path)
     if len(text) < 500:
-        return {'paper_id': rec['paper_id'], 'title': rec.get('title', ''), 'error': 'pdf_text_too_short'}
+        return {k: rec.get(k, '') for k in ('paper_id', 'title', 'conference', 'year')} | {'error': 'pdf_text_too_short'}
     compact_annotation = {
         'collaboration_pattern': rec.get('collaboration_pattern'),
         'application_environment': rec.get('application_environment'),
@@ -317,7 +318,7 @@ def process_one(rec, pdf_path):
             })
             return parsed
         time.sleep(1 + random.random())
-    return {'paper_id': rec['paper_id'], 'title': rec.get('title', ''), 'error': 'llm_failed'}
+    return {k: rec.get(k, '') for k in ('paper_id', 'title', 'conference', 'year')} | {'error': 'llm_failed'}
 
 
 def main():
@@ -336,7 +337,7 @@ def main():
 
     done, failed = load_done()
     pdf_map = build_pdf_map(records)
-    pending = [r for r in records if r['paper_id'] not in done and r['paper_id'] in pdf_map]
+    pending = [r for r in records if paper_key(r) not in done and paper_key(r) in pdf_map]
     if args.limit and args.limit > 0:
         pending = pending[:args.limit]
 
@@ -354,7 +355,7 @@ def main():
     error_count = 0
     with OUTPUT_PATH.open('a', encoding='utf-8') as fout:
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
-            futures = {pool.submit(process_one, r, pdf_map[r['paper_id']]): r for r in pending}
+            futures = {pool.submit(process_one, r, pdf_map[paper_key(r)]): r for r in pending}
             pbar = tqdm(as_completed(futures), total=len(futures), desc='failure modes')
             for fut in pbar:
                 rec = fut.result()

@@ -42,6 +42,7 @@ from collections import Counter, defaultdict
 import fitz  # PyMuPDF
 import requests
 from tqdm import tqdm
+from paper_utils import paper_key, pdf_path, valid_pdf
 
 BASE_DIR = Path(__file__).parent
 DEEP_SCREENING_DIR = BASE_DIR / "papers_data" / "deep_screening"
@@ -410,11 +411,10 @@ def _build_pdf_map():
         except Exception:
             continue
         for p in data:
-            safe_title = re.sub(r'[^\w\s-]', '', html.unescape(p.get('title', '')))[:80].strip()
-            safe_title = re.sub(r'\s+', '_', safe_title)
-            pdf_path = PDF_DIR / venue / year_str / f"{p['paper_id']}_{safe_title}.pdf"
-            if pdf_path.exists():
-                pdf_map[p['paper_id']] = str(pdf_path)
+            p = {**p, 'conference': venue, 'year': int(year_str)}
+            path = pdf_path(PDF_DIR, p)
+            if valid_pdf(path):
+                pdf_map[paper_key(p)] = str(path)
     return pdf_map
 
 
@@ -429,7 +429,7 @@ def _load_original_taxonomy_records():
                     continue
                 rec = json.loads(line)
                 if rec.get('taxonomy_status') == 'OK':
-                    out[rec['paper_id']] = rec
+                    out[paper_key(rec)] = rec
     return out
 
 
@@ -441,7 +441,7 @@ def _load_deep_screening_yes():
                 if line.strip():
                     rec = json.loads(line)
                     if rec.get('label') == 'YES':
-                        yes_papers[rec['paper_id']] = rec
+                        yes_papers[paper_key(rec)] = rec
     return yes_papers
 
 
@@ -464,14 +464,14 @@ def load_suspect_papers():
     result = []
     no_pdf = 0
     for s in suspects:
-        pid = s['paper_id']
+        pid = paper_key(s)
         if pid not in pdf_map:
             no_pdf += 1
             continue
         screen_rec = deep_yes.get(pid, {})
         orig = original_taxo.get(pid, {})
         paper = {
-            'paper_id': pid,
+            'paper_id': s['paper_id'],
             'title': s.get('title') or screen_rec.get('title', ''),
             'conference': s.get('conference') or screen_rec.get('conference', ''),
             'year': s.get('year') or screen_rec.get('year', 0),
@@ -496,7 +496,7 @@ def load_completed(output_dir):
                 if line.strip():
                     rec = json.loads(line)
                     if rec.get('taxonomy_status') == 'OK':
-                        completed.add(rec['paper_id'])
+                        completed.add(paper_key(rec))
     return completed
 
 
@@ -828,7 +828,7 @@ def run_taxonomy_reannotation(papers, output_dir, models, force=False):
     if not force:
         completed = load_completed(output_dir)
 
-    pending = [p for p in papers if p['paper_id'] not in completed]
+    pending = [p for p in papers if paper_key(p) not in completed]
     if not pending:
         print('All suspect papers already re-annotated.')
         return

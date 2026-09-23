@@ -20,6 +20,7 @@ import threading
 import glob
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from paper_utils import paper_key, pdf_path as library_pdf_path, valid_pdf
 
 import fitz  # PyMuPDF
 import requests
@@ -175,7 +176,7 @@ def load_target_papers():
                 continue
             d = json.loads(line)
             if d.get('taxonomy_status') == 'OK':
-                final_pids[d['paper_id']] = d
+                final_pids[paper_key(d)] = d
 
     annotated = set()
     for f in ANNOTATIONS_DIR.glob('annotate_*.jsonl'):
@@ -185,7 +186,7 @@ def load_target_papers():
                 continue
             d = json.loads(line)
             if d.get('paper_id'):
-                annotated.add(d['paper_id'])
+                annotated.add(paper_key(d))
 
     missing = [final_pids[p] for p in final_pids if p not in annotated]
     return missing
@@ -193,7 +194,7 @@ def load_target_papers():
 
 def build_pdf_map(target_papers):
     """Build a paper_id -> pdf_path mapping from metadata."""
-    needed = {p['paper_id'] for p in target_papers}
+    needed = {paper_key(p) for p in target_papers}
     pdf_map = {}
     for meta_file in METADATA_DIR.glob('*.json'):
         try:
@@ -206,13 +207,11 @@ def build_pdf_map(target_papers):
             continue
         venue, year = parts
         for p in data:
-            pid = p.get('paper_id')
+            pid = paper_key(p)
             if pid not in needed:
                 continue
-            safe_title = re.sub(r'[^\w\s-]', '', html.unescape(p.get('title', '')))[:80].strip()
-            safe_title = re.sub(r'\s+', '_', safe_title)
-            pdf_path = PDF_DIR / venue / year / f'{pid}_{safe_title}.pdf'
-            if pdf_path.exists():
+            pdf_path = library_pdf_path(PDF_DIR, p)
+            if valid_pdf(pdf_path):
                 pdf_map[pid] = str(pdf_path)
     return pdf_map
 
@@ -246,7 +245,7 @@ def load_done():
             try:
                 d = json.loads(line)
                 if d.get('interface_type'):
-                    done.add(d['paper_id'])
+                    done.add(paper_key(d))
             except Exception:
                 pass
     return done
@@ -259,7 +258,7 @@ def main():
     print(f'[info] resolved pdf for {len(pdf_map)}/{len(targets)} papers')
 
     done = load_done()
-    pending = [p for p in targets if p['paper_id'] not in done and p['paper_id'] in pdf_map]
+    pending = [p for p in targets if paper_key(p) not in done and paper_key(p) in pdf_map]
     print(f'[info] already done: {len(done)}, pending: {len(pending)}')
 
     if not pending:
@@ -276,7 +275,7 @@ def main():
 
     pbar = tqdm(total=len(pending), desc='annotate iface')
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        fut_to_p = {pool.submit(process_one, p, pdf_map[p['paper_id']]): p for p in pending}
+        fut_to_p = {pool.submit(process_one, p, pdf_map[paper_key(p)]): p for p in pending}
         for fut in as_completed(fut_to_p):
             try:
                 rec = fut.result()
@@ -284,6 +283,8 @@ def main():
                 p = fut_to_p[fut]
                 rec = {'paper_id': p['paper_id'], 'title': p.get('title', ''),
                        'interface_type': '', 'interface_details': '', 'error': str(e)}
+            source = fut_to_p[fut]
+            rec.update(conference=source['conference'], year=source['year'])
             write_record(rec)
             pbar.update(1)
     pbar.close()

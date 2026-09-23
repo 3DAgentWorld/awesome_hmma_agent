@@ -21,6 +21,7 @@ import re
 import sys
 from pathlib import Path
 from collections import Counter
+from paper_utils import paper_key, pdf_path
 
 try:
     import fitz  # PyMuPDF
@@ -31,6 +32,7 @@ BASE_DIR = Path(__file__).parent / "papers_data"
 DEEP_SCREENING_DIR = BASE_DIR / "deep_screening"
 ANNOTATIONS_DIR = BASE_DIR / "annotations"
 PDF_DIR = BASE_DIR / "pdfs"
+METADATA_DIR = BASE_DIR / 'metadata'
 
 # Track keywords to exclude for *CL venues
 EXCLUDED_TRACK_KEYWORDS = ['demo', 'srw', 'tutorial']
@@ -58,10 +60,7 @@ def is_excluded_track(track: str) -> bool:
 
 
 def build_pdf_page_cache() -> dict[str, int]:
-    """
-    Build a paper_id -> PDF page count mapping.
-    Only scans PDFs of non-CL venues.
-    """
+    """Count pages of non-CL papers by full identity."""
     if fitz is None:
         print("⚠️  PyMuPDF (fitz) not installed; cannot page-count-filter non-CL papers")
         return {}
@@ -70,25 +69,15 @@ def build_pdf_page_cache() -> dict[str, int]:
     if not PDF_DIR.exists():
         return cache
 
-    for conf_dir in sorted(PDF_DIR.iterdir()):
-        if not conf_dir.is_dir():
-            continue
-        conf_name = conf_dir.name
-        if conf_name in CL_CONFERENCES:
-            continue  # CL venues use track filtering; page count not needed
-        for year_dir in sorted(conf_dir.iterdir()):
-            if not year_dir.is_dir():
+    for metadata in sorted(METADATA_DIR.glob('*.json')):
+        for paper in json.loads(metadata.read_text()):
+            if paper['conference'] in CL_CONFERENCES:
                 continue
-            for pdf_file in year_dir.iterdir():
-                if pdf_file.suffix != '.pdf':
-                    continue
-                pid = pdf_file.name.split('_')[0]
-                try:
-                    doc = fitz.open(str(pdf_file))
-                    cache[pid] = doc.page_count
-                    doc.close()
-                except Exception:
-                    pass
+            try:
+                with fitz.open(pdf_path(PDF_DIR, paper)) as doc:
+                    cache[paper_key(paper)] = doc.page_count
+            except Exception:
+                pass
     return cache
 
 
@@ -117,8 +106,7 @@ def should_filter_non_cl(record: dict, file_type: str, pdf_pages: dict) -> tuple
     Whether a non-CL paper should be filtered (by page count).
     Returns (should_filter, reason).
     """
-    paper_id = record.get('paper_id', '')
-    pages = pdf_pages.get(paper_id)
+    pages = pdf_pages.get(paper_key(record))
 
     if pages is None:
         return False, ''  # PDF not found; do not filter

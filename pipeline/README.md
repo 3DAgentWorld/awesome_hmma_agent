@@ -37,7 +37,7 @@ better screening quality.
 
 | # | Script | What it does | Data source |
 |---|--------|--------------|-------------|
-| 1 | `1_crawl_papers.py` | Crawl paper metadata and download the PDF of **every** paper; papers without a direct PDF link (DBLP source) are resolved to an arxiv PDF via title search | papers.cool + DBLP API |
+| 1 | `1_crawl_papers.py` | Collect metadata and download publisher PDFs | papers.cool, DBLP, Crossref, official proceedings |
 | 2 | `2_deep_screen_papers.py` | Fine screening on full text (YES / MAYBE / NO) | LLM API |
 | 3 | `3_annotate_papers.py` | Structured annotation (domain, topology, interface, roles, ...) | LLM API |
 | 4 | `4_gen_task_assignment.py` | Split annotated papers into per-person reading lists | local |
@@ -51,6 +51,15 @@ better screening quality.
 Every script resumes from cached results when re-run (`--phase summary` shows progress
 for the staged scripts).
 
+## Downloading
+
+```bash
+python 1_crawl_papers.py --phase metadata --source robotics
+python 1_crawl_papers.py --phase download --conferences CoRL ICRA IROS RSS --years 2023 2024 2025 --proxy http://127.0.0.1:6890
+python 1_crawl_papers.py --phase summary
+python 1_crawl_papers.py --help
+```
+
 ## Adapting to another survey topic
 
 1. Replace the screening prompt in `2_deep_screen_papers.py` with your
@@ -58,4 +67,4 @@ for the staged scripts).
 2. Replace the annotation prompt and output schema in `3_annotate_papers.py` and
    `taxonomy_annotate.py` with your taxonomy dimensions.
 3. Adjust the venue/year configuration in `1_crawl_papers.py`
-   (`PAPERS_COOL_VENUES`, `DBLP_VENUES`).
+   (`PAPERS_COOL_VENUES`, `DBLP_VENUES`, and `venue_sources.ROBOTICS_YEARS`).

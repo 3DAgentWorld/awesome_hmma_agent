@@ -40,6 +40,10 @@ The complete list of surveyed papers is in [PAPERS.md](PAPERS.md).
   EMNLP, NAACL, COLING, COLM, ACM MM, KDD, SIGIR, WWW, MICCAI, INTERSPEECH), 2023–2026
   (2026 covers ICLR 2026 only).
 
+The collection pipeline additionally includes CoRL, ICRA, IROS and RSS for
+2023–2025: **10,597** metadata records, extending the reported **82,416**-paper
+pool to **93,013**.
+
 ## Repository structure
 
 ```

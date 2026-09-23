@@ -33,6 +33,7 @@ from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import fitz  # PyMuPDF
 import requests
 from tqdm import tqdm
+from paper_utils import paper_key, pdf_path, valid_pdf
 
 BASE_DIR = Path(__file__).parent
 METADATA_DIR = BASE_DIR / "papers_data" / "metadata"
@@ -357,11 +358,9 @@ def load_papers_with_pdfs() -> list:
             p['conference'] = venue
             p['year'] = int(year_str)
 
-            safe_title = re.sub(r'[^\w\s-]', '', html.unescape(p.get('title', '')))[:80].strip()
-            safe_title = re.sub(r'\s+', '_', safe_title)
-            pdf_path = PDF_DIR / venue / year_str / f"{p['paper_id']}_{safe_title}.pdf"
-            if pdf_path.exists():
-                p['pdf_path'] = str(pdf_path)
+            path = pdf_path(PDF_DIR, p)
+            if valid_pdf(path):
+                p['pdf_path'] = str(path)
                 papers.append(p)
 
     return papers
@@ -375,7 +374,7 @@ def load_completed(output_dir: Path) -> set:
             for line in fh:
                 if line.strip():
                     rec = json.loads(line)
-                    completed.add(rec['paper_id'])
+                    completed.add(paper_key(rec))
     return completed
 
 
@@ -687,7 +686,7 @@ def run_deep_screening(
     if not force:
         completed = load_completed(output_dir)
 
-    pending = [p for p in papers if p['paper_id'] not in completed]
+    pending = [p for p in papers if paper_key(p) not in completed]
 
     if not pending:
         print('All papers have already been deep-screened!')

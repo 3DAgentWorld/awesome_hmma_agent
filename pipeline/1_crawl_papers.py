@@ -2,11 +2,7 @@
 """
 Crawl conference paper metadata and download the PDFs of ALL papers.
 
-Phase 1 fetches paper metadata (title, authors, abstract, pdf_url) from
-papers.cool and DBLP; Phase 2 downloads every paper's PDF with a thread
-pool. Papers whose metadata has no direct PDF link (DBLP source carries
-DOI links only) are first resolved to an arxiv PDF URL by title search
-on papers.cool.
+Collect metadata and fetch publisher PDFs with resumable, validated downloads.
 
 Usage:
     python 1_crawl_papers.py --phase metadata   # only fetch metadata
@@ -20,6 +16,7 @@ import re
 import sys
 import json
 import html
+from html import unescape as html_unescape
 import time
 import signal
 import hashlib
@@ -28,17 +25,19 @@ import argparse
 import threading
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
-from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass, asdict, field
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
+from dataclasses import dataclass, asdict, fields
 
 import requests
 from tqdm import tqdm
+import pdf_download
+from paper_utils import paper_key, pdf_path, valid_pdf
+from venue_sources import ROBOTICS_YEARS, fetch_ieee, fetch_rss, fetch_acm, fetch_coling
 
 BASE_DIR = Path(__file__).parent / "papers_data"
 METADATA_DIR = BASE_DIR / "metadata"
 PDF_DIR = BASE_DIR / "pdfs"
 CACHE_FILE = BASE_DIR / "download_cache.json"
-ARXIV_RESOLVE_CACHE = BASE_DIR / "arxiv_resolve_cache.json"
 
 PAPERS_COOL_BASE = "https://papers.cool/venue"
 PAPERS_COOL_PAGE_SIZE = 1000  # max papers per request (tested: show=1000 works)
@@ -54,7 +53,6 @@ RETRY_DELAY = 2  # seconds
 
 METADATA_WORKERS = 4       # threads for fetching metadata pages
 PDF_DOWNLOAD_WORKERS = 8   # threads for downloading PDFs
-RESOLVE_WORKERS = 8        # threads for papers.cool arxiv title search
 RATE_LIMIT_DELAY = 0.5     # seconds between requests per thread
 
 # Conferences available on papers.cool (manually verified)
@@ -62,7 +60,7 @@ RATE_LIMIT_DELAY = 0.5     # seconds between requests per thread
 PAPERS_COOL_VENUES = {
     # ML/AI flagship
     "NeurIPS":      [2022, 2023, 2024, 2025],
-    "ICLR":         [2022, 2023, 2024, 2025],
+    "ICLR":         [2022, 2023, 2024, 2025, 2026],
     "ICML":         [2022, 2023, 2024, 2025],
     "AAAI":         [2022, 2023, 2024, 2025],
     # NLP
@@ -74,7 +72,7 @@ PAPERS_COOL_VENUES = {
     "ECCV":         [2022, 2024],
     "ICCV":         [2023, 2025],
     # Others
-    "IJCAI":        [2022, 2023, 2024],
+    "IJCAI":        [2022, 2023, 2024, 2025],
     "COLM":         [2024, 2025],
     "MICCAI":       [2024, 2025],
     "MLSYS":        [2022, 2023, 2024, 2025],
@@ -84,7 +82,7 @@ PAPERS_COOL_VENUES = {
 # Venues not on papers.cool, fetched via the DBLP API
 DBLP_VENUES = {
     "ACMMM":    {"dblp_key": "conf/mm", "years": [2022, 2023, 2024, 2025]},
-    "KDD":      {"dblp_key": "conf/kdd", "years": [2022, 2023, 2024]},
+    "KDD":      {"dblp_key": "conf/kdd", "years": [2022, 2023, 2024, 2025]},
     "SIGIR":    {"dblp_key": "conf/sigir", "years": [2022, 2023, 2024, 2025]},
     "COLING":   {"dblp_key": "conf/coling", "years": [2022, 2024, 2025]},
     "WWW":      {"dblp_key": "conf/www", "years": [2022, 2023, 2024, 2025]},
@@ -113,7 +111,7 @@ signal.signal(signal.SIGINT, _signal_handler)
 @dataclass
 class PaperInfo:
     """Metadata for a single paper."""
-    paper_id: str          # unique ID (openreview ID or hash)
+    paper_id: str
     title: str
     authors: List[str]
     abstract: str
@@ -125,219 +123,19 @@ class PaperInfo:
 
 
 def create_session() -> requests.Session:
-    """Create a requests session with retry and proper headers."""
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": USER_AGENT,
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-    })
-    return session
+    return pdf_download.create_session()
 
 
 def resolve_pdf_url(paper: dict) -> Optional[str]:
-    """
-    Resolve a downloadable PDF URL for a paper, in priority order:
-    1. resolved_pdf_url (from papers.cool arxiv title search)
-    2. aclanthology links with .pdf appended
-    3. the original pdf_url (if directly downloadable)
-    """
-    resolved = paper.get("resolved_pdf_url", "")
-    if resolved:
-        return resolved
-
-    pdf_url = paper.get("pdf_url", "")
-    if not pdf_url:
-        return None
-
-    if "aclanthology.org" in pdf_url and not pdf_url.endswith(".pdf"):
-        return pdf_url.rstrip("/") + ".pdf"
-
-    # DOI links are not directly downloadable
-    if "doi.org" in pdf_url and not pdf_url.endswith(".pdf"):
-        return None
-
-    return pdf_url
+    return pdf_download.canonical_pdf_url(paper) or None
 
 
 def get_pdf_path(paper: dict) -> Path:
-    """Build the PDF save path: pdfs/{conference}/{year}/{paper_id}_{safe_title}.pdf"""
-    safe_title = re.sub(r'[^\w\s-]', '', html.unescape(paper.get('title', '')))[:80].strip()
-    safe_title = re.sub(r'\s+', '_', safe_title)
-    return PDF_DIR / paper['conference'] / str(paper['year']) / f"{paper['paper_id']}_{safe_title}.pdf"
+    return pdf_path(PDF_DIR, paper)
 
 
-class PapersCoolResolver:
-    """
-    Search papers.cool /arxiv/search by title to obtain the arxiv PDF URL
-    for papers without a direct PDF link (DBLP source).
-    Results are cached locally to avoid repeat queries.
-    """
-
-    def __init__(self, cache_path: Path):
-        self.cache_path = cache_path
-        self._lock = threading.Lock()
-        self.cache: Dict[str, Optional[str]] = {}  # paper_id -> pdf_url or None
-        self._load()
-
-    def _load(self):
-        if self.cache_path.exists():
-            self.cache = json.loads(self.cache_path.read_text())
-
-    def save(self):
-        with self._lock:
-            self.cache_path.parent.mkdir(parents=True, exist_ok=True)
-            self.cache_path.write_text(json.dumps(self.cache, indent=2))
-
-    def resolve(self, session: requests.Session, paper_id: str, title: str) -> Optional[str]:
-        """
-        Search papers.cool for the paper title and return the arxiv PDF URL.
-        Returns None if not found.
-        """
-        with self._lock:
-            if paper_id in self.cache:
-                return self.cache[paper_id]
-
-        # Decode HTML entities and extract alphanumeric words
-        clean_title = html.unescape(title)
-        words = re.findall(r'[a-zA-Z0-9]+', clean_title)
-        if not words:
-            with self._lock:
-                self.cache[paper_id] = None
-            return None
-
-        query = '+'.join(words)
-        url = f"https://papers.cool/arxiv/search?query={query}&show=5"
-
-        pdf_url = None
-
-        for attempt in range(MAX_RETRIES):
-            if _shutdown_requested:
-                return None
-            try:
-                resp = session.get(url, timeout=20)
-                if resp.status_code == 200:
-                    # Parse HTML: <div id="2402.07945" class="panel paper">
-                    panels = re.findall(
-                        r'id="([^"]+)"\s+class="panel paper"', resp.text
-                    )
-                    result_titles = re.findall(
-                        r'class="title-link[^"]*"[^>]*>([^<]+)', resp.text
-                    )
-
-                    # Fuzzy title matching via word-level Jaccard similarity
-                    title_words = set(w.lower() for w in words if len(w) > 2)
-                    for i, rt in enumerate(result_titles[:5]):
-                        if i >= len(panels):
-                            break
-                        rt_words = set(
-                            w.lower() for w in re.findall(r'[a-zA-Z0-9]+', rt)
-                            if len(w) > 2
-                        )
-                        if not title_words or not rt_words:
-                            continue
-                        common = len(title_words & rt_words)
-                        jaccard = common / len(title_words | rt_words)
-                        if jaccard >= 0.75:
-                            arxiv_id = panels[i]
-                            pdf_url = f"https://arxiv.org/pdf/{arxiv_id}.pdf"
-                            break
-
-                    break  # request succeeded; no retry
-
-                elif resp.status_code == 429:
-                    time.sleep(2 * (attempt + 1))
-                else:
-                    break
-
-            except Exception:
-                if attempt < MAX_RETRIES - 1:
-                    time.sleep(RETRY_DELAY * (attempt + 1))
-
-        with self._lock:
-            self.cache[paper_id] = pdf_url
-
-        return pdf_url
-
-
-def resolve_paper_pdf_urls(papers: List[dict], max_workers: int = RESOLVE_WORKERS) -> int:
-    """
-    Resolve a downloadable arxiv PDF URL for papers without a direct PDF
-    link by title search on papers.cool. Multithreaded (papers.cool has
-    no rate limit). Returns the number of papers with a resolved URL.
-    """
-    resolver = PapersCoolResolver(ARXIV_RESOLVE_CACHE)
-
-    # Split into already-cached vs pending
-    pending = []
-    resolved = 0
-    for paper in papers:
-        pid = paper["paper_id"]
-        with resolver._lock:
-            if pid in resolver.cache:
-                if resolver.cache[pid]:
-                    paper["resolved_pdf_url"] = resolver.cache[pid]
-                    resolved += 1
-                continue
-        pending.append(paper)
-
-    logger.info(
-        f"PDF URL resolve: {len(papers)} papers, "
-        f"{len(papers) - len(pending)} cached ({resolved} with URL), {len(pending)} pending"
-    )
-
-    if not pending:
-        resolver.save()
-        return resolved
-
-    # One session per thread
-    thread_sessions = {}
-    session_lock = threading.Lock()
-
-    def _get_session():
-        tid = threading.current_thread().ident
-        with session_lock:
-            if tid not in thread_sessions:
-                thread_sessions[tid] = create_session()
-            return thread_sessions[tid]
-
-    success_count = 0
-    pbar = tqdm(total=len(pending), desc="Resolving arxiv PDF URLs (papers.cool)", unit="paper")
-
-    try:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            futures = {}
-            for paper in pending:
-                if _shutdown_requested:
-                    break
-                future = executor.submit(
-                    resolver.resolve, _get_session(), paper["paper_id"], paper["title"]
-                )
-                futures[future] = paper
-
-            for future in as_completed(futures):
-                if _shutdown_requested:
-                    break
-                paper = futures[future]
-                try:
-                    pdf_url = future.result()
-                    if pdf_url:
-                        paper["resolved_pdf_url"] = pdf_url
-                        success_count += 1
-                except Exception:
-                    pass
-
-                pbar.update(1)
-                pbar.set_postfix_str(
-                    f"found={resolved + success_count}", refresh=False
-                )
-    finally:
-        pbar.close()
-        resolver.save()
-
-    total_resolved = resolved + success_count
-    logger.info(f"PDF URL resolve complete: {total_resolved}/{len(papers)} arxiv PDFs found")
-    return total_resolved
+def paper_info(record):
+    return PaperInfo(**{f.name: record[f.name] for f in fields(PaperInfo) if f.name in record})
 
 
 def parse_papers_cool_page(html: str, conference: str, year: int) -> List[PaperInfo]:
@@ -362,7 +160,7 @@ def parse_papers_cool_page(html: str, conference: str, year: int) -> List[PaperI
         end = paper_starts[i + 1].start() if i + 1 < len(paper_starts) else len(html)
         block = html[start:end]
 
-        paper_id = full_id.split("@")[0] if "@" in full_id else full_id
+        paper_id = full_id if conference == 'CoRL' else full_id.split('@')[0]
 
         title_match = re.search(
             r'class="title-link[^"]*"[^>]*>([^<]+)', block
@@ -397,13 +195,13 @@ def parse_papers_cool_page(html: str, conference: str, year: int) -> List[PaperI
         )
         subject = subject_match.group(1).strip() if subject_match else ""
 
-        if title and pdf_url:
+        if title:
             papers.append(PaperInfo(
                 paper_id=paper_id,
-                title=title,
-                authors=authors,
-                abstract=abstract,
-                pdf_url=pdf_url,
+                title=html_unescape(title),
+                authors=[html_unescape(a) for a in authors],
+                abstract=html_unescape(abstract),
+                pdf_url=html_unescape(pdf_url),
                 conference=conference,
                 year=year,
                 source="papers_cool",
@@ -441,13 +239,15 @@ def fetch_venue_metadata(
                     time.sleep(RETRY_DELAY * (retry + 1))
                 else:
                     logger.error(f"Failed to fetch {page_url}: {e}")
-                    return all_papers
+                    raise RuntimeError(f'Incomplete metadata: {conference}.{year}') from e
 
         html = resp.text
 
         # Total count is only parsed from the first page
         if skip == 0:
             total_match = re.search(r'Total:\s*(\d+)', html)
+            if not total_match:
+                raise RuntimeError(f'Unrecognized metadata response: {conference}.{year}')
             total = int(total_match.group(1)) if total_match else 0
             if total == 0:
                 logger.warning(f"No papers found for {conference}.{year}")
@@ -459,7 +259,7 @@ def fetch_venue_metadata(
 
         page_papers = parse_papers_cool_page(html, conference, year)
         if not page_papers:
-            break
+            raise RuntimeError(f'Empty metadata page: {conference}.{year}, offset {skip}')
 
         all_papers.extend(page_papers)
         if pbar is not None:
@@ -469,13 +269,15 @@ def fetch_venue_metadata(
 
         skip += PAPERS_COOL_PAGE_SIZE
 
-        if len(all_papers) >= total:
+        if skip >= total:
             break
 
         time.sleep(RATE_LIMIT_DELAY)
 
+    if _shutdown_requested:
+        return []
     logger.info(f"  {conference}.{year}: collected {len(all_papers)} papers")
-    return all_papers
+    return list({p.paper_id: p for p in all_papers}.values())
 
 
 def fetch_all_papers_cool_metadata(
@@ -511,7 +313,7 @@ def fetch_all_papers_cool_metadata(
         if meta_file.exists():
             logger.info(f"  Skipping {key} (metadata already exists)")
             existing = json.loads(meta_file.read_text())
-            results[key] = [PaperInfo(**p) for p in existing]
+            results[key] = [paper_info(p) for p in existing]
             continue
 
         pbar = tqdm(desc=f"  {key}", unit="paper", leave=True)
@@ -566,7 +368,7 @@ def fetch_dblp_venue_metadata(
                     time.sleep(RETRY_DELAY * (retry + 1))
                 else:
                     logger.error(f"Failed to fetch DBLP {conference}.{year}: {e}")
-                    return all_papers
+                    raise RuntimeError(f'Incomplete DBLP metadata: {conference}.{year}') from e
 
         if data is None:
             break
@@ -581,7 +383,7 @@ def fetch_dblp_venue_metadata(
 
         hit_list = hits.get("hit", [])
         if not hit_list:
-            break
+            raise RuntimeError(f'Incomplete DBLP metadata: {conference}.{year}')
 
         for item in hit_list:
             info = item.get("info", {})
@@ -618,6 +420,8 @@ def fetch_dblp_venue_metadata(
             break
         time.sleep(RATE_LIMIT_DELAY)
 
+    if _shutdown_requested:
+        return []
     logger.info(f"  {conference}.{year}: collected {len(all_papers)} papers from DBLP")
     return all_papers
 
@@ -645,10 +449,17 @@ def fetch_all_dblp_metadata(
             if meta_file.exists():
                 logger.info(f"  Skipping {key} (metadata already exists)")
                 existing = json.loads(meta_file.read_text())
-                results[key] = [PaperInfo(**p) for p in existing]
+                results[key] = [paper_info(p) for p in existing]
                 continue
 
-            papers = fetch_dblp_venue_metadata(session, conf, config["dblp_key"], y)
+            try:
+                papers = fetch_dblp_venue_metadata(session, conf, config["dblp_key"], y)
+                if not papers and not _shutdown_requested:
+                    raise RuntimeError('Empty DBLP response')
+            except RuntimeError:
+                logger.warning('DBLP unavailable for %s.%s; trying publisher metadata', conf, y)
+                records = fetch_coling(session, y) if conf == 'COLING' else fetch_acm(session, conf, y)
+                papers = [paper_info(p) for p in records]
 
             if papers:
                 results[key] = papers
@@ -660,6 +471,36 @@ def fetch_all_dblp_metadata(
     return results
 
 
+def fetch_robotics_metadata(conferences=None, years=None, refresh=False):
+    with create_session() as session:
+        for conf, available_years in ROBOTICS_YEARS.items():
+            if conferences and conf not in conferences:
+                continue
+            for year in available_years:
+                if years and year not in years:
+                    continue
+                if _shutdown_requested:
+                    return
+                target = METADATA_DIR / f'{conf}.{year}.json'
+                if target.exists() and not refresh:
+                    continue
+                if conf in {'ICRA', 'IROS'}:
+                    papers = fetch_ieee(session, conf, year)
+                elif conf == 'RSS':
+                    papers = fetch_rss(session, year)
+                else:
+                    papers = [asdict(p) for p in fetch_venue_metadata(session, conf, year)]
+                if not papers:
+                    raise RuntimeError(f'No metadata for {conf}.{year}')
+                records = [asdict(paper_info(p)) for p in papers]
+                unique = {paper_key(p): p for p in records}
+                target.parent.mkdir(parents=True, exist_ok=True)
+                temporary = target.with_suffix('.tmp')
+                temporary.write_text(json.dumps(list(unique.values()), ensure_ascii=False, indent=2))
+                temporary.replace(target)
+                logger.info('%s.%s: %s papers', conf, year, len(unique))
+
+
 class DownloadCache:
     """Track downloaded PDFs to support resume."""
 
@@ -668,185 +509,129 @@ class DownloadCache:
         self._lock = __import__("threading").Lock()
         self.downloaded: set = set()
         self.failed: dict = {}  # paper_id -> error message
+        self.provenance = {}
+        legacy_path = cache_path.parent / 'arxiv_resolve_cache.json'
+        self.legacy_arxiv = json.loads(legacy_path.read_text()) if legacy_path.exists() else {}
         self._load()
 
     def _load(self):
         if self.cache_path.exists():
             data = json.loads(self.cache_path.read_text())
-            self.downloaded = set(data.get("downloaded", []))
-            self.failed = data.get("failed", {})
+            if data.get('version') == 2:
+                self.downloaded = set(data.get("downloaded", []))
+                self.failed = data.get("failed", {})
+                self.provenance = data.get('provenance', {})
             logger.info(f"Loaded download cache: {len(self.downloaded)} downloaded, {len(self.failed)} failed")
 
     def save(self):
         with self._lock:
             self.cache_path.parent.mkdir(parents=True, exist_ok=True)
-            self.cache_path.write_text(json.dumps({
+            temporary = self.cache_path.with_suffix('.tmp')
+            temporary.write_text(json.dumps({
+                'version': 2,
                 "downloaded": sorted(self.downloaded),
                 "failed": self.failed,
+                'provenance': self.provenance,
             }, indent=2))
+            temporary.replace(self.cache_path)
 
     def is_downloaded(self, paper_id: str) -> bool:
         return paper_id in self.downloaded
 
-    def mark_downloaded(self, paper_id: str):
+    def can_reuse(self, paper):
+        key = paper_key(paper)
+        if self.provenance.get(key, {}).get('version') == 'publisher':
+            return True
+        return not self.legacy_arxiv.get(paper['paper_id'])
+
+    def mark_downloaded(self, paper_id: str, provenance=None):
         with self._lock:
             self.downloaded.add(paper_id)
             self.failed.pop(paper_id, None)
+            if provenance:
+                self.provenance[paper_id] = provenance
 
     def mark_failed(self, paper_id: str, error: str):
         with self._lock:
             self.failed[paper_id] = error
+            self.downloaded.discard(paper_id)
 
 
-def download_single_pdf(
-    session: requests.Session,
-    paper: dict,
-    cache: DownloadCache,
-) -> Tuple[bool, str]:
-    """
-    Download a single PDF file.
-    Returns (success: bool, message: str).
-    """
+def download_single_pdf(session, paper, cache):
+    key = paper_key(paper)
     if _shutdown_requested:
-        return False, "shutdown"
-
-    paper_id = paper["paper_id"]
-
-    if cache.is_downloaded(paper_id):
-        return True, "cached"
-
-    pdf_url = resolve_pdf_url(paper)
-    if not pdf_url:
-        cache.mark_failed(paper_id, "no_pdf_url")
-        return False, "no_pdf_url"
-
-    pdf_path = get_pdf_path(paper)
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-
-    if pdf_path.exists() and pdf_path.stat().st_size > 1000:
-        cache.mark_downloaded(paper_id)
-        return True, "exists"
-
-    for retry in range(MAX_RETRIES):
-        if _shutdown_requested:
-            return False, "shutdown"
-        try:
-            resp = session.get(
-                pdf_url,
-                timeout=PDF_DOWNLOAD_TIMEOUT,
-                stream=True,
-            )
-            resp.raise_for_status()
-
-            # Verify it's actually a PDF
-            content_type = resp.headers.get("Content-Type", "")
-            if "pdf" not in content_type and "octet-stream" not in content_type:
-                # Some servers redirect; read first bytes to check
-                first_chunk = next(resp.iter_content(1024), b"")
-                if not first_chunk.startswith(b"%PDF"):
-                    cache.mark_failed(paper_id, f"not_pdf: {content_type}")
-                    return False, f"not_pdf: {content_type}"
-                with open(pdf_path, "wb") as f:
-                    f.write(first_chunk)
-                    for chunk in resp.iter_content(chunk_size=8192):
-                        if _shutdown_requested:
-                            return False, "shutdown"
-                        f.write(chunk)
-            else:
-                with open(pdf_path, "wb") as f:
-                    for chunk in resp.iter_content(chunk_size=8192):
-                        if _shutdown_requested:
-                            return False, "shutdown"
-                        f.write(chunk)
-
-            if pdf_path.stat().st_size < 1000:
-                pdf_path.unlink(missing_ok=True)
-                raise ValueError("PDF too small, likely error page")
-
-            cache.mark_downloaded(paper_id)
-            return True, "ok"
-
-        except Exception as e:
-            if retry < MAX_RETRIES - 1:
-                time.sleep(RETRY_DELAY * (retry + 1))
-            else:
-                pdf_path.unlink(missing_ok=True)
-                cache.mark_failed(paper_id, str(e))
-                return False, str(e)
-
-    return False, "max_retries"
-
-
-def download_pdfs(
-    papers: List[dict],
-    max_workers: int = PDF_DOWNLOAD_WORKERS,
-):
-    """Download PDFs for all papers using thread pool."""
-    cache = DownloadCache(CACHE_FILE)
-
-    pending = [p for p in papers if not cache.is_downloaded(p["paper_id"])]
-    logger.info(
-        f"PDF download: {len(papers)} total, {len(papers) - len(pending)} cached, "
-        f"{len(pending)} pending"
-    )
-
-    if not pending:
-        logger.info("All PDFs already downloaded!")
-        return
-
-    success_count = 0
-    fail_count = 0
-
-    pbar = tqdm(total=len(pending), desc="Downloading PDFs", unit="pdf")
-
-    # One session per thread for connection pooling
-    sessions = {}
-
-    def _get_session(thread_id):
-        if thread_id not in sessions:
-            sessions[thread_id] = create_session()
-        return sessions[thread_id]
-
+        return False, 'shutdown'
+    path = get_pdf_path(paper)
+    if valid_pdf(path) and cache.can_reuse(paper):
+        cache.mark_downloaded(key)
+        return True, 'exists'
     try:
-        with ThreadPoolExecutor(max_workers=max_workers) as executor:
-            futures = {}
-            for paper in pending:
-                if _shutdown_requested:
-                    break
-                thread_id = hash(paper["paper_id"]) % max_workers
-                future = executor.submit(
-                    download_single_pdf,
-                    _get_session(thread_id),
-                    paper,
-                    cache,
-                )
-                futures[future] = paper
+        provenance = pdf_download.download(session, paper, path, lambda: _shutdown_requested)
+        cache.mark_downloaded(key, provenance)
+        return True, 'ok'
+    except Exception as exc:
+        cache.mark_failed(key, str(exc))
+        return False, str(exc)
 
-            for future in as_completed(futures):
-                if _shutdown_requested:
-                    break
-                paper = futures[future]
-                try:
-                    ok, msg = future.result()
-                    if ok:
-                        success_count += 1
-                    else:
-                        fail_count += 1
-                        if msg not in ("cached", "shutdown"):
-                            logger.debug(f"Failed: {paper.title[:50]}... -> {msg}")
-                except Exception as e:
-                    fail_count += 1
-                    logger.error(f"Exception downloading {paper['paper_id']}: {e}")
 
-                pbar.update(1)
+def download_pdfs(papers, max_workers=PDF_DOWNLOAD_WORKERS):
+    cache = DownloadCache(CACHE_FILE)
+    papers = list({paper_key(p): p for p in papers}.values())
+    pending = []
+    for paper in papers:
+        if valid_pdf(get_pdf_path(paper)) and cache.can_reuse(paper):
+            cache.mark_downloaded(paper_key(paper))
+        else:
+            pending.append(paper)
+    logger.info('PDF download: %s total, %s available, %s pending',
+                len(papers), len(papers) - len(pending), len(pending))
+    local = threading.local()
+    sessions = []
+    lock = threading.Lock()
 
-    except KeyboardInterrupt:
-        logger.warning("Download interrupted by user")
-    finally:
-        pbar.close()
-        cache.save()
-        logger.info(f"Download complete: {success_count} succeeded, {fail_count} failed")
-        logger.info(f"Cache saved to {CACHE_FILE}")
+    def worker(paper):
+        try:
+            if not hasattr(local, 'session'):
+                local.session = create_session()
+                with lock:
+                    sessions.append(local.session)
+            return download_single_pdf(local.session, paper, cache)
+        except Exception as exc:
+            cache.mark_failed(paper_key(paper), str(exc))
+            return False, str(exc)
+
+    success = failed = 0
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        remaining = iter(pending)
+        active = {}
+        with tqdm(total=len(pending), desc='Downloading PDFs', unit='pdf') as progress:
+            try:
+                while not _shutdown_requested:
+                    while len(active) < max_workers:
+                        paper = next(remaining, None)
+                        if paper is None:
+                            break
+                        active[executor.submit(worker, paper)] = paper
+                    if not active:
+                        break
+                    completed, _ = wait(active, timeout=0.2, return_when=FIRST_COMPLETED)
+                    for future in completed:
+                        paper = active.pop(future)
+                        ok, message = future.result()
+                        success += int(ok)
+                        failed += int(not ok)
+                        if not ok:
+                            logger.warning('%s %s %s: %s', paper['conference'], paper['year'], paper['paper_id'], message)
+                        progress.update(1)
+                        if (success + failed) % 20 == 0:
+                            cache.save()
+            finally:
+                for future in active:
+                    future.cancel()
+    for session in sessions:
+        session.close()
+    cache.save()
+    logger.info('Download complete: %s succeeded, %s failed', success, failed)
 
 
 def load_all_metadata(
@@ -871,7 +656,7 @@ def load_all_metadata(
             continue
 
         data = json.loads(meta_file.read_text())
-        papers = [PaperInfo(**p) for p in data]
+        papers = [paper_info(p) for p in data]
         all_papers.extend(papers)
         logger.info(f"  Loaded {len(papers)} papers from {meta_file.name}")
 
@@ -901,8 +686,7 @@ def print_summary():
         data = json.loads(meta_file.read_text())
         n_papers = len(data)
 
-        pdf_dir = PDF_DIR / conf / year_str
-        n_pdfs = len(list(pdf_dir.glob("*.pdf"))) if pdf_dir.exists() else 0
+        n_pdfs = sum(valid_pdf(get_pdf_path(p)) for p in data)
 
         total_papers += n_papers
         total_pdfs += n_pdfs
@@ -932,14 +716,14 @@ def main():
     parser.add_argument(
         "--conferences", "-c",
         nargs="+",
-        default=None,
+        default=sorted((set(PAPERS_COOL_VENUES) | set(DBLP_VENUES) | set(ROBOTICS_YEARS)) - {'MLSYS'}),
         help="Only process these conferences (e.g. NeurIPS ICLR CVPR)",
     )
     parser.add_argument(
         "--years", "-y",
         nargs="+",
         type=int,
-        default=None,
+        default=[2023, 2024, 2025, 2026],
         help="Only process these years (e.g. 2023 2024 2025)",
     )
     parser.add_argument(
@@ -950,7 +734,7 @@ def main():
     )
     parser.add_argument(
         "--source",
-        choices=["papers_cool", "dblp", "all"],
+        choices=["papers_cool", "dblp", "robotics", "all"],
         default="all",
         help="Which data source to use for metadata (default: all)",
     )
@@ -960,7 +744,19 @@ def main():
         help="Enable verbose/debug logging",
     )
 
+    parser.add_argument('--proxy', default=pdf_download.PROXY)
+    parser.add_argument('--cookies', default=pdf_download.COOKIE_FILE, help='Netscape-format publisher cookies')
+    parser.add_argument('--browser', action='store_true', help='Optional Playwright Chromium fallback')
+    parser.add_argument('--browser-profile', type=Path, default=pdf_download.BROWSER_PROFILE)
+    parser.add_argument('--refresh-robotics', action='store_true', help='Re-fetch robotics metadata even if locally cached')
+    parser.add_argument('--limit', type=int, help='Maximum PDFs to attempt for a smoke test')
     args = parser.parse_args()
+    if args.workers < 1 or args.limit is not None and args.limit < 1:
+        parser.error('--workers and --limit must be positive')
+    pdf_download.PROXY = args.proxy
+    pdf_download.COOKIE_FILE = args.cookies
+    pdf_download.BROWSER = args.browser
+    pdf_download.BROWSER_PROFILE = args.browser_profile
 
     if args.verbose:
         logging.getLogger().setLevel(logging.DEBUG)
@@ -984,6 +780,9 @@ def main():
         if args.source in ("dblp", "all"):
             fetch_all_dblp_metadata(args.conferences, args.years)
 
+        if args.source in ('robotics', 'all'):
+            fetch_robotics_metadata(args.conferences, args.years, args.refresh_robotics)
+
         if _shutdown_requested:
             logger.warning("Metadata fetch interrupted. Progress has been saved.")
             return
@@ -1000,18 +799,8 @@ def main():
 
         paper_dicts = [asdict(p) for p in all_papers]
 
-        # Resolve an arxiv PDF URL for papers without a direct PDF link
-        # (DBLP source carries DOI links only)
-        need_resolve = [p for p in paper_dicts if not resolve_pdf_url(p)]
-        if need_resolve:
-            logger.info("=" * 50)
-            logger.info(f"Resolving PDF URLs for {len(need_resolve)} papers without a direct link")
-            logger.info("=" * 50)
-            resolve_paper_pdf_urls(need_resolve, max_workers=RESOLVE_WORKERS)
-
-            if _shutdown_requested:
-                logger.warning("PDF URL resolution interrupted. Progress has been saved.")
-                return
+        if args.limit:
+            paper_dicts = paper_dicts[:args.limit]
 
         if _shutdown_requested:
             logger.warning("Metadata fetch interrupted. Progress has been saved.")

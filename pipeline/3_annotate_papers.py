@@ -33,6 +33,7 @@ from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import fitz  # PyMuPDF
 import requests
 from tqdm import tqdm
+from paper_utils import paper_key, pdf_path, valid_pdf
 
 BASE_DIR = Path(__file__).parent
 DEEP_SCREENING_DIR = BASE_DIR / "papers_data" / "deep_screening"
@@ -395,16 +396,15 @@ def load_papers_to_annotate() -> list:
         venue, year_str = parts
         data = json.loads(meta_file.read_text())
         for p in data:
-            safe_title = re.sub(r'[^\w\s-]', '', html.unescape(p.get('title', '')))[:80].strip()
-            safe_title = re.sub(r'\s+', '_', safe_title)
-            pdf_path = PDF_DIR / venue / year_str / f"{p['paper_id']}_{safe_title}.pdf"
-            if pdf_path.exists():
-                pdf_map[p['paper_id']] = str(pdf_path)
+            p = {**p, 'conference': venue, 'year': int(year_str)}
+            path = pdf_path(PDF_DIR, p)
+            if valid_pdf(path):
+                pdf_map[paper_key(p)] = str(path)
 
     result = []
     no_pdf = 0
     for p in papers:
-        pid = p['paper_id']
+        pid = paper_key(p)
         if pid in pdf_map:
             p['pdf_path'] = pdf_map[pid]
             result.append(p)
@@ -425,7 +425,7 @@ def load_completed(output_dir: Path) -> set:
             for line in fh:
                 if line.strip():
                     rec = json.loads(line)
-                    completed.add(rec['paper_id'])
+                    completed.add(paper_key(rec))
     return completed
 
 
@@ -736,7 +736,7 @@ def run_annotation(
     if not force:
         completed = load_completed(output_dir)
 
-    pending = [p for p in papers if p['paper_id'] not in completed]
+    pending = [p for p in papers if paper_key(p) not in completed]
 
     if not pending:
         print('All papers already annotated!')
