@@ -52,6 +52,8 @@ awesome_hmma_agent/
 ├── data/                       # Curated literature base and annotations
 │   ├── candidates.json         #   591 screening candidates (572 final + 19 filtered)
 │   ├── papers.json             #   572 papers: metadata + taxonomy labels
+│   ├── robotics_papers.json    #   110 additional robotics papers (CoRL/ICRA/IROS/RSS)
+│   ├── robotics_candidates.json#   118 robotics screening candidates (110 final + 8 filtered)
 │   ├── annotations_failure_modes.jsonl
 │   ├── annotations_evaluation_deployment.jsonl
 │   ├── statistics.json         #   Aggregate statistics behind the paper's tables

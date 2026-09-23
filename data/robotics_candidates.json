@@ -1,0 +1,828 @@
+[
+ {
+  "paper_id": "dUo6j3YURS@OpenReview",
+  "title": "MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "IcOrwlXzMi@OpenReview",
+  "title": "VLM-Grounder: A VLM Agent for Zero-Shot 3D Visual Grounding",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nQslM6f7dW@OpenReview",
+  "title": "APRICOT: Active Preference Learning and Constraint-Aware Task Planning with LLMs",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "2SYFDG4WRA@OpenReview",
+  "title": "Manipulate-Anything: Automating Real-World Robots using Vision-Language Models",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "wZUQq0JaL6@OpenReview",
+  "title": "Robot Operating Home Appliances by Reading User Manuals",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "VrNSv02Xfu@OpenReview",
+  "title": "SAVOR: Skill Affordance Learning from Visuo-Haptic Perception for Robot-Assisted Bite Acquisition",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10611640",
+  "title": "Self-Recovery Prompting: Promptable General Purpose Service Robot System with Foundation Models and Self-Recovery",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610243",
+  "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10611376",
+  "title": "CAPE: Corrective Actions from Precondition Errors using Large Language Models",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128486",
+  "title": "MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128658",
+  "title": "SYNERGAI: Perception Alignment for Human-Robot Collaboration",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127975",
+  "title": "Closed-Loop Open-Vocabulary Mobile Manipulation with GPT-4V",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128444",
+  "title": "BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10342363",
+  "title": "Chat with the Environment: Interactive Multimodal Perception Using Large Language Models",
+  "conference": "IROS",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802571",
+  "title": "Design of a Multi-robot Coordination System based on Functional Expressions using Large Language Models",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802284",
+  "title": "DoReMi: Grounding Language Model by Detecting and Recovering from Plan-Execution Misalignment",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802716",
+  "title": "CoNVOI: Context-aware Navigation using Vision Language Models in Outdoor and Indoor Environments",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10801328",
+  "title": "LLM 3 : Large Language Model-based Task and Motion Planning with Motion Failure Reasoning",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10801932",
+  "title": "TrustNavGPT: Modeling Uncertainty to Improve Trustworthiness of Audio-Guided LLM-Based Robot Navigation",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246638",
+  "title": "CLEA: Closed-Loop Embodied Agent for Enhancing Task Execution in Dynamic Environments",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246632",
+  "title": "Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Models",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247714",
+  "title": "RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247593",
+  "title": "OpenNav: Open-World Navigation with Multimodal Large Language Models",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246064",
+  "title": "MovSAM: A Single-image Moving Object Segmentation Framework Based on Deep Thinking",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p062",
+  "title": "MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting",
+  "conference": "RSS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "PsV65r0itpo@OpenReview",
+  "title": "Navigation with Large Language Models: Semantic Guesswork as a Heuristic for Planning",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Ffn8Z4Q-zU@OpenReview",
+  "title": "Gesture-Informed Robot Assistance via Foundation Models",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "S8jQtafbT3@OpenReview",
+  "title": "Autonomous Interactive Correction MLLM for Robust Robotic Manipulation",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4eMWCoWUKR@OpenReview",
+  "title": "Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610455",
+  "title": "Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Language Corrections",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610855",
+  "title": "RoCo: Dialectic Multi-Robot Collaboration with Large Language Models",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10611565",
+  "title": "Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127832",
+  "title": "Here's your PDDL Problem File! On Using VLMs for Generating Symbolic PDDL Problem Files",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128414",
+  "title": "ConceptAgent: LLM-Driven Precondition Grounding and Tree Search for Robust Task Planning and Execution",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127585",
+  "title": "A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127808",
+  "title": "COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127684",
+  "title": "Chameleon: Fast-Slow Neuro-Symbolic Lane Topology Extraction",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127706",
+  "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128677",
+  "title": "Socratic Planner: Self-QA-Based Zero-Shot Planning for Embodied Instruction Following",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802670",
+  "title": "TriHelper: Zero-Shot Object Navigation with Dynamic Assistance",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802733",
+  "title": "Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247258",
+  "title": "VLIN-RL: A Unified Vision-Language Interpreter and Reinforcement Learning Motion Planner Framework for Robot Dynamic Tasks",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246600",
+  "title": "VLM Can Be a Good Assistant: Enhancing Embodied Visual Tracking with Self-Improving Vision-Language Models",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p106",
+  "title": "VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation",
+  "conference": "RSS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p112",
+  "title": "AutoGPT+P: Affordance-based Task Planning using Large Language Models",
+  "conference": "RSS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p145",
+  "title": "Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins",
+  "conference": "RSS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9AHjtHLlIe@OpenReview",
+  "title": "Imagine, Verify, Execute: Memory-guided Agentic Exploration with Vision-Language Models",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610178",
+  "title": "Think, Act, and Ask: Open-World Interactive Personalized Robot Navigation",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127418",
+  "title": "Verifiably Following Complex Robot Instructions with Foundation Models",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247436",
+  "title": "LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127927",
+  "title": "ASCENT: Autonomous Skill Learning Toward Complex Embodied Tasks With Foundation Models",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247547",
+  "title": "Human Demonstrations are Generalizable Knowledge for Robots",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "UHxPZgK33I@OpenReview",
+  "title": "RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610443",
+  "title": "LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128238",
+  "title": "SPINE: Online Semantic Planning for Missions with Incomplete Natural Language Specifications in Unstructured Environments",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128038",
+  "title": "KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for Open-Vocabulary Robotic Manipulation",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802225",
+  "title": "Revolutionizing Battery Disassembly: The Design and Implementation of a Battery Disassembly Autonomous Mobile Manipulator Robot(BEAM-1)",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9_8LF30mOC@OpenReview",
+  "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "7Pkzm2FgUmq@OpenReview",
+  "title": "SLAP: Spatial-Language Attention Policies",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10611485",
+  "title": "Talk2BEV: Language-enhanced Bird’s-eye View Maps for Autonomous Driving",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127617",
+  "title": "Fast and Accurate Task Planning using Neuro-Symbolic Language Models and Multi-Level Goal Decomposition",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11127842",
+  "title": "LEMMo-Plan: LLM-Enhanced Learning from Multi-Modal Demonstration for Planning Sequential Contact-Rich Manipulation Tasks",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128709",
+  "title": "QueryCAD: Grounded Question Answering for CAD Models",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128194",
+  "title": "Interaction-Driven Updates: 3D Scene Graph Maintenance During Robot Task Execution",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10801352",
+  "title": "CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247005",
+  "title": "Robust Instant Policy: Leveraging Student’s t-Regression Model for Robust In-context Imitation Learning of Robot Manipulation",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247661",
+  "title": "Robotic Task Ambiguity Resolution via Natural Language Interaction",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11245905",
+  "title": "LBAP: Improved Uncertainty Alignment of LLM Planners using Bayesian Inference",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246682",
+  "title": "VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247043",
+  "title": "Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246127",
+  "title": "Embodied Instruction Following in Unknown Environments",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p114",
+  "title": "Real-Time Anomaly Detection and Reactive Planning with Large Language Models",
+  "conference": "RSS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p095",
+  "title": "Set It Up!: Functional Object Arrangement with Compositional Generative Models",
+  "conference": "RSS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p148",
+  "title": "PartInstruct: Part-level Instruction Following for Fine-grained Robot Manipulation",
+  "conference": "RSS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10802053",
+  "title": "SuFIA: Language-Guided Augmented Dexterity for Robotic Surgical Assistants",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246115",
+  "title": "SDA-LLM: Spatial DisAmbiguation via Multi-turn Vision-Language Dialogues for Robot Navigation",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246834",
+  "title": "Interactive Object Detection by Mitigating Uncertainty of Robot Task Plans using Large Language Model",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247565",
+  "title": "ROD-VLM: A Framework of Real-time Robotic Perception, Reasoning and Manipulation",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11245939",
+  "title": "Autonomous Subtask Generation for Indoor Search and Rescue Mission via Large-Language-Model and Behavior-Tree Integration",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nNsZxc2cmO@OpenReview",
+  "title": "FindThis: Language-Driven Object Disambiguation in Indoor Environments",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "fviZhMCr62@OpenReview",
+  "title": "Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "4ZK8ODNyFXx@OpenReview",
+  "title": "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "8yTS_nAILxt@OpenReview",
+  "title": "REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction",
+  "conference": "CoRL",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "928V4Umlys@OpenReview",
+  "title": "DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "QUzwHYJ9Hf@OpenReview",
+  "title": "Towards Open-World Grasping with Large Vision-Language Models",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "ma7McOiCZY@OpenReview",
+  "title": "HYPERmotion: Learning Hybrid Behavior Planning for Autonomous Loco-manipulation",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "fCDOfpTCzZ@OpenReview",
+  "title": "InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "G8UcwxNAoD@OpenReview",
+  "title": "Teaching Robots with Show and Tell: Using Foundation Models to Synthesize Robot Policies from Language and Visual Demonstration",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "MsCbbIqHRA@OpenReview",
+  "title": "ThinkGrasp: A Vision-Language System for Strategic Part Grasping in Clutter",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "cq2uB30uBM@OpenReview",
+  "title": "Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "iq0wUf6dUy@OpenReview",
+  "title": "Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Th1kFSnjUW@OpenReview",
+  "title": "MoTo: A Zero-shot Plug-in Interaction-aware Navigation for General Mobile Manipulation",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "Yy9EVIajH5@OpenReview",
+  "title": "GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "nMiyWyNhQx@OpenReview",
+  "title": "Human-like Navigation in a World Built for Humans",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10161534",
+  "title": "Open-vocabulary Queryable Scene Representations for Real World Planning",
+  "conference": "ICRA",
+  "year": 2023,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610634",
+  "title": "Statler: State-Maintaining Language Models for Embodied Reasoning",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610225",
+  "title": "Lifelong Robot Learning with Human Assisted Language Planners",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "UUZ4Yw3lt0@OpenReview",
+  "title": "Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "mjYKNIRqpy@OpenReview",
+  "title": "GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128059",
+  "title": "Beyond Bare Queries: Open-Vocabulary Object Grounding with 3D Scene Graph",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128270",
+  "title": "Chain-of-Modality: Learning Manipulation Programs from Multimodal Human Videos with Vision-Language-Models",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11128807",
+  "title": "In-Context Learning Enables Robot Action Prediction in LLMs",
+  "conference": "ICRA",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "p072",
+  "title": "CodeDiffuser: Attention-Enhanced Diffusion Policy via VLM-Generated Code for Instruction Ambiguity",
+  "conference": "RSS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10610784",
+  "title": "How to Prompt Your Robot: A PromptBook for Manipulation Skills with Code as Policies",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10801525",
+  "title": "GenCHiP: Generating Robot Policy Code for High-Precision and Contact-Rich Manipulation Tasks",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247438",
+  "title": "EfficientEQA: An Efficient Approach to Open-Vocabulary Embodied Question Answering",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11247567",
+  "title": "FRANC: Feeding Robot for Adaptive Needs and Personalized Care",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246582",
+  "title": "GraspMAS: Zero-Shot Language-driven Grasp Detection with Multi-Agent System",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "11246460",
+  "title": "PACR: Point-Axis Constraint Reasoning for Enhanced Robotic Manipulation with Dexterity and Compliance",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "9iG3SEbMnL@OpenReview",
+  "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
+  "conference": "CoRL",
+  "year": 2024,
+  "in_final_set": true
+ },
+ {
+  "paper_id": "10801425",
+  "title": "NARRATE: Versatile Language Architecture for Optimal Control in Robotics",
+  "conference": "IROS",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "10611163",
+  "title": "AutoTAMP: Autoregressive Task and Motion Planning with LLMs as Translators and Checkers",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "11246084",
+  "title": "DualAD: Dual-Layer Planning for Reasoning in Autonomous Driving",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "11246069",
+  "title": "Intelligent LiDAR Navigation: Leveraging External Information and Semantic Maps with LLM as Copilot",
+  "conference": "IROS",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "1n1Liq6So4@OpenReview",
+  "title": "Meta-Optimization and Program Search using Language Models for Task and Motion Planning",
+  "conference": "CoRL",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "p140",
+  "title": "Enhancing Autonomous Driving Systems with On-Board Deployed Large Language Models",
+  "conference": "RSS",
+  "year": 2025,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "10611164",
+  "title": "Anticipate & Act: Integrating LLMs and Classical Planning for Efficient Task Execution in Household Environments †",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": false
+ },
+ {
+  "paper_id": "10610599",
+  "title": "Optimal Scene Graph Planning with Large Language Model Guidance",
+  "conference": "ICRA",
+  "year": 2024,
+  "in_final_set": false
+ }
+]

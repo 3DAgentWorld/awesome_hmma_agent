@@ -9,9 +9,14 @@ This directory contains the curated literature base and annotations released wit
 |------|---------|-------------|
 | `papers.json` | 572 | The final surveyed paper set: bibliographic metadata + taxonomy labels for every paper. |
 | `candidates.json` | 591 | All candidate papers identified by the automated screening; `in_final_set` marks the 572 that survived manual verification (19 were filtered out). |
+| `robotics_papers.json` | 110 | Additional robotics papers (CoRL/ICRA/IROS/RSS, 2023–2025) screened after the main set, in the same schema as `papers.json`. |
+| `robotics_candidates.json` | 118 | Robotics screening candidates; `in_final_set` marks the 110 kept (8 non-learned-action papers were filtered out). |
 | `annotations_failure_modes.jsonl` | 572 | Failure-mode annotations per paper (one JSON object per line). |
 | `annotations_evaluation_deployment.jsonl` | 572 | Evaluation- and deployment-oriented annotations per paper. |
 | `statistics.json` | 1 | Precomputed aggregate statistics used in the paper's tables and figures. |
+
+The two `robotics_*` files are disjoint from the 572-paper main set and are not
+counted in `statistics.json`.
 
 ## `papers.json` schema
 
