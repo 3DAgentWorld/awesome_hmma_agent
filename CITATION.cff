@@ -1,7 +1,8 @@
 cff-version: 1.2.0
-title: "Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents"
-type: article
-authors:
+message: "If you use this survey, please cite the article."
+title: "Heterogeneous Multi-Model Agents survey literature collection"
+type: dataset
+authors: &survey-authors
   - family-names: Zhang
     given-names: Zheng
   - family-names: Yao
@@ -22,4 +23,12 @@ authors:
     given-names: Hao
   - family-names: Xiong
     given-names: Hui
-year: 2026
+repository-code: https://github.com/3DAgentWorld/awesome_hmma_agent
+preferred-citation:
+  type: article
+  title: "Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents"
+  authors: *survey-authors
+  journal: Preprints.org
+  year: 2026
+  doi: 10.20944/preprints202607.1041.v1
+  url: https://doi.org/10.20944/preprints202607.1041.v1

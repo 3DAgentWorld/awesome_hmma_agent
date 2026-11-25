@@ -1,16 +1,27 @@
 # Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents
 
-[![Preprint](https://img.shields.io/badge/Preprint-preprints.org-b31b1b)](https://www.preprints.org/manuscript/202607.1041)
-[![Project Page](https://img.shields.io/badge/Project-Page-blue)](https://3dagentworld.github.io/awesome_hmma_agent/)
-[![Papers](https://img.shields.io/badge/Papers-572-green)](data/papers.json)
-[![Venues](https://img.shields.io/badge/Venues-19-orange)](#scope)
-[![Years](https://img.shields.io/badge/Years-2023--2026-red)](#scope)
+Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peilin Zhao · Xiangxin Zhou · Hao Wang · Hui Xiong
 
-This repository accompanies the survey paper
-**“Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents”**.
-It releases the full surveyed literature base (572 papers with structured taxonomy labels),
-the LLM-assisted paper collection and annotation pipeline used to build it, and a
-[project page](https://3dagentworld.github.io/awesome_hmma_agent/) with an interactive paper browser.
+[Preprint](https://doi.org/10.20944/preprints202607.1041.v1) · [Project page](https://3dagentworld.github.io/awesome_hmma_agent/) · [Paper browser](https://3dagentworld.github.io/awesome_hmma_agent/#browser) · [BibTeX](#citation)
+
+[![Distribution of the five HMMA interaction patterns across years and application domains in the 682-paper corpus](docs/assets/taxonomy.png)](https://3dagentworld.github.io/awesome_hmma_agent/#taxonomy)
+
+Accepted for publication in *ACM Computing Surveys*. The [preprint corpus](PAPERS.md) covers 572 papers. The [robotics extension](data/robotics_papers.json) adds 110 papers from CoRL, ICRA, IROS, and RSS, bringing the combined corpus to 682.
+
+## Citation
+
+[Download BibTeX for the public preprint](docs/citation.bib)
+
+```bibtex
+@article{zhang2026hmma,
+  title   = {Orchestrating {LLMs} with Specialized Models: A Survey on Heterogeneous Multi-Model Agents},
+  author  = {Zhang, Zheng and Yao, Nanjie and Feng, Yu and Chai, Qi and Liu, Liu and Ye, Deheng and Zhao, Peilin and Zhou, Xiangxin and Wang, Hao and Xiong, Hui},
+  journal = {Preprints.org},
+  year    = {2026},
+  doi     = {10.20944/preprints202607.1041.v1},
+  url     = {https://doi.org/10.20944/preprints202607.1041.v1}
+}
+```
 
 ## What are HMMAs?
 
@@ -21,7 +32,7 @@ environments. A growing line of work therefore connects LLMs with specialized no
 We call this emerging paradigm **Heterogeneous Multi-Model Agents (HMMAs)**.
 
 The survey organizes existing systems into **five interaction patterns** according to the
-roles played by perception, generation, and action models:
+roles played by perception, generation, and action models. The counts below are for the preprint corpus.
 
 | Interaction pattern | Papers | Share |
 |---|---:|---:|
@@ -32,7 +43,11 @@ roles played by perception, generation, and action models:
 | LLM + Perception + Generation + Action | 26 | 4.5% |
 | **Total** | **572** | 100% |
 
-The complete list of surveyed papers is in [PAPERS.md](PAPERS.md).
+The categorized preprint list is in [PAPERS.md](PAPERS.md). See the [data guide](data/README.md) for both corpora and their annotations.
+
+### Suggest a paper or correction
+
+Open an [issue](https://github.com/3DAgentWorld/awesome_hmma_agent/issues/new) with the title, DOI or arXiv link, and the interaction pattern it illustrates. Identify the LLM and specialized models involved and include the official code link when available.
 
 ## Scope
 
@@ -85,19 +100,6 @@ The pipeline is topic-agnostic. To reuse it for another survey topic:
 
 All scripts support resuming after interruption and are safe to re-run.
 See [pipeline/README.md](pipeline/README.md) for details.
-
-## Citation
-
-```bibtex
-@article{zhang2026hmma,
-  title   = {Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents},
-  author  = {Zhang, Zheng and Yao, Nanjie and Feng, Yu and Chai, Qi and Liu, Liu and Ye, Deheng and Zhao, Peilin and Zhou, Xiangxin and Wang, Hao and Xiong, Hui},
-  journal = {Preprints},
-  year    = {2026},
-  doi     = {10.20944/preprints202607.1041.v1},
-  url     = {https://www.preprints.org/manuscript/202607.1041}
-}
-```
 
 ## License
 
