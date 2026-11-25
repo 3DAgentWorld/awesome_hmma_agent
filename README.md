@@ -16,7 +16,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/taxonomy-overview-dark.png">
-    <img src="docs/assets/taxonomy-overview.png" width="840" alt="An LLM orchestrator coordinates perception, generation, and action models in five interaction patterns.">
+    <img src="docs/assets/taxonomy-overview.png" width="840" alt="Five HMMA interaction patterns with specialist models, representative systems, and paper counts.">
   </picture>
 </p>
 
