@@ -74,9 +74,11 @@ def main():
         "\n".join(index),
     ]
     for pattern, heading, _ in PATTERNS:
+        entries = grouped[pattern]
         sections.extend([
             f"### {heading}",
-            paper_table(grouped[pattern]),
+            f"<details>\n<summary>Show {len(entries)} papers</summary>\n\n"
+            f"{paper_table(entries)}\n\n</details>",
             "[Back to paper index](#papers)",
         ])
 

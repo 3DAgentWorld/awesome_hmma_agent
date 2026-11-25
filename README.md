@@ -42,6 +42,9 @@
 
 ### Perception
 
+<details>
+<summary>Show 281 papers</summary>
+
 | Paper | Venue | Domain | Code |
 | --- | --- | --- | --- |
 | [Accelerating Materials Design via LLM-Guided Evolutionary Search](https://openreview.net/pdf?id=TIqzhBvCNB) | ICLR 2026 | Scientific Discovery | [Code](https://github.com/scientific-discovery/LLEMA) |
@@ -326,9 +329,14 @@
 | [EHRXQA: A Multi-Modal Question Answering Dataset for Electronic Health Records with Chest X-ray Images](https://openreview.net/pdf?id=Pk2x7FPuZ4) | NeurIPS 2023 | Medical Analysis | [Code](https://github.com/baeseongsu/ehrxqa) |
 | [TOA: Task-oriented Active VQA](https://openreview.net/pdf?id=yoAmURKDJi) | NeurIPS 2023 | Visual QA Reasoning |  |
 
+</details>
+
 [Back to paper index](#papers)
 
 ### Perception and action
+
+<details>
+<summary>Show 200 papers</summary>
 
 | Paper | Venue | Domain | Code |
 | --- | --- | --- | --- |
@@ -533,9 +541,14 @@
 | [Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents](https://openreview.net/pdf?id=JCCi58IUsh) | NeurIPS 2023 | Robot Manipulation |  |
 | [What’s Left? Concept Grounding with Logic-Enhanced Foundation Models](https://openreview.net/pdf?id=sq4o3tjWaj) | NeurIPS 2023 | Multi Domain |  |
 
+</details>
+
 [Back to paper index](#papers)
 
 ### Perception and generation
+
+<details>
+<summary>Show 139 papers</summary>
 
 | Paper | Venue | Domain | Code |
 | --- | --- | --- | --- |
@@ -679,9 +692,14 @@
 | [HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face](https://openreview.net/pdf?id=yHdTscY6Ci) | NeurIPS 2023 | Multi Domain | [Code](https://github.com/microsoft/JARVIS) |
 | [LMC: Large Model Collaboration with Cross-assessment for Training-Free Open-Set Object Recognition](https://openreview.net/pdf?id=dHF3Im8Aic) | NeurIPS 2023 | Visual QA Reasoning | [Code](https://github.com/Harryqu123/LMC) |
 
+</details>
+
 [Back to paper index](#papers)
 
 ### Generation
+
+<details>
+<summary>Show 34 papers</summary>
 
 | Paper | Venue | Domain | Code |
 | --- | --- | --- | --- |
@@ -720,9 +738,14 @@
 | [LayoutGPT: Compositional Visual Planning and Generation with Large Language Models](https://openreview.net/pdf?id=Xu8aG5Q8M3) | NeurIPS 2023 | Multi Domain | [Code](https://github.com/weixi-feng/LayoutGPT) |
 | [Visual Programming for Step-by-Step Text-to-Image Generation and Evaluation](https://openreview.net/pdf?id=yhBFG9Y85R) | NeurIPS 2023 | Image Generation | [Code](https://github.com/j-min/VPGen) |
 
+</details>
+
 [Back to paper index](#papers)
 
 ### Perception, generation, and action
+
+<details>
+<summary>Show 28 papers</summary>
 
 | Paper | Venue | Domain | Code |
 | --- | --- | --- | --- |
@@ -755,26 +778,11 @@
 | [Compositional Foundation Models for Hierarchical Planning](https://openreview.net/pdf?id=dyXNh5HLq3) | NeurIPS 2023 | Robot Manipulation | [Code](https://github.com/anuragajay/hip) |
 | [OpenAGI: When LLM Meets Domain Experts](https://openreview.net/pdf?id=gFf0a0ZxJM) | NeurIPS 2023 | Benchmark Evaluation | [Code](https://github.com/agiresearch/OpenAGI) |
 
+</details>
+
 [Back to paper index](#papers)
 
 <!-- END PAPER CATALOG -->
-
-## Citation
-
-The public preprint was released under the earlier title shown in the BibTeX entry.
-
-[Download BibTeX for the public preprint](docs/citation.bib)
-
-```bibtex
-@article{zhang2026hmma,
-  title   = {Orchestrating {LLMs} with Specialized Models: A Survey on Heterogeneous Multi-Model Agents},
-  author  = {Zhang, Zheng and Yao, Nanjie and Feng, Yu and Chai, Qi and Liu, Liu and Ye, Deheng and Zhao, Peilin and Zhou, Xiangxin and Wang, Hao and Xiong, Hui},
-  journal = {Preprints.org},
-  year    = {2026},
-  doi     = {10.20944/preprints202607.1041.v1},
-  url     = {https://doi.org/10.20944/preprints202607.1041.v1}
-}
-```
 
 ## What are HMMAs?
 
@@ -852,6 +860,23 @@ The pipeline is topic-agnostic. To reuse it for another survey topic:
 
 All scripts support resuming after interruption and are safe to re-run.
 See [pipeline/README.md](pipeline/README.md) for details.
+
+## Citation
+
+The public preprint was released under the earlier title shown in the BibTeX entry.
+
+[Download BibTeX for the public preprint](docs/citation.bib)
+
+```bibtex
+@article{zhang2026hmma,
+  title   = {Orchestrating {LLMs} with Specialized Models: A Survey on Heterogeneous Multi-Model Agents},
+  author  = {Zhang, Zheng and Yao, Nanjie and Feng, Yu and Chai, Qi and Liu, Liu and Ye, Deheng and Zhao, Peilin and Zhou, Xiangxin and Wang, Hao and Xiong, Hui},
+  journal = {Preprints.org},
+  year    = {2026},
+  doi     = {10.20944/preprints202607.1041.v1},
+  url     = {https://doi.org/10.20944/preprints202607.1041.v1}
+}
+```
 
 ## License
 
