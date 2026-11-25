@@ -1,7 +1,7 @@
 # Data
 
 This directory contains the curated literature base and annotations released with the survey
-**"Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents"**.
+**“Many Models, One LLM: A Survey on Heterogeneous Multi-Model Agents”**.
 
 ## Files
 

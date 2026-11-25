@@ -1,4 +1,4 @@
-# Orchestrating LLMs with Specialized Models: A Survey on Heterogeneous Multi-Model Agents
+# Many Models, One LLM: A Survey on Heterogeneous Multi-Model Agents
 
 Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peilin Zhao · Xiangxin Zhou · Hao Wang · Hui Xiong
 
@@ -9,6 +9,8 @@ Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peili
 Accepted for publication in *ACM Computing Surveys*. The [preprint corpus](PAPERS.md) covers 572 papers. The [robotics extension](data/robotics_papers.json) adds 110 papers from CoRL, ICRA, IROS, and RSS, bringing the combined corpus to 682.
 
 ## Citation
+
+The public preprint was released under the earlier title shown in the BibTeX entry.
 
 [Download BibTeX for the public preprint](docs/citation.bib)
 
