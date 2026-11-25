@@ -26,18 +26,19 @@
 
 <!-- BEGIN PAPER CATALOG -->
 
+<a name="robotics-extension"></a>
+
 ## Papers
 
-**682 papers** · 572 in the preprint corpus · 110 in the robotics extension
+**682 papers**
 
 | Pattern | Browse | Papers |
 | :---: | :--- | ---: |
-| `P` | [Perception](#perception) | 214 |
-| `P+A` | [Perception and action](#perception-and-action) | 166 |
-| `P+G` | [Perception and generation](#perception-and-generation) | 136 |
-| `G` | [Generation](#generation) | 30 |
-| `P+G+A` | [Perception, generation, and action](#perception-generation-and-action) | 26 |
-| | [Robotics extension](#robotics-extension) | 110 |
+| `P` | [Perception](#perception) | 281 |
+| `P+A` | [Perception and action](#perception-and-action) | 200 |
+| `P+G` | [Perception and generation](#perception-and-generation) | 139 |
+| `G` | [Generation](#generation) | 34 |
+| `P+G+A` | [Perception, generation, and action](#perception-generation-and-action) | 28 |
 
 ### Perception
 
@@ -107,6 +108,12 @@
 | [Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents](https://openreview.net/pdf?id=zg5is4GJ3R) | COLM 2025 | GUI Web Agent | [Code](https://github.com/simular-ai/Agent-S) |
 | [Plancraft: an evaluation dataset for planning with LLM agents](https://openreview.net/pdf?id=nSV8Depcpx) | COLM 2025 | Gaming | [Code](https://github.com/gautierdag/plancraft) |
 | [VisualTrap: A Stealthy Backdoor Attack on GUI Agents via Visual Grounding Manipulation](https://openreview.net/pdf?id=7HPuAkgdVm) | COLM 2025 | GUI Web Agent |  |
+| [Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering](https://openreview.net/pdf?id=4eMWCoWUKR) | CoRL 2025 | Embodied Navigation |  |
+| [GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation](https://openreview.net/pdf?id=mjYKNIRqpy) | CoRL 2025 | Embodied Navigation |  |
+| [GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering](https://openreview.net/pdf?id=Yy9EVIajH5) | CoRL 2025 | Embodied Navigation |  |
+| [Human-like Navigation in a World Built for Humans](https://openreview.net/pdf?id=nMiyWyNhQx) | CoRL 2025 | Embodied Navigation |  |
+| [Robot Operating Home Appliances by Reading User Manuals](https://openreview.net/pdf?id=wZUQq0JaL6) | CoRL 2025 | Robot Manipulation |  |
+| [SAVOR: Skill Affordance Learning from Visuo-Haptic Perception for Robot-Assisted Bite Acquisition](https://openreview.net/pdf?id=VrNSv02Xfu) | CoRL 2025 | Robot Manipulation |  |
 | [Chain of Semantics Programming in 3D Gaussian Splatting Representation for 3D Vision Grounding](https://openaccess.thecvf.com/content/CVPR2025/papers/Shi_Chain_of_Semantics_Programming_in_3D_Gaussian_Splatting_Representation_for_CVPR_2025_paper.pdf) | CVPR 2025 | Visual QA Reasoning |  |
 | [DiSciPLE: Learning Interpretable Programs for Scientific Visual Discovery](https://openaccess.thecvf.com/content/CVPR2025/papers/Mall_DiSciPLE_Learning_Interpretable_Programs_for_Scientific_Visual_Discovery_CVPR_2025_paper.pdf) | CVPR 2025 | Scientific Discovery |  |
 | [DrVideo: Document Retrieval Based Long Video Understanding](https://openaccess.thecvf.com/content/CVPR2025/papers/Ma_DrVideo_Document_Retrieval_Based_Long_Video_Understanding_CVPR_2025_paper.pdf) | CVPR 2025 | Visual QA Reasoning | [Code](https://github.com/Upper9527/DrVideo) |
@@ -158,7 +165,38 @@
 | [Perception in Reflection](https://openreview.net/pdf?id=YqerkYZfvu) | ICML 2025 | Visual QA Reasoning | [Code](https://github.com/weiyana/RePer) |
 | [Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage](https://openreview.net/pdf?id=REnIf3dCsI) | ICML 2025 | Visual QA Reasoning |  |
 | [Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale](https://openreview.net/pdf?id=W9s817KqYf) | ICML 2025 | GUI Web Agent | [Code](https://github.com/dockur/windows) |
+| [Beyond Bare Queries: Open-Vocabulary Object Grounding with 3D Scene Graph](https://doi.org/10.1109/icra55743.2025.11128059) | ICRA 2025 | Visual QA Reasoning |  |
+| [BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation](https://doi.org/10.1109/icra55743.2025.11128444) | ICRA 2025 | Robot Manipulation |  |
+| [Chain-of-Modality: Learning Manipulation Programs from Multimodal Human Videos with Vision-Language-Models](https://doi.org/10.1109/icra55743.2025.11128270) | ICRA 2025 | Robot Manipulation |  |
+| [Chameleon: Fast-Slow Neuro-Symbolic Lane Topology Extraction](https://doi.org/10.1109/icra55743.2025.11127684) | ICRA 2025 | Autonomous Driving |  |
+| [Closed-Loop Open-Vocabulary Mobile Manipulation with GPT-4V](https://doi.org/10.1109/icra55743.2025.11127975) | ICRA 2025 | Robot Manipulation |  |
+| [COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models](https://doi.org/10.1109/icra55743.2025.11127808) | ICRA 2025 | Multi Domain |  |
+| [ConceptAgent: LLM-Driven Precondition Grounding and Tree Search for Robust Task Planning and Execution](https://doi.org/10.1109/icra55743.2025.11128414) | ICRA 2025 | Robot Manipulation |  |
+| [Fast and Accurate Task Planning using Neuro-Symbolic Language Models and Multi-Level Goal Decomposition](https://doi.org/10.1109/icra55743.2025.11127617) | ICRA 2025 | Robot Manipulation |  |
+| [Here's your PDDL Problem File! On Using VLMs for Generating Symbolic PDDL Problem Files](https://doi.org/10.1109/icra55743.2025.11127832) | ICRA 2025 | Robot Manipulation |  |
+| [In-Context Learning Enables Robot Action Prediction in LLMs](https://doi.org/10.1109/icra55743.2025.11128807) | ICRA 2025 | Robot Manipulation |  |
+| [Interaction-Driven Updates: 3D Scene Graph Maintenance During Robot Task Execution](https://doi.org/10.1109/icra55743.2025.11128194) | ICRA 2025 | Robot Manipulation |  |
+| [LEMMo-Plan: LLM-Enhanced Learning from Multi-Modal Demonstration for Planning Sequential Contact-Rich Manipulation Tasks](https://doi.org/10.1109/icra55743.2025.11127842) | ICRA 2025 | Robot Manipulation |  |
+| [MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment](https://doi.org/10.1109/icra55743.2025.11128486) | ICRA 2025 | Robot Manipulation |  |
+| [QueryCAD: Grounded Question Answering for CAD Models](https://doi.org/10.1109/icra55743.2025.11128709) | ICRA 2025 | Robot Manipulation |  |
+| [ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation](https://doi.org/10.1109/icra55743.2025.11127706) | ICRA 2025 | Embodied Navigation |  |
+| [Socratic Planner: Self-QA-Based Zero-Shot Planning for Embodied Instruction Following](https://doi.org/10.1109/icra55743.2025.11128677) | ICRA 2025 | Robot Manipulation |  |
+| [SPINE: Online Semantic Planning for Missions with Incomplete Natural Language Specifications in Unstructured Environments](https://doi.org/10.1109/icra55743.2025.11128238) | ICRA 2025 | Embodied Navigation |  |
+| [SYNERGAI: Perception Alignment for Human-Robot Collaboration](https://doi.org/10.1109/icra55743.2025.11128658) | ICRA 2025 | Robot Manipulation |  |
+| [Verifiably Following Complex Robot Instructions with Foundation Models](https://doi.org/10.1109/icra55743.2025.11127418) | ICRA 2025 | Robot Manipulation |  |
 | [Selective Invocation for Multilingual ASR: A Cost-effective Approach Adapting to Speech Recognition Difficulty](https://www.isca-archive.org/interspeech_2025/xue25_interspeech.pdf) | INTERSPEECH 2025 | Audio Speech |  |
+| [Autonomous Subtask Generation for Indoor Search and Rescue Mission via Large-Language-Model and Behavior-Tree Integration](https://doi.org/10.1109/iros60139.2025.11245939) | IROS 2025 | Embodied Navigation |  |
+| [CLEA: Closed-Loop Embodied Agent for Enhancing Task Execution in Dynamic Environments](https://doi.org/10.1109/iros60139.2025.11246638) | IROS 2025 | Robot Manipulation |  |
+| [EfficientEQA: An Efficient Approach to Open-Vocabulary Embodied Question Answering](https://doi.org/10.1109/iros60139.2025.11247438) | IROS 2025 | Embodied Navigation |  |
+| [Embodied Instruction Following in Unknown Environments](https://doi.org/10.1109/iros60139.2025.11246127) | IROS 2025 | Embodied Navigation |  |
+| [Interactive Object Detection by Mitigating Uncertainty of Robot Task Plans using Large Language Model](https://doi.org/10.1109/iros60139.2025.11246834) | IROS 2025 | Robot Manipulation |  |
+| [LBAP: Improved Uncertainty Alignment of LLM Planners using Bayesian Inference](https://doi.org/10.1109/iros60139.2025.11245905) | IROS 2025 | Robot Manipulation |  |
+| [LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning](https://doi.org/10.1109/iros60139.2025.11247436) | IROS 2025 | Robot Manipulation |  |
+| [MovSAM: A Single-image Moving Object Segmentation Framework Based on Deep Thinking](https://doi.org/10.1109/iros60139.2025.11246064) | IROS 2025 | Autonomous Driving |  |
+| [OpenNav: Open-World Navigation with Multimodal Large Language Models](https://doi.org/10.1109/iros60139.2025.11247593) | IROS 2025 | Embodied Navigation |  |
+| [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](https://doi.org/10.1109/iros60139.2025.11247043) | IROS 2025 | Robot Manipulation |  |
+| [SDA-LLM: Spatial DisAmbiguation via Multi-turn Vision-Language Dialogues for Robot Navigation](https://doi.org/10.1109/iros60139.2025.11246115) | IROS 2025 | Embodied Navigation |  |
+| [VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model](https://doi.org/10.1109/iros60139.2025.11246682) | IROS 2025 | Robot Manipulation |  |
 | [MedAgentSim: Self-Evolving Multi-Agent Simulations for Realistic Clinical Interactions](https://papers.miccai.org/miccai-2025/paper/2575_paper.pdf) | MICCAI 2025 | Medical Analysis |  |
 | [Operating Room Workflow Analysis via Reasoning Segmentation over Digital Twins](https://papers.miccai.org/miccai-2025/paper/2221_paper.pdf) | MICCAI 2025 | Medical Analysis |  |
 | [WSI-Agents: A Collaborative Multi-Agent System for Multi-Modal Whole Slide Image Analysis](https://papers.miccai.org/miccai-2025/paper/0994_paper.pdf) | MICCAI 2025 | Medical Analysis | [Code](https://github.com/XinhengLyu/WSI-Agents) |
@@ -205,6 +243,11 @@
 | [De-fine: Decomposing and Refining Visual Programs with Auto-Feedback](https://doi.org/10.1145/3664647.3681082) | ACMMM 2024 | Visual QA Reasoning |  |
 | [Exploring the Robustness of Decision-Level Through Adversarial Attacks on LLM-Based Embodied Models](https://doi.org/10.1145/3664647.3680616) | ACMMM 2024 | Robot Manipulation |  |
 | [A Language Agent for Autonomous Driving](https://openreview.net/pdf?id=UPE6WYE8vg) | COLM 2024 | Autonomous Driving |  |
+| [Autonomous Interactive Correction MLLM for Robust Robotic Manipulation](https://openreview.net/pdf?id=S8jQtafbT3) | CoRL 2024 | Robot Manipulation |  |
+| [InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment](https://openreview.net/pdf?id=fCDOfpTCzZ) | CoRL 2024 | Embodied Navigation |  |
+| [Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents](https://openreview.net/pdf?id=cq2uB30uBM) | CoRL 2024 | Robot Manipulation |  |
+| [RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation](https://openreview.net/pdf?id=UHxPZgK33I) | CoRL 2024 | Robot Manipulation |  |
+| [VLM-Grounder: A VLM Agent for Zero-Shot 3D Visual Grounding](https://openreview.net/pdf?id=IcOrwlXzMi) | CoRL 2024 | Robot Manipulation |  |
 | [AssistGUI: Task-Oriented PC Graphical User Interface Automation](https://openaccess.thecvf.com/content/CVPR2024/papers/Gao_AssistGUI_Task-Oriented_PC_Graphical_User_Interface_Automation_CVPR_2024_paper.pdf) | CVPR 2024 | GUI Web Agent | [Code](https://github.com/showlab/assistgui) |
 | [Modeling Collaborator: Enabling Subjective Vision Classification With Minimal Human Effort via LLM Tool-Use](https://openaccess.thecvf.com/content/CVPR2024/papers/Toubal_Modeling_Collaborator_Enabling_Subjective_Vision_Classification_With_Minimal_Human_Effort_CVPR_2024_paper.pdf) | CVPR 2024 | Visual QA Reasoning |  |
 | [MoReVQA: Exploring Modular Reasoning Models for Video Question Answering](https://openaccess.thecvf.com/content/CVPR2024/papers/Min_MoReVQA_Exploring_Modular_Reasoning_Models_for_Video_Question_Answering_CVPR_2024_paper.pdf) | CVPR 2024 | Visual QA Reasoning |  |
@@ -237,20 +280,45 @@
 | [DoraemonGPT: Toward Understanding Dynamic Scenes with Large Language Models (Exemplified as A Video Agent)](https://raw.githubusercontent.com/mlresearch/v235/main/assets/yang24d/yang24d.pdf) | ICML 2024 | Visual QA Reasoning | [Code](https://github.com/z-x-yang/DoraemonGPT) |
 | [GPT-4V(ision) is a Generalist Web Agent, if Grounded](https://raw.githubusercontent.com/mlresearch/v235/main/assets/zheng24e/zheng24e.pdf) | ICML 2024 | GUI Web Agent | [Code](https://github.com/OSU-NLP-Group/SeeAct) |
 | [VoroNav: Voronoi-based Zero-shot Object Navigation with Large Language Model](https://raw.githubusercontent.com/mlresearch/v235/main/assets/wu24u/wu24u.pdf) | ICML 2024 | Embodied Navigation |  |
+| [CAPE: Corrective Actions from Precondition Errors using Large Language Models](https://doi.org/10.1109/icra57147.2024.10611376) | ICRA 2024 | Robot Manipulation |  |
+| [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://doi.org/10.1109/icra57147.2024.10610243) | ICRA 2024 | Robot Manipulation |  |
+| [Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions](https://doi.org/10.1109/icra57147.2024.10611565) | ICRA 2024 | Embodied Navigation |  |
+| [Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Language Corrections](https://doi.org/10.1109/icra57147.2024.10610455) | ICRA 2024 | Robot Manipulation |  |
+| [How to Prompt Your Robot: A PromptBook for Manipulation Skills with Code as Policies](https://doi.org/10.1109/icra57147.2024.10610784) | ICRA 2024 | Robot Manipulation |  |
+| [LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent](https://doi.org/10.1109/icra57147.2024.10610443) | ICRA 2024 | Embodied Navigation |  |
+| [RoCo: Dialectic Multi-Robot Collaboration with Large Language Models](https://doi.org/10.1109/icra57147.2024.10610855) | ICRA 2024 | Robot Manipulation |  |
+| [Self-Recovery Prompting: Promptable General Purpose Service Robot System with Foundation Models and Self-Recovery](https://doi.org/10.1109/icra57147.2024.10611640) | ICRA 2024 | Robot Manipulation |  |
+| [Statler: State-Maintaining Language Models for Embodied Reasoning](https://doi.org/10.1109/icra57147.2024.10610634) | ICRA 2024 | Robot Manipulation |  |
+| [Talk2BEV: Language-enhanced Bird’s-eye View Maps for Autonomous Driving](https://doi.org/10.1109/icra57147.2024.10611485) | ICRA 2024 | Autonomous Driving |  |
+| [Think, Act, and Ask: Open-World Interactive Personalized Robot Navigation](https://doi.org/10.1109/icra57147.2024.10610178) | ICRA 2024 | Embodied Navigation |  |
+| [CoNVOI: Context-aware Navigation using Vision Language Models in Outdoor and Indoor Environments](https://doi.org/10.1109/iros58592.2024.10802716) | IROS 2024 | Embodied Navigation |  |
+| [Design of a Multi-robot Coordination System based on Functional Expressions using Large Language Models](https://doi.org/10.1109/iros58592.2024.10802571) | IROS 2024 | Robot Manipulation |  |
+| [GenCHiP: Generating Robot Policy Code for High-Precision and Contact-Rich Manipulation Tasks](https://doi.org/10.1109/iros58592.2024.10801525) | IROS 2024 | Robot Manipulation |  |
+| [LLM 3 : Large Language Model-based Task and Motion Planning with Motion Failure Reasoning](https://doi.org/10.1109/iros58592.2024.10801328) | IROS 2024 | Robot Manipulation |  |
+| [SuFIA: Language-Guided Augmented Dexterity for Robotic Surgical Assistants](https://doi.org/10.1109/iros58592.2024.10802053) | IROS 2024 | Robot Manipulation |  |
+| [TriHelper: Zero-Shot Object Navigation with Dynamic Assistance](https://doi.org/10.1109/iros58592.2024.10802670) | IROS 2024 | Embodied Navigation |  |
+| [TrustNavGPT: Modeling Uncertainty to Improve Trustworthiness of Audio-Guided LLM-Based Robot Navigation](https://doi.org/10.1109/iros58592.2024.10801932) | IROS 2024 | Embodied Navigation |  |
 | [Large Language Model with Curriculum Reasoning for Visual Concept Recognition](https://doi.org/10.1145/3637528.3671653) | KDD 2024 | Visual QA Reasoning |  |
 | [LangNav: Language as a Perceptual Representation for Navigation](https://aclanthology.org/2024.findings-naacl.60.pdf) | NAACL 2024 | Embodied Navigation |  |
 | [OpenFMNav: Towards Open-Set Zero-Shot Object Navigation via Vision-Language Foundation Models](https://aclanthology.org/2024.findings-naacl.24.pdf) | NAACL 2024 | Embodied Navigation | [Code](https://github.com/yxKryptonite/OpenFMNav) |
 | [MoVA: Adapting Mixture of Vision Experts to Multimodal Context](https://openreview.net/pdf?id=uHs6RJFDsg) | NeurIPS 2024 | Visual QA Reasoning | [Code](https://github.com/TempleX98/MoVA) |
 | [SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation](https://openreview.net/pdf?id=HmCmxbCpp2) | NeurIPS 2024 | Embodied Navigation |  |
 | [Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models](https://openreview.net/pdf?id=GNSMl1P5VR) | NeurIPS 2024 | Multi Domain | [Code](https://github.com/Yushi-Hu/VisualSketchpad) |
+| [AutoGPT+P: Affordance-based Task Planning using Large Language Models](https://www.roboticsproceedings.org/rss20/p112.pdf) | RSS 2024 | Robot Manipulation |  |
+| [MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting](https://www.roboticsproceedings.org/rss20/p062.pdf) | RSS 2024 | Robot Manipulation |  |
+| [Real-Time Anomaly Detection and Reactive Planning with Large Language Models](https://www.roboticsproceedings.org/rss20/p114.pdf) | RSS 2024 | Embodied Navigation |  |
 | [CapAlign: Improving Cross Modal Alignment via Informative Captioning for Harmful Meme Detection](https://doi.org/10.1145/3589334.3648146) | WWW 2024 | Visual QA Reasoning | [Code](https://github.com/thunlp/OpenPrompt) |
 | [Modular Visual Question Answering via Code Generation](https://aclanthology.org/2023.acl-short.65.pdf) | ACL 2023 | Visual QA Reasoning | [Code](https://github.com/sanjayss34/codevqa) |
 | [Let's ViCE! Mimicking Human Cognitive Behavior in Image Generation Evaluation](https://doi.org/10.1145/3581783.3612706) | ACMMM 2023 | Image Generation |  |
+| [FindThis: Language-Driven Object Disambiguation in Indoor Environments](https://openreview.net/pdf?id=nNsZxc2cmO) | CoRL 2023 | Embodied Navigation |  |
+| [REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction](https://openreview.net/pdf?id=8yTS_nAILxt) | CoRL 2023 | Robot Manipulation |  |
+| [Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation](https://openreview.net/pdf?id=fviZhMCr62) | CoRL 2023 | Embodied Navigation |  |
 | [Analyzing Modular Approaches for Visual Question Decomposition](https://aclanthology.org/2023.emnlp-main.157.pdf) | EMNLP 2023 | Visual QA Reasoning | [Code](https://github.com/brown-palm/visual-question-decomposition) |
 | [Can Foundation Models Watch, Talk and Guide You Step by Step to Make a Cake?](https://aclanthology.org/2023.findings-emnlp.824.pdf) | EMNLP 2023 | Other | [Code](https://github.com/microsoft/psi) |
 | [Filling the Image Information Gap for VQA: Prompting Large Language Models to Proactively Ask Questions](https://aclanthology.org/2023.findings-emnlp.189.pdf) | EMNLP 2023 | Visual QA Reasoning | [Code](https://github.com/Yushi-Hu/PromptCap) |
 | [IdealGPT: Iteratively Decomposing Vision and Language Reasoning via Large Language Models](https://aclanthology.org/2023.findings-emnlp.755.pdf) | EMNLP 2023 | Visual QA Reasoning | [Code](https://github.com/Hxyou/IdealGPT) |
 | [ViperGPT: Visual Inference via Python Execution for Reasoning](https://openaccess.thecvf.com/content/ICCV2023/papers/Suris_ViperGPT_Visual_Inference_via_Python_Execution_for_Reasoning_ICCV_2023_paper.pdf) | ICCV 2023 | Visual QA Reasoning |  |
+| [Chat with the Environment: Interactive Multimodal Perception Using Large Language Models](https://doi.org/10.1109/iros55552.2023.10342363) | IROS 2023 | Robot Manipulation |  |
 | [AmadeusGPT: a natural language interface for interactive animal behavioral analysis](https://openreview.net/pdf?id=9AcG3Tsyoq) | NeurIPS 2023 | Scientific Discovery | [Code](https://github.com/AdaptiveMotorControlLab/AmadeusGPT) |
 | [AVIS: Autonomous Visual Information Seeking with Large Language Model Agent](https://openreview.net/pdf?id=7EMphtUgCI) | NeurIPS 2023 | Visual QA Reasoning |  |
 | [Chatting Makes Perfect: Chat-based Image Retrieval](https://openreview.net/pdf?id=bt7pQ7o7zG) | NeurIPS 2023 | Retrieval Augmented | [Code](https://github.com/levymsn/ChatIR) |
@@ -309,6 +377,8 @@
 | [MMPro: A Decoupled Perception-Thinking-Execution Framework for Secure GUI Agent](https://doi.org/10.1145/3746027.3755553) | ACMMM 2025 | GUI Web Agent | [Code](https://github.com/Dizzy-K/MMPro) |
 | [Queryable 3D Scene Representation: A Multi-Modal Framework for Semantic Reasoning and Robotic Task Planning](https://doi.org/10.1145/3746027.3758177) | ACMMM 2025 | Robot Manipulation |  |
 | [UAV-ON: A Benchmark for Open-World Object Goal Navigation with Aerial Agents](https://doi.org/10.1145/3746027.3758251) | ACMMM 2025 | Embodied Navigation | [Code](https://github.com/Kyaren/UAV_ON) |
+| [Imagine, Verify, Execute: Memory-guided Agentic Exploration with Vision-Language Models](https://openreview.net/pdf?id=9AHjtHLlIe) | CoRL 2025 | Robot Manipulation |  |
+| [MoTo: A Zero-shot Plug-in Interaction-aware Navigation for General Mobile Manipulation](https://openreview.net/pdf?id=Th1kFSnjUW) | CoRL 2025 | Robot Manipulation |  |
 | [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf) | CVPR 2025 | Embodied Navigation | [Code](https://github.com/UMass-Foundation-Model/3D-Mem) |
 | [CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation](https://openaccess.thecvf.com/content/CVPR2025/papers/Long_CheckManual_A_New_Challenge_and_Benchmark_for_Manual-based_Appliance_Manipulation_CVPR_2025_paper.pdf) | CVPR 2025 | Robot Manipulation |  |
 | [Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection](https://openaccess.thecvf.com/content/CVPR2025/papers/Zhou_Code-as-Monitor_Constraint-aware_Visual_Programming_for_Reactive_and_Proactive_Robotic_Failure_CVPR_2025_paper.pdf) | CVPR 2025 | Robot Manipulation |  |
@@ -358,6 +428,19 @@
 | [Cradle: Empowering Foundation Agents towards General Computer Control](https://openreview.net/pdf?id=6CAgbrjHTc) | ICML 2025 | Multi Domain | [Code](https://github.com/BAAI-Agents/Cradle) |
 | [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](https://openreview.net/pdf?id=lNVHg9npif) | ICML 2025 | Robot Manipulation |  |
 | [World Model Implanting for Test-time Adaptation of Embodied Agents](https://openreview.net/pdf?id=tpbtodnI1p) | ICML 2025 | Robot Manipulation |  |
+| [A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards](https://doi.org/10.1109/icra55743.2025.11127585) | ICRA 2025 | Robot Manipulation |  |
+| [ASCENT: Autonomous Skill Learning Toward Complex Embodied Tasks With Foundation Models](https://doi.org/10.1109/icra55743.2025.11127927) | ICRA 2025 | Robot Manipulation |  |
+| [FRANC: Feeding Robot for Adaptive Needs and Personalized Care](https://doi.org/10.1109/iros60139.2025.11247567) | IROS 2025 | Robot Manipulation |  |
+| [GraspMAS: Zero-Shot Language-driven Grasp Detection with Multi-Agent System](https://doi.org/10.1109/iros60139.2025.11246582) | IROS 2025 | Robot Manipulation |  |
+| [Human Demonstrations are Generalizable Knowledge for Robots](https://doi.org/10.1109/iros60139.2025.11247547) | IROS 2025 | Robot Manipulation |  |
+| [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Models](https://doi.org/10.1109/iros60139.2025.11246632) | IROS 2025 | Robot Manipulation |  |
+| [PACR: Point-Axis Constraint Reasoning for Enhanced Robotic Manipulation with Dexterity and Compliance](https://doi.org/10.1109/iros60139.2025.11246460) | IROS 2025 | Robot Manipulation |  |
+| [RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation](https://doi.org/10.1109/iros60139.2025.11247714) | IROS 2025 | Robot Manipulation |  |
+| [Robotic Task Ambiguity Resolution via Natural Language Interaction](https://doi.org/10.1109/iros60139.2025.11247661) | IROS 2025 | Robot Manipulation |  |
+| [Robust Instant Policy: Leveraging Student’s t-Regression Model for Robust In-context Imitation Learning of Robot Manipulation](https://doi.org/10.1109/iros60139.2025.11247005) | IROS 2025 | Robot Manipulation |  |
+| [ROD-VLM: A Framework of Real-time Robotic Perception, Reasoning and Manipulation](https://doi.org/10.1109/iros60139.2025.11247565) | IROS 2025 | Robot Manipulation |  |
+| [VLIN-RL: A Unified Vision-Language Interpreter and Reinforcement Learning Motion Planner Framework for Robot Dynamic Tasks](https://doi.org/10.1109/iros60139.2025.11247258) | IROS 2025 | Robot Manipulation |  |
+| [VLM Can Be a Good Assistant: Enhancing Embodied Visual Tracking with Self-Improving Vision-Language Models](https://doi.org/10.1109/iros60139.2025.11246600) | IROS 2025 | Embodied Navigation |  |
 | [Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies](https://aclanthology.org/2025.naacl-long.379.pdf) | NAACL 2025 | Robot Manipulation |  |
 | [Tooling or Not Tooling? The Impact of Tools on Language Agents for Chemistry Problem Solving](https://aclanthology.org/2025.findings-naacl.424.pdf) | NAACL 2025 | Scientific Discovery | [Code](https://github.com/OSU-NLP-Group/ChemAgent) |
 | [ActiveVOO: Value of Observation Guided Active Knowledge Acquisition for Open-World Embodied Lifted Regression Planning](https://openreview.net/pdf?id=cZVYswQQMt) | NeurIPS 2025 | Embodied Navigation |  |
@@ -374,6 +457,8 @@
 | [ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning](https://openreview.net/pdf?id=72UR53jN7T) | NeurIPS 2025 | Robot Manipulation |  |
 | [TP-MDDN: Task-Preferenced Multi-Demand-Driven Navigation with Autonomous Decision-Making](https://openreview.net/pdf?id=xrAqVVk2qe) | NeurIPS 2025 | Embodied Navigation |  |
 | [VLMLight: Safety-Critical Traffic Signal Control via Vision-Language Meta-Control and Dual-Branch Reasoning Architecture](https://openreview.net/pdf?id=08mjueZ0Iq) | NeurIPS 2025 | Autonomous Driving |  |
+| [CodeDiffuser: Attention-Enhanced Diffusion Policy via VLM-Generated Code for Instruction Ambiguity](https://www.roboticsproceedings.org/rss21/p072.pdf) | RSS 2025 | Robot Manipulation |  |
+| [PartInstruct: Part-level Instruction Following for Fine-grained Robot Manipulation](https://www.roboticsproceedings.org/rss21/p148.pdf) | RSS 2025 | Robot Manipulation |  |
 | [Insight Agents: An LLM-Based Multi-Agent System for Data Insights](https://doi.org/10.1145/3726302.3731959) | SIGIR 2025 | Retrieval Augmented |  |
 | [Multi-Model Workflows for Advanced Visual Understanding](https://doi.org/10.1145/3701716.3715188) | WWW 2025 | Visual QA Reasoning | [Code](https://github.com/NVIDIA/Multi-Model-Workflows) |
 | [Hypothesis, Verification, and Induction: Grounding Large Language Models with Self-Driven Skill Learning](https://ojs.aaai.org/index.php/AAAI/article/view/29376/30598) | AAAI 2024 | Gaming |  |
@@ -388,6 +473,14 @@
 | [Few-Shot Multimodal Explanation for Visual Question Answering](https://doi.org/10.1145/3664647.3681597) | ACMMM 2024 | Visual QA Reasoning | [Code](https://github.com/LivXue/FS-MEVQA) |
 | [ExoViP: Step-by-step Verification and Exploration with Exoskeleton Modules for Compositional Visual Reasoning](https://openreview.net/pdf?id=6U1FEKP7Ar) | COLM 2024 | Multi Domain | [Code](https://github.com/bigai-nlco/ExoViP) |
 | [Task Success is not Enough: Investigating the Use of Video-Language Models as Behavior Critics for Catching Undesirable Agent Behaviors](https://openreview.net/pdf?id=otKo4zFKmH) | COLM 2024 | Robot Manipulation | [Code](https://github.com/GuanSuns/VLMs-Behavior-Critic) |
+| [APRICOT: Active Preference Learning and Constraint-Aware Task Planning with LLMs](https://openreview.net/pdf?id=nQslM6f7dW) | CoRL 2024 | Robot Manipulation |  |
+| [DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models](https://openreview.net/pdf?id=928V4Umlys) | CoRL 2024 | Autonomous Driving |  |
+| [HYPERmotion: Learning Hybrid Behavior Planning for Autonomous Loco-manipulation](https://openreview.net/pdf?id=ma7McOiCZY) | CoRL 2024 | Robot Manipulation |  |
+| [Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://openreview.net/pdf?id=2SYFDG4WRA) | CoRL 2024 | Robot Manipulation |  |
+| [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://openreview.net/pdf?id=9iG3SEbMnL) | CoRL 2024 | Robot Manipulation |  |
+| [Teaching Robots with Show and Tell: Using Foundation Models to Synthesize Robot Policies from Language and Visual Demonstration](https://openreview.net/pdf?id=G8UcwxNAoD) | CoRL 2024 | Robot Manipulation |  |
+| [ThinkGrasp: A Vision-Language System for Strategic Part Grasping in Clutter](https://openreview.net/pdf?id=MsCbbIqHRA) | CoRL 2024 | Robot Manipulation |  |
+| [Towards Open-World Grasping with Large Vision-Language Models](https://openreview.net/pdf?id=QUzwHYJ9Hf) | CoRL 2024 | Robot Manipulation |  |
 | [Driving Everywhere with Large Language Model Policy Adaptation](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_Driving_Everywhere_with_Large_Language_Model_Policy_Adaptation_CVPR_2024_paper.pdf) | CVPR 2024 | Autonomous Driving | [Code](https://github.com/Boyiliee/LLaDA-AV) |
 | [LMDrive: Closed-Loop End-to-End Driving with Large Language Models](https://openaccess.thecvf.com/content/CVPR2024/papers/Shao_LMDrive_Closed-Loop_End-to-End_Driving_with_Large_Language_Models_CVPR_2024_paper.pdf) | CVPR 2024 | Autonomous Driving | [Code](https://github.com/opendilab/LMDrive) |
 | [MultiPLY: A Multisensory Object-Centric Embodied Large Language Model in 3D World](https://openaccess.thecvf.com/content/CVPR2024/papers/Hong_MultiPLY_A_Multisensory_Object-Centric_Embodied_Large_Language_Model_in_3D_CVPR_2024_paper.pdf) | CVPR 2024 | Embodied Navigation |  |
@@ -406,6 +499,10 @@
 | [Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control](https://openreview.net/pdf?id=Pc8AU1aF5e) | ICLR 2024 | GUI Web Agent | [Code](https://github.com/ltzheng/Synapse) |
 | [RoboCodeX: Multimodal Code Generation for Robotic Behavior Synthesis](https://raw.githubusercontent.com/mlresearch/v235/main/assets/mu24a/mu24a.pdf) | ICML 2024 | Robot Manipulation |  |
 | [RoboMP$^2$: A Robotic Multimodal Perception-Planning Framework with Multimodal Large Language Models](https://raw.githubusercontent.com/mlresearch/v235/main/assets/lv24a/lv24a.pdf) | ICML 2024 | Robot Manipulation |  |
+| [Lifelong Robot Learning with Human Assisted Language Planners](https://doi.org/10.1109/icra57147.2024.10610225) | ICRA 2024 | Robot Manipulation |  |
+| [CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models](https://doi.org/10.1109/iros58592.2024.10801352) | IROS 2024 | Robot Manipulation |  |
+| [DoReMi: Grounding Language Model by Detecting and Recovering from Plan-Execution Misalignment](https://doi.org/10.1109/iros58592.2024.10802284) | IROS 2024 | Robot Manipulation |  |
+| [Revolutionizing Battery Disassembly: The Design and Implementation of a Battery Disassembly Autonomous Mobile Manipulator Robot(BEAM-1)](https://doi.org/10.1109/iros58592.2024.10802225) | IROS 2024 | Robot Manipulation |  |
 | [Intelligent Agents with LLM-based Process Automation](https://doi.org/10.1145/3637528.3671646) | KDD 2024 | GUI Web Agent |  |
 | [Transforming Surgical Interventions with Embodied Intelligence for Ultrasound Robotics](https://papers.miccai.org/miccai-2024/paper/0242_paper.pdf) | MICCAI 2024 | Robot Manipulation | [Code](https://github.com/seanxuu/EmbodiedUS) |
 | [LLaMA-Rider: Spurring Large Language Models to Explore the Open World](https://aclanthology.org/2024.findings-naacl.292.pdf) | NAACL 2024 | Gaming | [Code](https://github.com/PKU-RL/LLaMA-Rider) |
@@ -420,11 +517,16 @@
 | [RL-GPT: Integrating Reinforcement Learning and Code-as-policy](https://openreview.net/pdf?id=LEzx6QRkRH) | NeurIPS 2024 | Gaming |  |
 | [VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions](https://openreview.net/pdf?id=C3ZHiij9QE) | NeurIPS 2024 | Robot Manipulation |  |
 | [Empowering Large Language Models: Tool Learning for Real-World Interaction](https://doi.org/10.1145/3626772.3661381) | SIGIR 2024 | Multi Domain |  |
+| [Gesture-Informed Robot Assistance via Foundation Models](https://openreview.net/pdf?id=Ffn8Z4Q-zU) | CoRL 2023 | Robot Manipulation |  |
+| [Navigation with Large Language Models: Semantic Guesswork as a Heuristic for Planning](https://openreview.net/pdf?id=PsV65r0itpo) | CoRL 2023 | Embodied Navigation |  |
+| [Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](https://openreview.net/pdf?id=4ZK8ODNyFXx) | CoRL 2023 | Robot Manipulation |  |
+| [SLAP: Spatial-Language Attention Policies](https://openreview.net/pdf?id=7Pkzm2FgUmq) | CoRL 2023 | Robot Manipulation |  |
 | [Open-Ended Instructable Embodied Agents with Memory-Augmented Large Language Models](https://aclanthology.org/2023.findings-emnlp.226.pdf) | EMNLP 2023 | Embodied Navigation | [Code](https://github.com/Gabesarch/HELPER) |
 | [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](https://openaccess.thecvf.com/content/ICCV2023/papers/Song_LLM-Planner_Few-Shot_Grounded_Planning_for_Embodied_Agents_with_Large_Language_ICCV_2023_paper.pdf) | ICCV 2023 | Embodied Navigation | [Code](https://github.com/OSU-NLP-Group/LLM-Planner) |
 | [Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language](https://openreview.net/pdf?id=G2Q2Mh3avow) | ICLR 2023 | Multi Domain | [Code](https://github.com/google-research/google-research) |
 | [Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling](http://proceedings.mlr.press/v202/nottingham23a/nottingham23a.pdf) | ICML 2023 | Gaming | [Code](https://github.com/DeckardAgent/deckard) |
 | [ESC: Exploration with Soft Commonsense Constraints for Zero-shot Object Navigation](http://proceedings.mlr.press/v202/zhou23r/zhou23r.pdf) | ICML 2023 | Embodied Navigation |  |
+| [Open-vocabulary Queryable Scene Representations for Real World Planning](https://doi.org/10.1109/icra48891.2023.10161534) | ICRA 2023 | Robot Manipulation |  |
 | [Chameleon: Plug-and-Play Compositional Reasoning with Large Language Models](https://openreview.net/pdf?id=HtqnVSCj3q) | NeurIPS 2023 | Multi Domain | [Code](https://github.com/lupantech/chameleon-llm) |
 | [Describe, Explain, Plan and Select: Interactive Planning with LLMs Enables Open-World Multi-Task Agents](https://openreview.net/pdf?id=KtvPdGb31Z) | NeurIPS 2023 | Gaming | [Code](https://github.com/CraftJarvis/MC-Planner) |
 | [EmbodiedGPT: Vision-Language Pre-Training via Embodied Chain of Thought](https://openreview.net/pdf?id=IL5zJqfxAa) | NeurIPS 2023 | Robot Manipulation |  |
@@ -512,6 +614,7 @@
 | [Empowering World Models with Reflection for Embodied Video Prediction](https://openreview.net/pdf?id=onumui0nHi) | ICML 2025 | Multi Domain |  |
 | [LLMs can see and hear without any training](https://openreview.net/pdf?id=cJeFULIiot) | ICML 2025 | Multi Domain |  |
 | [MedRAX: Medical Reasoning Agent for Chest X-ray](https://openreview.net/pdf?id=JiFfij5iv0) | ICML 2025 | Medical Analysis | [Code](https://github.com/bowang-lab/MedRAX) |
+| [KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for Open-Vocabulary Robotic Manipulation](https://doi.org/10.1109/icra55743.2025.11128038) | ICRA 2025 | Robot Manipulation |  |
 | [UnifiedMLLM: Enabling Unified Representation for Multi-modal Multi-tasks With Large Language Model](https://aclanthology.org/2025.findings-naacl.19.pdf) | NAACL 2025 | Multi Domain |  |
 | [4KAgent: Agentic Any Image to 4K Super-Resolution](https://openreview.net/pdf?id=IKxKs3rF9V) | NeurIPS 2025 | Image Generation | [Code](https://github.com/taco-group/4KAgent) |
 | [Automated Detection of Visual Attribute Reliance with a Self-Reflective Agent](https://openreview.net/pdf?id=LyH2ISbOV8) | NeurIPS 2025 | Visual QA Reasoning | [Code](https://github.com/christykl/saia) |
@@ -528,6 +631,7 @@
 | [Safe + Safe = Unsafe? Exploring How Safe Images Can Be Exploited to Jailbreak Large Vision-Language Models](https://openreview.net/pdf?id=jvq8nzOUp8) | NeurIPS 2025 | Benchmark Evaluation | [Code](https://github.com/gzcch/Safety_Snowball_Agent) |
 | [ShapeCraft: LLM Agents for Structured, Textured and Interactive 3D Modeling](https://openreview.net/pdf?id=skS03tzYNw) | NeurIPS 2025 | 3D Generation | [Code](https://github.com/SanBingYouYong/shapecraft) |
 | [ThinkSound: Chain-of-Thought Reasoning in Multimodal LLMs for Audio Generation and Editing](https://openreview.net/pdf?id=mj8VN4MyrO) | NeurIPS 2025 | Audio Speech | [Code](https://github.com/liuhuadai/ThinkSound) |
+| [Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins](https://www.roboticsproceedings.org/rss21/p145.pdf) | RSS 2025 | Robot Manipulation |  |
 | [Enhancing Product Search Interfaces with Sketch-Guided Diffusion and Language Agents](https://doi.org/10.1145/3701716.3717853) | WWW 2025 | Retrieval Augmented | [Code](https://github.com/marqo-ai/marqo-ecommerce-) |
 | [Luoling: An Immersive Cross-Modal Interactive Poem Creation Factory through Multi-Agent Collaboration](https://doi.org/10.1145/3701716.3715184) | WWW 2025 | Multi Domain | [Code](https://github.com/chinese-poetry/chinese-poetry) |
 | [Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark](https://doi.org/10.1145/3696410.3714739) | WWW 2025 | Multi Domain | [Code](https://github.com/AvaMERG/AvaMERG-Pipeline) |
@@ -568,6 +672,7 @@
 | [Stylus: Automatic Adapter Selection for Diffusion Models](https://openreview.net/pdf?id=3Odq2tGSpp) | NeurIPS 2024 | Image Generation |  |
 | [VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks](https://openreview.net/pdf?id=nvYDPF4LJK) | NeurIPS 2024 | Multi Domain | [Code](https://github.com/OpenGVLab/VisionLLM) |
 | [Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing](https://openreview.net/pdf?id=kPmSfhCM5s) | NeurIPS 2024 | Multi Domain | [Code](https://github.com/SkyworkAI/Vitron) |
+| [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://openreview.net/pdf?id=9_8LF30mOC) | CoRL 2023 | Robot Manipulation |  |
 | [Visual Programming: Compositional Visual Reasoning Without Training](https://openaccess.thecvf.com/content/CVPR2023/papers/Gupta_Visual_Programming_Compositional_Visual_Reasoning_Without_Training_CVPR_2023_paper.pdf) | CVPR 2023 | Multi Domain |  |
 | [WordArt Designer: User-Driven Artistic Typography Synthesis using Large Language Models](https://aclanthology.org/2023.emnlp-industry.23.pdf) | EMNLP 2023 | Image Generation |  |
 | [GPT4Tools: Teaching Large Language Model to Use Tools via Self-instruction](https://openreview.net/pdf?id=cwjh8lqmOL) | NeurIPS 2023 | Multi Domain | [Code](https://github.com/AILab-CVC/GPT4Tools) |
@@ -586,6 +691,7 @@
 | [Modular-Cam: Modular Dynamic Camera-view Video Generation with LLM](https://ojs.aaai.org/index.php/AAAI/article/view/32681/34836) | AAAI 2025 | Video Generation | [Code](https://github.com/pzrain/Modular-Cam) |
 | [PodAgent: A Comprehensive Framework for Podcast Generation](https://aclanthology.org/2025.findings-acl.1226.pdf) | ACL 2025 | Audio Speech | [Code](https://github.com/yujxx/PodAgent) |
 | [The Male CEO and the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects](https://aclanthology.org/2025.acl-long.449.pdf) | ACL 2025 | Image Generation |  |
+| [Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation](https://openreview.net/pdf?id=iq0wUf6dUy) | CoRL 2025 | Robot Manipulation |  |
 | [CARD: Cross-modal Agent Framework for Generative and Editable Residential Design](https://aclanthology.org/2025.emnlp-main.473.pdf) | EMNLP 2025 | Image Generation |  |
 | [Preacher: Paper-to-Video Agentic System](https://openaccess.thecvf.com/content/ICCV2025/papers/Liu_Preacher_Paper-to-Video_Agentic_System_ICCV_2025_paper.pdf) | ICCV 2025 | Video Generation |  |
 | [DataEnvGym: Data Generation Agents in Teacher Environments with Student Feedback](https://openreview.net/pdf?id=00SnKBGTsz) | ICLR 2025 | Benchmark Evaluation | [Code](https://github.com/codezakh/DataEnvGym) |
@@ -602,12 +708,15 @@
 | [OpenLEAF: A Novel Benchmark for Open-Domain Interleaved Image-Text Generation](https://doi.org/10.1145/3664647.3685511) | ACMMM 2024 | Image Generation |  |
 | [DiagrammerGPT: Generating Open-Domain, Open-Platform Diagrams via LLM Planning](https://openreview.net/pdf?id=NV8yRJRET1) | COLM 2024 | Image Generation | [Code](https://github.com/aszala/DiagrammerGPT) |
 | [VideoDirectorGPT: Consistent Multi-Scene Video Generation via LLM-Guided Planning](https://openreview.net/pdf?id=sKNIjS2brr) | COLM 2024 | Video Generation | [Code](https://github.com/HL-hanlin/VideoDirectorGPT) |
+| [Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions](https://openreview.net/pdf?id=UUZ4Yw3lt0) | CoRL 2024 | Robot Manipulation |  |
 | [DiffAgent: Fast and Accurate Text-to-Image API Selection with Large Language Model](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhao_DiffAgent_Fast_and_Accurate_Text-to-Image_API_Selection_with_Large_Language_CVPR_2024_paper.pdf) | CVPR 2024 | Image Generation | [Code](https://github.com/OpenGVLab/DiffAgent) |
 | [BlenderAlchemy: Editing 3D Graphics with Vision-Language Models](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/12578.pdf) | ECCV 2024 | 3D Generation |  |
 | [Idea2Img: Iterative Self-Refinement with GPT-4V for Automatic Image Design and Generation](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05515.pdf) | ECCV 2024 | Image Generation | [Code](https://github.com/zyang-ur/Idea2Img) |
 | [A Multimodal Automated Interpretability Agent](https://raw.githubusercontent.com/mlresearch/v235/main/assets/shaham24a/shaham24a.pdf) | ICML 2024 | Scientific Discovery |  |
 | [Mastering Text-to-Image Diffusion: Recaptioning, Planning, and Generating with Multimodal LLMs](https://raw.githubusercontent.com/mlresearch/v235/main/assets/yang24ai/yang24ai.pdf) | ICML 2024 | Image Generation | [Code](https://github.com/YangLing0818/RPG-DiffusionMaster) |
 | [YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals](https://openreview.net/pdf?id=RH7tfqhiZY) | NeurIPS 2024 | 3D Generation | [Code](https://github.com/YouDream3D/YouDream) |
+| [Set It Up!: Functional Object Arrangement with Compositional Generative Models](https://www.roboticsproceedings.org/rss20/p095.pdf) | RSS 2024 | Robot Manipulation |  |
+| [VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation](https://www.roboticsproceedings.org/rss20/p106.pdf) | RSS 2024 | Robot Manipulation |  |
 | [LayoutGPT: Compositional Visual Planning and Generation with Large Language Models](https://openreview.net/pdf?id=Xu8aG5Q8M3) | NeurIPS 2023 | Multi Domain | [Code](https://github.com/weixi-feng/LayoutGPT) |
 | [Visual Programming for Step-by-Step Text-to-Image Generation and Evaluation](https://openreview.net/pdf?id=yhBFG9Y85R) | NeurIPS 2023 | Image Generation | [Code](https://github.com/j-min/VPGen) |
 
@@ -634,134 +743,17 @@
 | [RobotSmith: Generative Robotic Tool Design for Acquisition of Complex Manipulation Skills](https://openreview.net/pdf?id=VZQSrNfNHd) | NeurIPS 2025 | Robot Manipulation | [Code](https://github.com/UMass-Embodied-AGI/RobotSmith) |
 | [VLA-OS: Structuring and Dissecting Planning Representations and Paradigms in Vision-Language-Action Models](https://openreview.net/pdf?id=PQYazNKEYo) | NeurIPS 2025 | Robot Manipulation | [Code](https://github.com/HeegerGao/VLA-OS) |
 | [Agent-DocEdit: Language-Instructed LLM Agent for Content-Rich Document Editing](https://openreview.net/pdf?id=1ba209BACA) | COLM 2024 | Document Understanding |  |
+| [MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking](https://openreview.net/pdf?id=dUo6j3YURS) | CoRL 2024 | Robot Manipulation |  |
 | [Digital Life Project: Autonomous 3D Characters with Social Intelligence](https://openaccess.thecvf.com/content/CVPR2024/papers/Cai_Digital_Life_Project_Autonomous_3D_Characters_with_Social_Intelligence_CVPR_2024_paper.pdf) | CVPR 2024 | Gaming |  |
 | [Video Language Planning](https://openreview.net/pdf?id=9pKtcJcMP3) | ICLR 2024 | Robot Manipulation | [Code](https://github.com/video-language-planning/vlp_code) |
 | [3D-VLA: A 3D Vision-Language-Action Generative World Model](https://raw.githubusercontent.com/mlresearch/v235/main/assets/zhen24a/zhen24a.pdf) | ICML 2024 | Robot Manipulation |  |
 | [RoboGen: Towards Unleashing Infinite Data for Automated Robot Learning via Generative Simulation](https://raw.githubusercontent.com/mlresearch/v235/main/assets/wang24cc/wang24cc.pdf) | ICML 2024 | Robot Manipulation | [Code](https://github.com/Genesis-Embodied-AI/RoboGen) |
+| [Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach](https://doi.org/10.1109/iros58592.2024.10802733) | IROS 2024 | Robot Manipulation |  |
 | [GenArtist: Multimodal LLM as an Agent for Unified Image Generation and Editing](https://openreview.net/pdf?id=Ur00BNk1v2) | NeurIPS 2024 | Image Generation | [Code](https://github.com/zhenyuw16/GenArtist) |
 | [PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation](https://openreview.net/pdf?id=zw2K6LfFI9) | NeurIPS 2024 | Robot Manipulation |  |
 | [SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors](https://openreview.net/pdf?id=YTHJ8O6SCB) | NeurIPS 2024 | Robot Manipulation |  |
 | [Compositional Foundation Models for Hierarchical Planning](https://openreview.net/pdf?id=dyXNh5HLq3) | NeurIPS 2023 | Robot Manipulation | [Code](https://github.com/anuragajay/hip) |
 | [OpenAGI: When LLM Meets Domain Experts](https://openreview.net/pdf?id=gFf0a0ZxJM) | NeurIPS 2023 | Benchmark Evaluation | [Code](https://github.com/agiresearch/OpenAGI) |
-
-[Back to paper index](#papers)
-
-### Robotics extension
-
-110 papers from CoRL, ICRA, IROS, and RSS. **P** = Perception, **G** = Generation, **A** = Action.
-
-| Paper | Venue | Pattern | Domain |
-| --- | --- | --- | --- |
-| [Enter the Mind Palace: Reasoning and Planning for Long-term Active Embodied Question Answering](https://openreview.net/pdf?id=4eMWCoWUKR) | CoRL 2025 | P | Embodied Navigation |
-| [GC-VLN: Instruction as Graph Constraints for Training-free Vision-and-Language Navigation](https://openreview.net/pdf?id=mjYKNIRqpy) | CoRL 2025 | P | Embodied Navigation |
-| [GraphEQA: Using 3D Semantic Scene Graphs for Real-time Embodied Question Answering](https://openreview.net/pdf?id=Yy9EVIajH5) | CoRL 2025 | P | Embodied Navigation |
-| [Human-like Navigation in a World Built for Humans](https://openreview.net/pdf?id=nMiyWyNhQx) | CoRL 2025 | P | Embodied Navigation |
-| [Imagine, Verify, Execute: Memory-guided Agentic Exploration with Vision-Language Models](https://openreview.net/pdf?id=9AHjtHLlIe) | CoRL 2025 | P+A | Robot Manipulation |
-| [MoTo: A Zero-shot Plug-in Interaction-aware Navigation for General Mobile Manipulation](https://openreview.net/pdf?id=Th1kFSnjUW) | CoRL 2025 | P+A | Robot Manipulation |
-| [Reflective Planning: Vision-Language Models for Multi-Stage Long-Horizon Robotic Manipulation](https://openreview.net/pdf?id=iq0wUf6dUy) | CoRL 2025 | G | Robot Manipulation |
-| [Robot Operating Home Appliances by Reading User Manuals](https://openreview.net/pdf?id=wZUQq0JaL6) | CoRL 2025 | P | Robot Manipulation |
-| [SAVOR: Skill Affordance Learning from Visuo-Haptic Perception for Robot-Assisted Bite Acquisition](https://openreview.net/pdf?id=VrNSv02Xfu) | CoRL 2025 | P | Robot Manipulation |
-| [A Real-to-Sim-to-Real Approach to Robotic Manipulation with VLM-Generated Iterative Keypoint Rewards](https://doi.org/10.1109/icra55743.2025.11127585) | ICRA 2025 | P+A | Robot Manipulation |
-| [ASCENT: Autonomous Skill Learning Toward Complex Embodied Tasks With Foundation Models](https://doi.org/10.1109/icra55743.2025.11127927) | ICRA 2025 | P+A | Robot Manipulation |
-| [Beyond Bare Queries: Open-Vocabulary Object Grounding with 3D Scene Graph](https://doi.org/10.1109/icra55743.2025.11128059) | ICRA 2025 | P | Visual QA Reasoning |
-| [BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation](https://doi.org/10.1109/icra55743.2025.11128444) | ICRA 2025 | P | Robot Manipulation |
-| [Chain-of-Modality: Learning Manipulation Programs from Multimodal Human Videos with Vision-Language-Models](https://doi.org/10.1109/icra55743.2025.11128270) | ICRA 2025 | P | Robot Manipulation |
-| [Chameleon: Fast-Slow Neuro-Symbolic Lane Topology Extraction](https://doi.org/10.1109/icra55743.2025.11127684) | ICRA 2025 | P | Autonomous Driving |
-| [Closed-Loop Open-Vocabulary Mobile Manipulation with GPT-4V](https://doi.org/10.1109/icra55743.2025.11127975) | ICRA 2025 | P | Robot Manipulation |
-| [COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models](https://doi.org/10.1109/icra55743.2025.11127808) | ICRA 2025 | P | Multi Domain |
-| [ConceptAgent: LLM-Driven Precondition Grounding and Tree Search for Robust Task Planning and Execution](https://doi.org/10.1109/icra55743.2025.11128414) | ICRA 2025 | P | Robot Manipulation |
-| [Fast and Accurate Task Planning using Neuro-Symbolic Language Models and Multi-Level Goal Decomposition](https://doi.org/10.1109/icra55743.2025.11127617) | ICRA 2025 | P | Robot Manipulation |
-| [Here's your PDDL Problem File! On Using VLMs for Generating Symbolic PDDL Problem Files](https://doi.org/10.1109/icra55743.2025.11127832) | ICRA 2025 | P | Robot Manipulation |
-| [In-Context Learning Enables Robot Action Prediction in LLMs](https://doi.org/10.1109/icra55743.2025.11128807) | ICRA 2025 | P | Robot Manipulation |
-| [Interaction-Driven Updates: 3D Scene Graph Maintenance During Robot Task Execution](https://doi.org/10.1109/icra55743.2025.11128194) | ICRA 2025 | P | Robot Manipulation |
-| [KUDA: Keypoints to Unify Dynamics Learning and Visual Prompting for Open-Vocabulary Robotic Manipulation](https://doi.org/10.1109/icra55743.2025.11128038) | ICRA 2025 | P+G | Robot Manipulation |
-| [LEMMo-Plan: LLM-Enhanced Learning from Multi-Modal Demonstration for Planning Sequential Contact-Rich Manipulation Tasks](https://doi.org/10.1109/icra55743.2025.11127842) | ICRA 2025 | P | Robot Manipulation |
-| [MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment](https://doi.org/10.1109/icra55743.2025.11128486) | ICRA 2025 | P | Robot Manipulation |
-| [QueryCAD: Grounded Question Answering for CAD Models](https://doi.org/10.1109/icra55743.2025.11128709) | ICRA 2025 | P | Robot Manipulation |
-| [ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation](https://doi.org/10.1109/icra55743.2025.11127706) | ICRA 2025 | P | Embodied Navigation |
-| [Socratic Planner: Self-QA-Based Zero-Shot Planning for Embodied Instruction Following](https://doi.org/10.1109/icra55743.2025.11128677) | ICRA 2025 | P | Robot Manipulation |
-| [SPINE: Online Semantic Planning for Missions with Incomplete Natural Language Specifications in Unstructured Environments](https://doi.org/10.1109/icra55743.2025.11128238) | ICRA 2025 | P | Embodied Navigation |
-| [SYNERGAI: Perception Alignment for Human-Robot Collaboration](https://doi.org/10.1109/icra55743.2025.11128658) | ICRA 2025 | P | Robot Manipulation |
-| [Verifiably Following Complex Robot Instructions with Foundation Models](https://doi.org/10.1109/icra55743.2025.11127418) | ICRA 2025 | P | Robot Manipulation |
-| [Autonomous Subtask Generation for Indoor Search and Rescue Mission via Large-Language-Model and Behavior-Tree Integration](https://doi.org/10.1109/iros60139.2025.11245939) | IROS 2025 | P | Embodied Navigation |
-| [CLEA: Closed-Loop Embodied Agent for Enhancing Task Execution in Dynamic Environments](https://doi.org/10.1109/iros60139.2025.11246638) | IROS 2025 | P | Robot Manipulation |
-| [EfficientEQA: An Efficient Approach to Open-Vocabulary Embodied Question Answering](https://doi.org/10.1109/iros60139.2025.11247438) | IROS 2025 | P | Embodied Navigation |
-| [Embodied Instruction Following in Unknown Environments](https://doi.org/10.1109/iros60139.2025.11246127) | IROS 2025 | P | Embodied Navigation |
-| [FRANC: Feeding Robot for Adaptive Needs and Personalized Care](https://doi.org/10.1109/iros60139.2025.11247567) | IROS 2025 | P+A | Robot Manipulation |
-| [GraspMAS: Zero-Shot Language-driven Grasp Detection with Multi-Agent System](https://doi.org/10.1109/iros60139.2025.11246582) | IROS 2025 | P+A | Robot Manipulation |
-| [Human Demonstrations are Generalizable Knowledge for Robots](https://doi.org/10.1109/iros60139.2025.11247547) | IROS 2025 | P+A | Robot Manipulation |
-| [Interactive Object Detection by Mitigating Uncertainty of Robot Task Plans using Large Language Model](https://doi.org/10.1109/iros60139.2025.11246834) | IROS 2025 | P | Robot Manipulation |
-| [LBAP: Improved Uncertainty Alignment of LLM Planners using Bayesian Inference](https://doi.org/10.1109/iros60139.2025.11245905) | IROS 2025 | P | Robot Manipulation |
-| [LightPlanner: Unleashing the Reasoning Capabilities of Lightweight Large Language Models in Task Planning](https://doi.org/10.1109/iros60139.2025.11247436) | IROS 2025 | P | Robot Manipulation |
-| [Long-horizon Locomotion and Manipulation on a Quadrupedal Robot with Large Language Models](https://doi.org/10.1109/iros60139.2025.11246632) | IROS 2025 | P+A | Robot Manipulation |
-| [MovSAM: A Single-image Moving Object Segmentation Framework Based on Deep Thinking](https://doi.org/10.1109/iros60139.2025.11246064) | IROS 2025 | P | Autonomous Driving |
-| [OpenNav: Open-World Navigation with Multimodal Large Language Models](https://doi.org/10.1109/iros60139.2025.11247593) | IROS 2025 | P | Embodied Navigation |
-| [PACR: Point-Axis Constraint Reasoning for Enhanced Robotic Manipulation with Dexterity and Compliance](https://doi.org/10.1109/iros60139.2025.11246460) | IROS 2025 | P+A | Robot Manipulation |
-| [RoboDexVLM: Visual Language Model-Enabled Task Planning and Motion Control for Dexterous Robot Manipulation](https://doi.org/10.1109/iros60139.2025.11247714) | IROS 2025 | P+A | Robot Manipulation |
-| [Robotic Programmer: Video Instructed Policy Code Generation for Robotic Manipulation](https://doi.org/10.1109/iros60139.2025.11247043) | IROS 2025 | P | Robot Manipulation |
-| [Robotic Task Ambiguity Resolution via Natural Language Interaction](https://doi.org/10.1109/iros60139.2025.11247661) | IROS 2025 | P+A | Robot Manipulation |
-| [Robust Instant Policy: Leveraging Student’s t-Regression Model for Robust In-context Imitation Learning of Robot Manipulation](https://doi.org/10.1109/iros60139.2025.11247005) | IROS 2025 | P+A | Robot Manipulation |
-| [ROD-VLM: A Framework of Real-time Robotic Perception, Reasoning and Manipulation](https://doi.org/10.1109/iros60139.2025.11247565) | IROS 2025 | P+A | Robot Manipulation |
-| [SDA-LLM: Spatial DisAmbiguation via Multi-turn Vision-Language Dialogues for Robot Navigation](https://doi.org/10.1109/iros60139.2025.11246115) | IROS 2025 | P | Embodied Navigation |
-| [VLIN-RL: A Unified Vision-Language Interpreter and Reinforcement Learning Motion Planner Framework for Robot Dynamic Tasks](https://doi.org/10.1109/iros60139.2025.11247258) | IROS 2025 | P+A | Robot Manipulation |
-| [VLM Can Be a Good Assistant: Enhancing Embodied Visual Tracking with Self-Improving Vision-Language Models](https://doi.org/10.1109/iros60139.2025.11246600) | IROS 2025 | P+A | Embodied Navigation |
-| [VLM See, Robot Do: Human Demo Video to Robot Action Plan via Vision Language Model](https://doi.org/10.1109/iros60139.2025.11246682) | IROS 2025 | P | Robot Manipulation |
-| [CodeDiffuser: Attention-Enhanced Diffusion Policy via VLM-Generated Code for Instruction Ambiguity](https://www.roboticsproceedings.org/rss21/p072.pdf) | RSS 2025 | P+A | Robot Manipulation |
-| [PartInstruct: Part-level Instruction Following for Fine-grained Robot Manipulation](https://www.roboticsproceedings.org/rss21/p148.pdf) | RSS 2025 | P+A | Robot Manipulation |
-| [Prompting with the Future: Open-World Model Predictive Control with Interactive Digital Twins](https://www.roboticsproceedings.org/rss21/p145.pdf) | RSS 2025 | P+G | Robot Manipulation |
-| [APRICOT: Active Preference Learning and Constraint-Aware Task Planning with LLMs](https://openreview.net/pdf?id=nQslM6f7dW) | CoRL 2024 | P+A | Robot Manipulation |
-| [Autonomous Interactive Correction MLLM for Robust Robotic Manipulation](https://openreview.net/pdf?id=S8jQtafbT3) | CoRL 2024 | P | Robot Manipulation |
-| [DriveVLM: The Convergence of Autonomous Driving and Large Vision-Language Models](https://openreview.net/pdf?id=928V4Umlys) | CoRL 2024 | P+A | Autonomous Driving |
-| [Harmon: Whole-Body Motion Generation of Humanoid Robots from Language Descriptions](https://openreview.net/pdf?id=UUZ4Yw3lt0) | CoRL 2024 | G | Robot Manipulation |
-| [HYPERmotion: Learning Hybrid Behavior Planning for Autonomous Loco-manipulation](https://openreview.net/pdf?id=ma7McOiCZY) | CoRL 2024 | P+A | Robot Manipulation |
-| [InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment](https://openreview.net/pdf?id=fCDOfpTCzZ) | CoRL 2024 | P | Embodied Navigation |
-| [Manipulate-Anything: Automating Real-World Robots using Vision-Language Models](https://openreview.net/pdf?id=2SYFDG4WRA) | CoRL 2024 | P+A | Robot Manipulation |
-| [MOSAIC: Modular Foundation Models for Assistive and Interactive Cooking](https://openreview.net/pdf?id=dUo6j3YURS) | CoRL 2024 | P+G+A | Robot Manipulation |
-| [Pre-emptive Action Revision by Environmental Feedback for Embodied Instruction Following Agents](https://openreview.net/pdf?id=cq2uB30uBM) | CoRL 2024 | P | Robot Manipulation |
-| [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](https://openreview.net/pdf?id=9iG3SEbMnL) | CoRL 2024 | P+A | Robot Manipulation |
-| [RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation](https://openreview.net/pdf?id=UHxPZgK33I) | CoRL 2024 | P | Robot Manipulation |
-| [Teaching Robots with Show and Tell: Using Foundation Models to Synthesize Robot Policies from Language and Visual Demonstration](https://openreview.net/pdf?id=G8UcwxNAoD) | CoRL 2024 | P+A | Robot Manipulation |
-| [ThinkGrasp: A Vision-Language System for Strategic Part Grasping in Clutter](https://openreview.net/pdf?id=MsCbbIqHRA) | CoRL 2024 | P+A | Robot Manipulation |
-| [Towards Open-World Grasping with Large Vision-Language Models](https://openreview.net/pdf?id=QUzwHYJ9Hf) | CoRL 2024 | P+A | Robot Manipulation |
-| [VLM-Grounder: A VLM Agent for Zero-Shot 3D Visual Grounding](https://openreview.net/pdf?id=IcOrwlXzMi) | CoRL 2024 | P | Robot Manipulation |
-| [CAPE: Corrective Actions from Precondition Errors using Large Language Models](https://doi.org/10.1109/icra57147.2024.10611376) | ICRA 2024 | P | Robot Manipulation |
-| [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](https://doi.org/10.1109/icra57147.2024.10610243) | ICRA 2024 | P | Robot Manipulation |
-| [Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions](https://doi.org/10.1109/icra57147.2024.10611565) | ICRA 2024 | P | Embodied Navigation |
-| [Distilling and Retrieving Generalizable Knowledge for Robot Manipulation via Language Corrections](https://doi.org/10.1109/icra57147.2024.10610455) | ICRA 2024 | P | Robot Manipulation |
-| [How to Prompt Your Robot: A PromptBook for Manipulation Skills with Code as Policies](https://doi.org/10.1109/icra57147.2024.10610784) | ICRA 2024 | P | Robot Manipulation |
-| [Lifelong Robot Learning with Human Assisted Language Planners](https://doi.org/10.1109/icra57147.2024.10610225) | ICRA 2024 | P+A | Robot Manipulation |
-| [LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent](https://doi.org/10.1109/icra57147.2024.10610443) | ICRA 2024 | P | Embodied Navigation |
-| [RoCo: Dialectic Multi-Robot Collaboration with Large Language Models](https://doi.org/10.1109/icra57147.2024.10610855) | ICRA 2024 | P | Robot Manipulation |
-| [Self-Recovery Prompting: Promptable General Purpose Service Robot System with Foundation Models and Self-Recovery](https://doi.org/10.1109/icra57147.2024.10611640) | ICRA 2024 | P | Robot Manipulation |
-| [Statler: State-Maintaining Language Models for Embodied Reasoning](https://doi.org/10.1109/icra57147.2024.10610634) | ICRA 2024 | P | Robot Manipulation |
-| [Talk2BEV: Language-enhanced Bird’s-eye View Maps for Autonomous Driving](https://doi.org/10.1109/icra57147.2024.10611485) | ICRA 2024 | P | Autonomous Driving |
-| [Think, Act, and Ask: Open-World Interactive Personalized Robot Navigation](https://doi.org/10.1109/icra57147.2024.10610178) | ICRA 2024 | P | Embodied Navigation |
-| [CoNVOI: Context-aware Navigation using Vision Language Models in Outdoor and Indoor Environments](https://doi.org/10.1109/iros58592.2024.10802716) | IROS 2024 | P | Embodied Navigation |
-| [CoPa: General Robotic Manipulation through Spatial Constraints of Parts with Foundation Models](https://doi.org/10.1109/iros58592.2024.10801352) | IROS 2024 | P+A | Robot Manipulation |
-| [Design of a Multi-robot Coordination System based on Functional Expressions using Large Language Models](https://doi.org/10.1109/iros58592.2024.10802571) | IROS 2024 | P | Robot Manipulation |
-| [DoReMi: Grounding Language Model by Detecting and Recovering from Plan-Execution Misalignment](https://doi.org/10.1109/iros58592.2024.10802284) | IROS 2024 | P+A | Robot Manipulation |
-| [GenCHiP: Generating Robot Policy Code for High-Precision and Contact-Rich Manipulation Tasks](https://doi.org/10.1109/iros58592.2024.10801525) | IROS 2024 | P | Robot Manipulation |
-| [LLM 3 : Large Language Model-based Task and Motion Planning with Motion Failure Reasoning](https://doi.org/10.1109/iros58592.2024.10801328) | IROS 2024 | P | Robot Manipulation |
-| [Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach](https://doi.org/10.1109/iros58592.2024.10802733) | IROS 2024 | P+G+A | Robot Manipulation |
-| [Revolutionizing Battery Disassembly: The Design and Implementation of a Battery Disassembly Autonomous Mobile Manipulator Robot(BEAM-1)](https://doi.org/10.1109/iros58592.2024.10802225) | IROS 2024 | P+A | Robot Manipulation |
-| [SuFIA: Language-Guided Augmented Dexterity for Robotic Surgical Assistants](https://doi.org/10.1109/iros58592.2024.10802053) | IROS 2024 | P | Robot Manipulation |
-| [TriHelper: Zero-Shot Object Navigation with Dynamic Assistance](https://doi.org/10.1109/iros58592.2024.10802670) | IROS 2024 | P | Embodied Navigation |
-| [TrustNavGPT: Modeling Uncertainty to Improve Trustworthiness of Audio-Guided LLM-Based Robot Navigation](https://doi.org/10.1109/iros58592.2024.10801932) | IROS 2024 | P | Embodied Navigation |
-| [AutoGPT+P: Affordance-based Task Planning using Large Language Models](https://www.roboticsproceedings.org/rss20/p112.pdf) | RSS 2024 | P | Robot Manipulation |
-| [MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting](https://www.roboticsproceedings.org/rss20/p062.pdf) | RSS 2024 | P | Robot Manipulation |
-| [Real-Time Anomaly Detection and Reactive Planning with Large Language Models](https://www.roboticsproceedings.org/rss20/p114.pdf) | RSS 2024 | P | Embodied Navigation |
-| [Set It Up!: Functional Object Arrangement with Compositional Generative Models](https://www.roboticsproceedings.org/rss20/p095.pdf) | RSS 2024 | G | Robot Manipulation |
-| [VLMPC: Vision-Language Model Predictive Control for Robotic Manipulation](https://www.roboticsproceedings.org/rss20/p106.pdf) | RSS 2024 | G | Robot Manipulation |
-| [FindThis: Language-Driven Object Disambiguation in Indoor Environments](https://openreview.net/pdf?id=nNsZxc2cmO) | CoRL 2023 | P | Embodied Navigation |
-| [Gesture-Informed Robot Assistance via Foundation Models](https://openreview.net/pdf?id=Ffn8Z4Q-zU) | CoRL 2023 | P+A | Robot Manipulation |
-| [Navigation with Large Language Models: Semantic Guesswork as a Heuristic for Planning](https://openreview.net/pdf?id=PsV65r0itpo) | CoRL 2023 | P+A | Embodied Navigation |
-| [REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction](https://openreview.net/pdf?id=8yTS_nAILxt) | CoRL 2023 | P | Robot Manipulation |
-| [Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners](https://openreview.net/pdf?id=4ZK8ODNyFXx) | CoRL 2023 | P+A | Robot Manipulation |
-| [SLAP: Spatial-Language Attention Policies](https://openreview.net/pdf?id=7Pkzm2FgUmq) | CoRL 2023 | P+A | Robot Manipulation |
-| [Tell Me Where to Go: A Composable Framework for Context-Aware Embodied Robot Navigation](https://openreview.net/pdf?id=fviZhMCr62) | CoRL 2023 | P | Embodied Navigation |
-| [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](https://openreview.net/pdf?id=9_8LF30mOC) | CoRL 2023 | P+G | Robot Manipulation |
-| [Open-vocabulary Queryable Scene Representations for Real World Planning](https://doi.org/10.1109/icra48891.2023.10161534) | ICRA 2023 | P+A | Robot Manipulation |
-| [Chat with the Environment: Interactive Multimodal Perception Using Large Language Models](https://doi.org/10.1109/iros55552.2023.10342363) | IROS 2023 | P | Robot Manipulation |
 
 [Back to paper index](#papers)
 
@@ -793,16 +785,7 @@ environments. A growing line of work therefore connects LLMs with specialized no
 We call this emerging paradigm **Heterogeneous Multi-Model Agents (HMMAs)**.
 
 The survey organizes existing systems into **five interaction patterns** according to the
-roles played by perception, generation, and action models. The counts below are for the preprint corpus.
-
-| Interaction pattern | Papers | Share |
-|---|---:|---:|
-| LLM + Perception | 214 | 37.4% |
-| LLM + Perception + Action | 166 | 29.0% |
-| LLM + Perception + Generation | 136 | 23.8% |
-| LLM + Generation | 30 | 5.2% |
-| LLM + Perception + Generation + Action | 26 | 4.5% |
-| **Total** | **572** | 100% |
+roles played by perception, generation, and action models. The [paper index](#papers) lists the papers and counts for each pattern.
 
 <details>
 <summary>Publication trends and application domains</summary>
@@ -819,24 +802,23 @@ After updating the paper records in `data/`, run `python pipeline/render_paper_c
 
 ## Scope
 
-- 19 major AI venues (NeurIPS, ICLR, ICML, CVPR, ICCV, ECCV, AAAI, IJCAI, ACL,
-  EMNLP, NAACL, COLING, COLM, ACM MM, KDD, SIGIR, WWW, MICCAI, INTERSPEECH), 2023–2026
-  (2026 covers ICLR 2026 only).
+The collection pipeline screened **93,013** papers from the main tracks of 23 venues
+between 2023 and 2026. The 2026 records cover ICLR only.
 
-The collection pipeline additionally includes CoRL, ICRA, IROS and RSS for
-2023–2025: **10,597** metadata records, extending the reported **82,416**-paper
-pool to **93,013**.
+The venues were AAAI, ACL, ACM MM, COLING, COLM, CoRL, CVPR, ECCV, EMNLP, ICCV,
+ICLR, ICML, ICRA, IJCAI, INTERSPEECH, IROS, KDD, MICCAI, NAACL, NeurIPS, RSS,
+SIGIR, and WWW.
 
 ## Repository structure
 
 ```
 awesome_hmma_agent/
-├── README.md                   # Categorized paper catalog and robotics extension
+├── README.md                   # Categorized paper catalog
 ├── PAPERS.md                   # Flat list of the preprint corpus
 ├── data/                       # Curated literature base and annotations
 │   ├── candidates.json         #   591 screening candidates (572 final + 19 filtered)
 │   ├── papers.json             #   572 papers: metadata + taxonomy labels
-│   ├── robotics_papers.json    #   110 additional robotics papers (CoRL/ICRA/IROS/RSS)
+│   ├── robotics_papers.json    #   Papers from CoRL, ICRA, IROS, and RSS
 │   ├── robotics_candidates.json#   118 robotics screening candidates (110 final + 8 filtered)
 │   ├── annotations_failure_modes.jsonl
 │   ├── annotations_evaluation_deployment.jsonl

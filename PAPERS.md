@@ -4,7 +4,7 @@ The flat list of the 572 HMMA papers reviewed in the preprint
 (19 venues, 2023–2026; 2026 covers ICLR only).
 Titles link to the paper; the Code column links to the official open-source repository when available (307 papers).
 
-The [README catalog](README.md#papers) groups these papers by interaction pattern and includes the robotics extension.
+The [README catalog](README.md#papers) groups the full corpus by interaction pattern.
 
 Pattern legend: **P** = Perception, **G** = Generation, **A** = Action.
 

@@ -17,8 +17,12 @@ PATTERNS = (
 )
 
 
-def load_papers(filename):
-    papers = json.loads((ROOT / "data" / filename).read_text(encoding="utf-8"))
+def load_papers(*filenames):
+    papers = [
+        paper
+        for filename in filenames
+        for paper in json.loads((ROOT / "data" / filename).read_text(encoding="utf-8"))
+    ]
     return sorted(papers, key=lambda paper: (
         -paper["year"], paper["conference"].casefold(), paper["title"].casefold()
     ))
@@ -28,13 +32,9 @@ def markdown_text(text):
     return re.sub(r"([\\|`*_\[\]<>])", r"\\\1", text)
 
 
-def paper_table(papers, include_pattern=False):
-    patterns = {pattern: short for pattern, _, short in PATTERNS}
+def paper_table(papers):
     include_code = any(paper.get("code_url") for paper in papers)
-    header = ["Paper", "Venue"]
-    if include_pattern:
-        header.append("Pattern")
-    header.append("Domain")
+    header = ["Paper", "Venue", "Domain"]
     if include_code:
         header.append("Code")
 
@@ -44,10 +44,8 @@ def paper_table(papers, include_pattern=False):
         cells = [
             f"[{title}]({paper['pdf_url']})",
             f"{paper['conference']} {paper['year']}",
+            markdown_text(paper["application_environment"].replace("_", " ")),
         ]
-        if include_pattern:
-            cells.append(patterns[paper["collaboration_pattern"]])
-        cells.append(markdown_text(paper["application_environment"].replace("_", " ")))
         if include_code:
             code_url = paper.get("code_url")
             cells.append(f"[Code]({code_url})" if code_url else "")
@@ -56,10 +54,9 @@ def paper_table(papers, include_pattern=False):
 
 
 def main():
-    preprint = load_papers("papers.json")
-    robotics = load_papers("robotics_papers.json")
+    papers = load_papers("papers.json", "robotics_papers.json")
     grouped = {pattern: [] for pattern, _, _ in PATTERNS}
-    for paper in preprint:
+    for paper in papers:
         grouped[paper["collaboration_pattern"]].append(paper)
 
     index = [
@@ -69,29 +66,19 @@ def main():
     for pattern, heading, short in PATTERNS:
         anchor = heading.lower().replace(",", "").replace(" ", "-")
         index.append(f"| `{short}` | [{heading}](#{anchor}) | {len(grouped[pattern])} |")
-    index.append(f"| | [Robotics extension](#robotics-extension) | {len(robotics)} |")
 
     sections = [
+        '<a name="robotics-extension"></a>',
         "## Papers",
-        f"**{len(preprint) + len(robotics)} papers** · {len(preprint)} in the preprint corpus "
-        f"· {len(robotics)} in the robotics extension",
+        f"**{len(papers)} papers**",
         "\n".join(index),
     ]
     for pattern, heading, _ in PATTERNS:
-        papers = grouped[pattern]
         sections.extend([
             f"### {heading}",
-            paper_table(papers),
+            paper_table(grouped[pattern]),
             "[Back to paper index](#papers)",
         ])
-
-    sections.extend([
-        "### Robotics extension",
-        f"{len(robotics)} papers from CoRL, ICRA, IROS, and RSS. "
-        "**P** = Perception, **G** = Generation, **A** = Action.",
-        paper_table(robotics, include_pattern=True),
-        "[Back to paper index](#papers)",
-    ])
 
     readme = ROOT / "README.md"
     current = readme.read_text(encoding="utf-8")
