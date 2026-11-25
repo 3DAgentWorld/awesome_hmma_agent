@@ -1,6 +1,4 @@
-<h1 align="center">Many Models, One LLM</h1>
-
-<p align="center"><strong>A Survey on Heterogeneous Multi-Model Agents</strong></p>
+<h1 align="center">Many Models, One LLM: A Survey on Heterogeneous Multi-Model Agents</h1>
 
 <p align="center">
   Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peilin Zhao · Xiangxin Zhou · Hao Wang · Hui Xiong
