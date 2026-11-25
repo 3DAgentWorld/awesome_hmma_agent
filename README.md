@@ -865,8 +865,6 @@ See [pipeline/README.md](pipeline/README.md) for details.
 
 The public preprint was released under the earlier title shown in the BibTeX entry.
 
-[Download BibTeX for the public preprint](docs/citation.bib)
-
 ```bibtex
 @article{zhang2026hmma,
   title   = {Orchestrating {LLMs} with Specialized Models: A Survey on Heterogeneous Multi-Model Agents},
