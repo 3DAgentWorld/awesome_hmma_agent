@@ -1,12 +1,14 @@
 # Many Models, One LLM: A Survey on Heterogeneous Multi-Model Agents
 
+**Accepted for publication in ACM Computing Surveys (CSUR).**
+
 Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peilin Zhao · Xiangxin Zhou · Hao Wang · Hui Xiong
 
 [Preprint](https://doi.org/10.20944/preprints202607.1041.v1) · [Project page](https://3dagentworld.github.io/awesome_hmma_agent/) · [Paper browser](https://3dagentworld.github.io/awesome_hmma_agent/#browser) · [BibTeX](#citation)
 
 [![Distribution of the five HMMA interaction patterns across years and application domains in the 682-paper corpus](docs/assets/taxonomy.png)](https://3dagentworld.github.io/awesome_hmma_agent/#taxonomy)
 
-Accepted for publication in *ACM Computing Surveys*. The [preprint corpus](PAPERS.md) covers 572 papers. The [robotics extension](data/robotics_papers.json) adds 110 papers from CoRL, ICRA, IROS, and RSS, bringing the combined corpus to 682.
+The [preprint corpus](PAPERS.md) covers 572 papers. The [robotics extension](data/robotics_papers.json) adds 110 papers from CoRL, ICRA, IROS, and RSS, bringing the combined corpus to 682.
 
 ## Citation
 
