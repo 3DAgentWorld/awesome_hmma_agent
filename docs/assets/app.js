@@ -74,15 +74,19 @@
   window.addEventListener('scroll', function () {
     nav.classList.toggle('scrolled', window.scrollY > 8);
   }, { passive: true });
-  $('#navBurger').addEventListener('click', function () {
-    $('#navLinks').classList.toggle('open');
+  var navBurger = $('#navBurger');
+  var navLinks = $('#navLinks');
+  navBurger.addEventListener('click', function () {
+    navBurger.setAttribute('aria-expanded', navLinks.classList.toggle('open'));
   });
-  $$('#navLinks a').forEach(function (a) {
-    a.addEventListener('click', function () { $('#navLinks').classList.remove('open'); });
+  var navAnchors = $$('.nav-browser, #navLinks a');
+  navAnchors.forEach(function (a) {
+    a.addEventListener('click', function () {
+      navLinks.classList.remove('open');
+      navBurger.setAttribute('aria-expanded', 'false');
+    });
   });
 
-  var sectionIds = ['overview', 'taxonomy', 'trends', 'architecture', 'browser', 'pipeline', 'citation'];
-  var navAnchors = $$('#navLinks a');
   var spy = new IntersectionObserver(function (entries) {
     entries.forEach(function (en) {
       if (!en.isIntersecting) return;
@@ -91,7 +95,7 @@
       });
     });
   }, { rootMargin: '-30% 0px -60% 0px' });
-  sectionIds.forEach(function (id) { var el = document.getElementById(id); if (el) spy.observe(el); });
+  navAnchors.forEach(function (a) { spy.observe($(a.getAttribute('href'))); });
 
   /* ---------- counters & reveal ---------- */
   var counterObs = new IntersectionObserver(function (entries) {
@@ -116,7 +120,7 @@
       if (en.isIntersecting) { en.target.classList.add('visible'); revealObs.unobserve(en.target); }
     });
   }, { threshold: 0.08 });
-  $$('.section, .chart-card, .pstep').forEach(function (el) {
+  $$('.section:not(.browser-section), .chart-card, .pstep').forEach(function (el) {
     el.classList.add('reveal'); revealObs.observe(el);
   });
 
@@ -355,7 +359,11 @@
       }]
     });
   }
-  buildCharts();
+  if (typeof echarts === 'undefined') {
+    $('#chartLibrary').addEventListener('load', buildCharts, { once: true });
+  } else {
+    buildCharts();
+  }
 
   var resizeTimer;
   window.addEventListener('resize', function () {

@@ -4,7 +4,9 @@
 
 Zheng Zhang · Nanjie Yao · Yu Feng · Qi Chai · Liu Liu · Deheng Ye · Peilin Zhao · Xiangxin Zhou · Hao Wang · Hui Xiong
 
-[Preprint](https://doi.org/10.20944/preprints202607.1041.v1) · [Project page](https://3dagentworld.github.io/awesome_hmma_agent/) · [Paper browser](https://3dagentworld.github.io/awesome_hmma_agent/#browser) · [BibTeX](#citation)
+**[Browse 572 papers →](https://3dagentworld.github.io/awesome_hmma_agent/#browser)** · [Paper list](PAPERS.md) · [Robotics extension](data/robotics_papers.json)
+
+[Taxonomy](#what-are-hmmas) · [Preprint](https://doi.org/10.20944/preprints202607.1041.v1) · [BibTeX](#citation) · [Pipeline](#using-the-pipeline-for-your-own-survey) · [Project page](https://3dagentworld.github.io/awesome_hmma_agent/)
 
 [![Distribution of the five HMMA interaction patterns across years and application domains in the 682-paper corpus](docs/assets/taxonomy.png)](https://3dagentworld.github.io/awesome_hmma_agent/#taxonomy)
 

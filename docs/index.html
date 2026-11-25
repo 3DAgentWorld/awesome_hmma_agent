@@ -11,16 +11,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+<script id="chartLibrary" src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js" async></script>
 </head>
 <body>
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="nav-brand" href="#top">HMMA<span class="nav-brand-sub">Survey</span></a>
+    <a class="nav-browser" href="#browser">Paper Browser</a>
     <div class="nav-links" id="navLinks">
       <a href="#overview">Overview</a>
-      <a href="#browser">Paper Browser</a>
       <a href="#taxonomy">Taxonomy</a>
       <a href="#trends">Trends</a>
       <a href="#architecture">Architecture</a>
@@ -32,7 +32,7 @@
         <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
       </button>
-      <button class="icon-btn nav-burger" id="navBurger" aria-label="Menu">
+      <button class="icon-btn nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
@@ -41,7 +41,7 @@
 
 <header class="hero" id="top">
   <div class="hero-grid-bg" aria-hidden="true"></div>
-  <div class="container hero-inner">
+  <div class="container container-wide hero-inner">
     <p class="hero-kicker">Accepted for publication in ACM Computing Surveys (CSUR)</p>
     <h1 class="hero-title">Many Models, One LLM</h1>
     <p class="hero-subtitle">A Survey on <em>Heterogeneous Multi-Model Agents</em></p>
@@ -52,30 +52,68 @@
     <p class="hero-venue">HKUST (Guangzhou) · Tencent · NTU · SJTU &nbsp;·&nbsp; <sup>*</sup>equal contribution</p>
 
     <div class="hero-buttons">
-      <a class="btn btn-primary" href="https://doi.org/10.20944/preprints202607.1041.v1" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
-        Read the Preprint
+      <a class="btn btn-primary" href="#browser">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        Browse 572 papers
       </a>
-      <a class="btn btn-ghost" href="https://github.com/3DAgentWorld/awesome_hmma_agent" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.05.78 2.13v3.16c0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-        Code &amp; Data
-      </a>
-      <a class="btn btn-ghost" href="#browser">Browse 572 Papers</a>
+      <a class="btn btn-ghost" href="https://doi.org/10.20944/preprints202607.1041.v1" target="_blank" rel="noopener">Preprint</a>
+      <a class="btn btn-ghost" href="https://github.com/3DAgentWorld/awesome_hmma_agent">GitHub</a>
       <a class="btn btn-ghost" href="#citation">Cite</a>
-    </div>
-
-    <div class="stat-chips">
-      <div class="chip"><span class="chip-num" data-count="572">0</span><span class="chip-label">Papers</span></div>
-      <div class="chip"><span class="chip-num" data-count="19">0</span><span class="chip-label">Venues</span></div>
-      <div class="chip"><span class="chip-num">2023–26</span><span class="chip-label">Years</span></div>
-      <div class="chip"><span class="chip-num" data-count="5">0</span><span class="chip-label">Interaction Patterns</span></div>
-      <div class="chip"><span class="chip-num" data-count="18">0</span><span class="chip-label">Application Domains</span></div>
-      <div class="chip"><span class="chip-num" data-count="307">0</span><span class="chip-label">Open-source Repos</span></div>
     </div>
   </div>
 </header>
 
 <main>
+
+<section class="section browser-section" id="browser" aria-labelledby="browserTitle">
+  <div class="container container-wide">
+    <div class="browser-header">
+      <h2 class="section-title" id="browserTitle">Paper Browser</h2>
+      <p class="browser-summary">572 papers from 19 venues, organized by interaction pattern and domain.</p>
+    </div>
+
+    <div class="browser-controls">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="searchInput" aria-label="Search papers by title, authors, or models" placeholder="Search title, author, or model" autocomplete="off">
+      </div>
+      <div class="filter-row" id="filterRow">
+        <select id="filterYear" class="filter-select" aria-label="Filter by year"><option value="">Year: all</option></select>
+        <select id="filterVenue" class="filter-select" aria-label="Filter by venue"><option value="">Venue: all</option></select>
+        <select id="filterPattern" class="filter-select" aria-label="Filter by interaction pattern"><option value="">Pattern: all</option></select>
+        <select id="filterDomain" class="filter-select" aria-label="Filter by application domain"><option value="">Domain: all</option></select>
+        <select id="filterInterface" class="filter-select" aria-label="Filter by interface"><option value="">Interface: all</option></select>
+        <label class="code-check"><input type="checkbox" id="filterCode"> With code</label>
+        <button class="btn btn-small btn-ghost" id="resetFilters">Reset</button>
+        <button class="btn btn-small btn-outline" id="exportCsv">Export CSV</button>
+      </div>
+    </div>
+
+    <div class="browser-meta">
+      <span id="resultCount" role="status">…</span>
+      <div class="browser-links">
+        <a href="https://github.com/3DAgentWorld/awesome_hmma_agent/blob/main/PAPERS.md">Paper list on GitHub</a>
+        <a href="https://github.com/3DAgentWorld/awesome_hmma_agent/blob/main/data/README.md#files">Robotics extension (110)</a>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="paper-table" id="paperTable">
+        <thead>
+          <tr>
+            <th class="col-title" data-sort="title">Title</th>
+            <th class="col-venue" data-sort="venue">Venue</th>
+            <th class="col-year" data-sort="year">Year</th>
+            <th class="col-pattern" data-sort="pattern">Pattern</th>
+            <th class="col-domain" data-sort="domain">Domain</th>
+          </tr>
+        </thead>
+        <tbody id="paperTbody"></tbody>
+      </table>
+    </div>
+    <div class="pagination" id="pagination"></div>
+  </div>
+</section>
 
 <section class="section" id="overview">
   <div class="container">
@@ -122,52 +160,18 @@
         </div>
       </div>
     </div>
+    <div class="stat-chips">
+      <div class="chip"><span class="chip-num">572</span><span class="chip-label">Papers</span></div>
+      <div class="chip"><span class="chip-num">19</span><span class="chip-label">Venues</span></div>
+      <div class="chip"><span class="chip-num">2023–26</span><span class="chip-label">Years</span></div>
+      <div class="chip"><span class="chip-num">5</span><span class="chip-label">Interaction Patterns</span></div>
+      <div class="chip"><span class="chip-num">18</span><span class="chip-label">Application Domains</span></div>
+      <div class="chip"><span class="chip-num">307</span><span class="chip-label">Open-source Repos</span></div>
+    </div>
     <figure class="scope-fig">
       <img src="assets/scope.png" alt="Positioning of HMMAs among adjacent paradigms: compound AI systems, multi-agent systems, multimodal LLMs, and model routing.">
       <figcaption>HMMAs sit between adjacent paradigms: unlike compound AI systems the components are probabilistic specialists; unlike multi-agent systems they are heterogeneous models rather than peer LLM agents; unlike multimodal LLMs the capabilities remain separate models orchestrated by the LLM.</figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="section section-alt" id="browser">
-  <div class="container container-wide">
-    <h2 class="section-title">Paper Browser</h2>
-    <p class="section-lead">All 572 surveyed papers with their taxonomy labels. Search, filter, and click a row for details.</p>
-
-    <div class="browser-controls">
-      <div class="search-wrap">
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input type="search" id="searchInput" placeholder="Search title, authors, models…" autocomplete="off">
-      </div>
-      <div class="filter-row" id="filterRow">
-        <select id="filterYear" class="filter-select"><option value="">Year: all</option></select>
-        <select id="filterVenue" class="filter-select"><option value="">Venue: all</option></select>
-        <select id="filterPattern" class="filter-select"><option value="">Pattern: all</option></select>
-        <select id="filterDomain" class="filter-select"><option value="">Domain: all</option></select>
-        <select id="filterInterface" class="filter-select"><option value="">Interface: all</option></select>
-        <label class="code-check"><input type="checkbox" id="filterCode"> with code</label>
-        <button class="btn btn-small btn-ghost" id="resetFilters">Reset</button>
-        <button class="btn btn-small btn-outline" id="exportCsv">Export CSV</button>
-      </div>
-    </div>
-
-    <div class="browser-meta"><span id="resultCount">…</span></div>
-
-    <div class="table-wrap">
-      <table class="paper-table" id="paperTable">
-        <thead>
-          <tr>
-            <th class="col-title" data-sort="title">Title</th>
-            <th class="col-venue" data-sort="venue">Venue</th>
-            <th class="col-year" data-sort="year">Year</th>
-            <th class="col-pattern" data-sort="pattern">Pattern</th>
-            <th class="col-domain" data-sort="domain">Domain</th>
-          </tr>
-        </thead>
-        <tbody id="paperTbody"></tbody>
-      </table>
-    </div>
-    <div class="pagination" id="pagination"></div>
   </div>
 </section>
 
