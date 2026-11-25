@@ -31,7 +31,7 @@ def markdown_text(text):
 def paper_table(papers, include_pattern=False):
     patterns = {pattern: short for pattern, _, short in PATTERNS}
     include_code = any(paper.get("code_url") for paper in papers)
-    header = ["Paper", "Venue", "Year"]
+    header = ["Paper", "Venue"]
     if include_pattern:
         header.append("Pattern")
     header.append("Domain")
@@ -43,8 +43,7 @@ def paper_table(papers, include_pattern=False):
         title = markdown_text(paper["title"])
         cells = [
             f"[{title}]({paper['pdf_url']})",
-            paper["conference"],
-            str(paper["year"]),
+            f"{paper['conference']} {paper['year']}",
         ]
         if include_pattern:
             cells.append(patterns[paper["collaboration_pattern"]])
@@ -63,21 +62,35 @@ def main():
     for paper in preprint:
         grouped[paper["collaboration_pattern"]].append(paper)
 
+    index = [
+        "| Pattern | Browse | Papers |",
+        "| :---: | :--- | ---: |",
+    ]
+    for pattern, heading, short in PATTERNS:
+        anchor = heading.lower().replace(",", "").replace(" ", "-")
+        index.append(f"| `{short}` | [{heading}](#{anchor}) | {len(grouped[pattern])} |")
+    index.append(f"| | [Robotics extension](#robotics-extension) | {len(robotics)} |")
+
     sections = [
         "## Papers",
-        f"The preprint corpus contains {len(preprint)} papers, grouped by the specialist "
-        f"models used alongside the LLM. The robotics extension adds {len(robotics)} "
-        "papers from CoRL, ICRA, IROS, and RSS.",
+        f"**{len(preprint) + len(robotics)} papers** · {len(preprint)} in the preprint corpus "
+        f"· {len(robotics)} in the robotics extension",
+        "\n".join(index),
     ]
     for pattern, heading, _ in PATTERNS:
         papers = grouped[pattern]
-        sections.extend([f"### {heading}", f"{len(papers)} papers", paper_table(papers)])
+        sections.extend([
+            f"### {heading}",
+            paper_table(papers),
+            "[Back to paper index](#papers)",
+        ])
 
     sections.extend([
         "### Robotics extension",
         f"{len(robotics)} papers from CoRL, ICRA, IROS, and RSS. "
         "**P** = Perception, **G** = Generation, **A** = Action.",
         paper_table(robotics, include_pattern=True),
+        "[Back to paper index](#papers)",
     ])
 
     readme = ROOT / "README.md"
